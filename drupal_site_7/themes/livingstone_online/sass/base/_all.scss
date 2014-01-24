@@ -1,0 +1,35 @@
+
+//forms
+
+label, input {
+	display: inline-block;
+	
+}
+
+//lists
+
+
+ul, ol {
+	padding: 0;
+	margin: .5em 0 .5em 1.7em;
+}
+
+ul li {
+	list-style-type: square;
+}
+
+dl dt {
+	font-weight: bold;
+}
+
+dl dd {
+	margin: 0 0 0 1.7em;
+}
+
+//media
+
+img, media {
+  max-width: 100%;
+}
+
+ 
