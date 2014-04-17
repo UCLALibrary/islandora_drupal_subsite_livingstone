@@ -66,70 +66,59 @@
 ?>
 
 <div id="page">
-  
+
     <div id="parent">
+        <?php if ($page['header']) : ?> 
             <header id="masthead">
-    
-        <nav id="navigation" >
-          
-<?php print render($page['header']); ?>
-           <!-- <div id="main-menu">
-              <ul class="menu sf-js-enabled sf-shadow"><li class="leaf"><a href="www.livingstoneonline.org" ><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/home.png'; ?>"/></a></li>
 
-<li class="leaf"><a href="mailto:awisnicki@yahoo.com"><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/mail.png'; ?>"/></a></li>
-<li class="leaf"><a href="http://www.twitter.com/livingstone13d"><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/twitter.png'; ?>"/></a></li>
-<li class="leaf"><a href="http://livingstoneonline.wordpress.com" title=""><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/wordpress.png'; ?>"/></a></li>
-<li class="last leaf"><a href="#" title=""><img width="200px" height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/search.jpg'; ?>"/></a></li>
-</ul>          </div>-->
-        </nav>
-     
-  </header>
+                <nav id="navigation" >
 
-    <?php if ($is_front): ?>
-    <?php if (theme_get_setting('slideshow_display','nexus')): ?>
-      <?php 
-        $slide1_head = check_plain(theme_get_setting('slide1_head','nexus'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html'); $slide1_url = check_plain(theme_get_setting('slide1_url','nexus'));
-        $slide2_head = check_plain(theme_get_setting('slide2_head','nexus'));   $slide2_desc = check_markup(theme_get_setting('slide2_desc','nexus'), 'full_html'); $slide2_url = check_plain(theme_get_setting('slide2_url','nexus'));
-        $slide3_head = check_plain(theme_get_setting('slide3_head','nexus'));   $slide3_desc = check_markup(theme_get_setting('slide3_desc','nexus'), 'full_html'); $slide3_url = check_plain(theme_get_setting('slide3_url','nexus'));
-       
-      ?>
-      <div id="slider">
-        <div class="flexslider">
-          <ul class="slides">
-            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-             
-            </li>
-            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-              
-            </li>
-            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-            
-            </li>
-            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-            
-            </li>
-          </ul>
-            <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
-            <div class="flex-caption">
-                <?php print render($page['content_top']); ?>
-               
-                <?php print render($page['preface_middle']); ?>
-                <!--<a class="frmore" href="/node/1"> Livingstone/Online </a>
-                <a class="frmore" href="/node/1"> In his Own Words </a>
-                <a class="frmore" href="/node/1"> Our Technology </a>
-                <a class="frmore" href="/node/1"> Behind the Scenes </a>
-                <a class="frmore" href="/node/1"> Life & Times </a>
-                <a class="frmore" href="/node/1"> Resources </a>-->
-            
-          </div>
-        </div>  
-      </div>
+                    <?php print render($page['header']); ?>
+
+
+                </nav>
+
+            </header>
         <?php endif; ?>
-    <?php endif; ?>
 
-  </div>
-  <footer id="colophon" class="site-footer" role="contentinfo">
-     <?php print render($page['footer']); ?>
-  
-  </div>
+        <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
+
+            <div id="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+
+                        </li>
+                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+
+                        </li>
+                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+
+                        </li>
+                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+
+                        </li>
+                    </ul>
+                    <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                    <div class="flex-caption">
+                         <?php if ($page['content_top']) : ?> 
+                                <?php print render($page['content_top']); ?>
+                        <?php endif; ?>
+                        <?php if ($page['preface_middle']) : ?> 
+                                <?php print render($page['preface_middle']); ?>
+                        <?php endif; ?>
+
+
+                    </div>
+                </div>  
+            </div>
+        <?php endif; ?>
+
+
+    </div>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+         <?php if ($page['footer']) : ?> 
+                <?php print render($page['footer']); ?>
+        <?php endif; ?>
+</div>
 </div>
