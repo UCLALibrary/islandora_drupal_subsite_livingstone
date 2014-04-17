@@ -1,0 +1,135 @@
+<?php
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - $base_path: The base URL path of the Drupal installation. At the very
+ *   least, this will always default to /.
+ * - $directory: The directory the template is located in, e.g. modules/system
+ *   or themes/garland.
+ * - $is_front: TRUE if the current page is the front page.
+ * - $logged_in: TRUE if the user is registered and signed in.
+ * - $is_admin: TRUE if the user has permission to access administration pages.
+ *
+ * Site identity:
+ * - $front_page: The URL of the front page. Use this instead of $base_path,
+ *   when linking to the front page. This includes the language domain or
+ *   prefix.
+ * - $logo: The path to the logo image, as defined in theme configuration.
+ * - $site_name: The name of the site, empty when display has been disabled
+ *   in theme settings.
+ * - $site_slogan: The slogan of the site, empty when display has been disabled
+ *   in theme settings.
+ *
+ * Navigation:
+ * - $main_menu (array): An array containing the Main menu links for the
+ *   site, if they have been configured.
+ * - $secondary_menu (array): An array containing the Secondary menu links for
+ *   the site, if they have been configured.
+ * - $breadcrumb: The breadcrumb trail for the current page.
+ *
+ * Page content (in order of occurrence in the default page.tpl.php):
+ * - $title_prefix (array): An array containing additional output populated by
+ *   modules, intended to be displayed in front of the main title tag that
+ *   appears in the template.
+ * - $title: The page title, for use in the actual HTML content.
+ * - $title_suffix (array): An array containing additional output populated by
+ *   modules, intended to be displayed after the main title tag that appears in
+ *   the template.
+ * - $messages: HTML for status and error messages. Should be displayed
+ *   prominently.
+ * - $tabs (array): Tabs linking to any sub-pages beneath the current page
+ *   (e.g., the view and edit tabs when displaying a node).
+ * - $action_links (array): Actions local to the page, such as 'Add menu' on the
+ *   menu administration interface.
+ * - $feed_icons: A string of all feed icons for the current page.
+ * - $node: The node object, if there is an automatically-loaded node
+ *   associated with the page, and the node ID is the second argument
+ *   in the page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - $page['help']: Dynamic help text, mostly for admin pages.
+ * - $page['content']: The main content of the current page.
+ * - $page['sidebar_first']: Items for the first sidebar.
+ * - $page['sidebar_second']: Items for the second sidebar.
+ * - $page['header']: Items for the header region.
+ * - $page['footer']: Items for the footer region.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_page()
+ * @see template_process()
+ */
+?>
+
+<div id="page">
+  
+    <div id="parent">
+            <header id="masthead">
+    
+        <nav id="navigation" >
+          
+<?php print render($page['header']); ?>
+           <!-- <div id="main-menu">
+              <ul class="menu sf-js-enabled sf-shadow"><li class="leaf"><a href="www.livingstoneonline.org" ><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/home.png'; ?>"/></a></li>
+
+<li class="leaf"><a href="mailto:awisnicki@yahoo.com"><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/mail.png'; ?>"/></a></li>
+<li class="leaf"><a href="http://www.twitter.com/livingstone13d"><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/twitter.png'; ?>"/></a></li>
+<li class="leaf"><a href="http://livingstoneonline.wordpress.com" title=""><img height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/wordpress.png'; ?>"/></a></li>
+<li class="last leaf"><a href="#" title=""><img width="200px" height="25px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/search.jpg'; ?>"/></a></li>
+</ul>          </div>-->
+        </nav>
+     
+  </header>
+
+    <?php if ($is_front): ?>
+    <?php if (theme_get_setting('slideshow_display','nexus')): ?>
+      <?php 
+        $slide1_head = check_plain(theme_get_setting('slide1_head','nexus'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','nexus'), 'full_html'); $slide1_url = check_plain(theme_get_setting('slide1_url','nexus'));
+        $slide2_head = check_plain(theme_get_setting('slide2_head','nexus'));   $slide2_desc = check_markup(theme_get_setting('slide2_desc','nexus'), 'full_html'); $slide2_url = check_plain(theme_get_setting('slide2_url','nexus'));
+        $slide3_head = check_plain(theme_get_setting('slide3_head','nexus'));   $slide3_desc = check_markup(theme_get_setting('slide3_desc','nexus'), 'full_html'); $slide3_url = check_plain(theme_get_setting('slide3_url','nexus'));
+       
+      ?>
+      <div id="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+             
+            </li>
+            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+              
+            </li>
+            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+            
+            </li>
+            <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
+            
+            </li>
+          </ul>
+            <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+            <div class="flex-caption">
+                <?php print render($page['content_top']); ?>
+               
+                <?php print render($page['preface_middle']); ?>
+                <!--<a class="frmore" href="/node/1"> Livingstone/Online </a>
+                <a class="frmore" href="/node/1"> In his Own Words </a>
+                <a class="frmore" href="/node/1"> Our Technology </a>
+                <a class="frmore" href="/node/1"> Behind the Scenes </a>
+                <a class="frmore" href="/node/1"> Life & Times </a>
+                <a class="frmore" href="/node/1"> Resources </a>-->
+            
+          </div>
+        </div>  
+      </div>
+        <?php endif; ?>
+    <?php endif; ?>
+
+  </div>
+  <footer id="colophon" class="site-footer" role="contentinfo">
+     <?php print render($page['footer']); ?>
+  
+  </div>
+</div>
