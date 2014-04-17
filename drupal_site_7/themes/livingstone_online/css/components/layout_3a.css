@@ -1,0 +1,95 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\000031}}
+html {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\000035}}
+.l-header {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\000039}}
+.l-header h1 a {
+  color: rgba(0, 0, 0, 0.6); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000313}}
+.l-header h2 {
+  color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000317}}
+.l-header-sub {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000321}}
+.l-branding {
+  background-color: #fff;
+  font-size: 1.3em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000326}}
+.block--search {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000330}}
+.block--block-2 {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000336}}
+nav .menu {
+  float: none;
+  text-align: center;
+  width: 100%;
+  border-top: #aaa solid 1px;
+  border-bottom: #aaa solid 1px;
+  margin: .5em 0;
+  padding: .4em 0 0 0;
+  font-size: 1.2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000349}}
+.l-region--navigation {
+  background-color: #fff;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000354}}
+.l-region--navigation .block--system-main-menu {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000358}}
+nav .menu li {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000362}}
+nav .menu li a {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000366}}
+.l-footer {
+  background-color: #fff;
+  color: #000;
+  border-top: solid 2px #aaa;
+  margin-top: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000373}}
+.l-footer h2 {
+  background-color: #fff;
+  color: #000; }
+
+@media only screen and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000384}}
+  .l-header {
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000387}}
+  .l-region--sidebar-first {
+    background: #fff;
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000392}}
+  .l-region--sidebar-first li {
+    background: rgba(0, 0, 0, 0.15); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\0000397}}
+  nav .menu li {
+    margin: 0;
+    padding: .25em 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kdalziel\/Desktop\/sandbox\/drupal-livingstoneonline\/sites\/all\/themes\/livingstone_online\/sass\/components\/layout_3a\.scss}line{font-family:\00003102}}
+  .l-content {
+    padding-top: 0; } }

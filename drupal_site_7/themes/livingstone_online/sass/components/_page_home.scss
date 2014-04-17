@@ -1,0 +1,140 @@
+// Home Page
+
+.l-content .home-page {
+	margin: 0;
+	padding: 0;
+}
+
+.l-content .home-page .item {
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+    zoom: 1; 
+    float: left;
+    margin: 1em;
+	background-color: #f0ece5;
+}
+
+.l-content .home-page .item a {
+	text-decoration: none;
+	color: #000;
+}
+
+.l-content .home-page .item h3 {
+	margin: 0;
+	padding-top: 5em;
+}
+
+.l-content .home-page .item h3 span {
+	background-color: rgba(0,0,0,.6);
+	display: block;
+	color: #fff;
+	padding: .5em;
+}
+
+.l-content .home-page .item p {
+	padding:  .5em;
+	margin: 0;
+}
+
+/* MANUSCRIPTS */
+.l-content .home-page .home-page-manuscripts {
+	height: 30em;
+	background-color: #d31b29;
+}
+
+	.l-content .home-page .home-page-manuscripts a {
+		color: #fff;
+	}
+	
+	.l-content .home-page .home-page-manuscripts h3 {
+		margin: 0;
+		padding-top: 14em;
+	}
+
+/* CONTEXTS */
+.l-content .home-page .home-page-contexts {
+	height: 28em;
+	background-color: #1c1915;
+}
+
+	.l-content .home-page .home-page-contexts a {
+		color: #fff;
+	}
+
+	.l-content .home-page .home-page-contexts h3 {
+		padding-top: 12em;
+	}
+	
+	.l-content .home-page .home-page-contexts h3 {
+		background-size: auto 100%;
+	}
+
+/* OUTREACH */
+.l-content .home-page .home-page-outreach {
+	height: 35em;
+	background-color: #383027;
+}
+
+	.l-content .home-page .home-page-outreach a {
+		color: #fff;
+	}
+	
+	.l-content .home-page .home-page-outreach h3 {
+		padding-top: 14em;
+		background-size:  auto 100%;
+	}
+
+/* LIVINGSTONE */
+.l-content .home-page .home-page-livingstone {
+	height: 30em;
+	background-color: #1c1915;
+}
+
+	.l-content .home-page .home-page-livingstone a {
+		color: #fff;
+	}
+
+	.l-content .home-page .home-page-livingstone h3 {
+		padding-top: 14em;
+	}
+	
+	.l-content .home-page .home-page-livingstone h3 {
+		background-size: auto;
+	}
+
+/* PROJECTS */
+.l-content .home-page .home-page-projects {
+	height: 23em;
+	background-color: #dfd4c5;
+}
+
+	.l-content .home-page .home-page-projects h3 {
+		padding-top: 12em;
+		background-size: 100% auto;
+	}
+
+/* ABOUT */
+.l-content .home-page .home-page-about {
+	height: 28em;
+	background-color: #d50e2e;
+}
+
+	.l-content .home-page .home-page-about a {
+		color: #fff;
+	}
+
+	.l-content .home-page .home-page-about h3 {
+		padding-top: 12em;
+	}
+	
+	.l-content .home-page .home-page-about h3 {
+		background-size:  100% auto;
+	}
+
+/* ------ */
+.section {
+	width: 33%;
+	float: left;
+}
