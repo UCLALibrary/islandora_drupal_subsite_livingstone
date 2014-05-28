@@ -117,8 +117,27 @@
 
     </div>
     <footer id="colophon" class="site-footer" role="contentinfo">
-         <?php if ($page['footer']) : ?> 
-                <?php print render($page['footer']); ?>
-        <?php endif; ?>
+        <div class="container">
+            <div class="row">
+                        
+          <div class=" block-center col-sm-2">  
+               <a href="http://www.library.ucla.edu/"><img width="180" height="31" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/ucla.png"></a>
+          </div>         
+          <div class="block-center col-sm-2">
+       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img width="150" height="87" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/NTS.png"></a>
+          </div>        
+  <div class="block-center col-sm-2">
+        <a href="http://www.neh.gov/"><img width="205" height="55" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/neh.png"></a>
+          </div>         
+ <div class="block-center col-sm-2">
+        <a href="http://www.nls.uk/"><img width="150" height="90" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/NLS.png"></a>
+          </div>      
+  <div class="block-center col-sm-2">
+      <a href="www.unl.edu"><img width="130" height="90" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/nebraska.png"></a>
+          </div>  
+       
+            </div>
+        </div>
+         
 </div>
 </div>

@@ -50,8 +50,15 @@
   -->
 
   <!--<div class="content"<?php print $content_attributes; ?>> -->
- 
+  <div id="<?php print $block_html_id; ?>" class="block block-block">
+ <div class="content">
+     <div class="container">
+        <div class="row">    
     <?php print $content ?>
+        </div>
+     </div>
+ </div>
+  </div>
   
  <!-- </div>-->
   

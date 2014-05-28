@@ -137,7 +137,7 @@ function nexus_menu_link__menu_external_links(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";*/
   if($element['#title'] == 'Home'){
-     $element['#title'] = '<img height="25px" src="'.drupal_get_path('theme', 'nexus').'/images/home.png"/>'; 
+     $element['#title'] = '<img height="30px" width="35px" src="'.drupal_get_path('theme', 'nexus').'/images/home.png"/>'; 
   }
     if($element['#title'] == 'Mail'){
      $element['#title'] = '<img height="25px" src="'.drupal_get_path('theme', 'nexus').'/images/mail.png"/>'; 
