@@ -121,19 +121,19 @@
             <div class="row">
                         
           <div class=" block-center col-sm-2">  
-               <a href="http://www.library.ucla.edu/"><img width="180" height="31" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/ucla.png"></a>
+               <a href="http://www.library.ucla.edu/"><img width="180" height="31" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/ucla.png'; ?>"></a>
           </div>         
           <div class="block-center col-sm-2">
-       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img width="150" height="87" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/NTS.png"></a>
+       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img width="150" height="87" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NTS.png'; ?>"></a>
           </div>        
   <div class="block-center col-sm-2">
-        <a href="http://www.neh.gov/"><img width="205" height="55" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/neh.png"></a>
+        <a href="http://www.neh.gov/"><img width="205" height="55" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/neh.png'; ?>"></a>
           </div>         
  <div class="block-center col-sm-2">
-        <a href="http://www.nls.uk/"><img width="150" height="90" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/NLS.png"></a>
+        <a href="http://www.nls.uk/"><img width="150" height="90" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NLS.png'; ?>"></a>
           </div>      
   <div class="block-center col-sm-2">
-      <a href="www.unl.edu"><img width="130" height="90" src="/drupal_site_7/sites/drupal_site_7/themes/nexus/images/nebraska.png"></a>
+      <a href="www.unl.edu"><img width="130" height="90" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/nebraska.png'; ?>"></a>
           </div>  
        
             </div>
