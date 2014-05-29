@@ -101,12 +101,21 @@
                     </ul>
                     <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
                     <div class="flex-caption">
-                         <?php if ($page['content_top']) : ?> 
-                                <?php print render($page['content_top']); ?>
-                        <?php endif; ?>
-                        <?php if ($page['preface_middle']) : ?> 
-                                <?php print render($page['preface_middle']); ?>
-                        <?php endif; ?>
+                        
+    <h2>LIVINGSTONE ONLINE</h2>
+<p>
+                    THE WORDS OF EXPLORER DAVID LIVINGSTONE
+                </p>
+                  
+    
+<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
+<a class="frmore" href="node/69">Our Technology</a>
+<a class="frmore" href="node/70">Behind the Scenes</a>
+<a class="frmore" href="node/67">Life &amp; Times</a>
+<a class="frmore" href="node/68">Resources</a>
+       
+ 
+                        
 
 
                     </div>
