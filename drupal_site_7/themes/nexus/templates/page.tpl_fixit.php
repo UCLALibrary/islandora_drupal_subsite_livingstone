@@ -65,18 +65,19 @@
  */
 ?>
 <div id="page">
-    <header>   
- <div class="flex-caption">
+  <header id="masthead" class="site-header flex-caption" role="banner">
+   
+      <div id="logo" class="col-sm-4 ">
        <?php print render($page['title']); ?>
- </div>   
-        <div class="first_menu"> 
+      </div>
+      <div class="col-sm-8 mainmenu">
+       <!-- <div class="mobilenavi"></div>
+        <nav id="navigation" role="navigation"> -->
           <?php print render($page['header']); ?>
+            
             <?php print render($page['section']); ?>
-        </div>
-           
-    
-    
-     
+      <!--  </nav> -->
+      </div>
     
   </header>
 
@@ -87,15 +88,10 @@
 
   
 
-  
-
- 
-
- 
-    
-    <div class="flex-direction-nav"><a class="flex-prev" href="#">Previous</a><a class="flex-next" href="#">Next</a></div>
-    <div class="content_main">
-          <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
+    <div id="main-content">
+    <!--<div class="container"> 
+      <div class="row"> -->
+        <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">
           <section id="content" role="main" class="clearfix">
             <!--<?php if (theme_get_setting('breadcrumbs')): ?><?php if ($breadcrumb): ?><div id="breadcrumbs"><?php print $breadcrumb; ?></div><?php endif;?><?php endif; ?>-->
@@ -117,5 +113,12 @@
            <?php print render($page['sidebar_first']); ?>
           </aside> 
         <?php endif; ?>
-    </div>
+     <!-- </div>
+    </div>-->
+  </div>
+
+ 
+
+ 
+  </div>
 </div>

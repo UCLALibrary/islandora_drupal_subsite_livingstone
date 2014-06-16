@@ -50,7 +50,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   font: 14px/1.6 'Oxygen',sans-serif;
-  background-color: #000000;
+  background-color: #ffffff;
  
       
 }
@@ -272,11 +272,8 @@ a:focus {
 /* Head */
 
 #masthead{
-  position: absolute;
-  z-index: 120;
- 
-  margin: 25px 0 0 0;
-  right:70px;
+  position: relative;
+  margin: 20px 50px 0px 0px;
  
 }
 #parent{
@@ -316,20 +313,27 @@ h1#site-title a:link, h1#site-title a:visited{
   font-size: 20px;
   display:none;
 }
-
-#main-menu {
-  padding:0px 0px;
- 
-  border-bottom: none;
-  float: left;
+.region-section{
+    float:right;
 }
-  
+#main-menu {
+  padding:0px 10px; 
+  border-bottom: none;  
+}
+.first_menu{
+    width:900px;
+    float:left;
+    position: absolute;
+    right:125px;
+    top:20px;
+}
 #main-menu ul {
-  width: 450px;
-  float:left;
+ 
+  float:right;
   list-style: none;
-  margin: 0;
+  margin: 10px 0px 10px 0px;
   padding: 0 0px;
+  height: 35px;
 }
 #search-block-form input[type=text]{
     width:200px;
@@ -453,19 +457,47 @@ img.grayscale {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
-  
+
+.border_section_left{
+    border-width: 6px;
+    border-style: solid;
+    border-color: #b0c4de;
+    margin:13px;
+    padding: 15px;
+    height:250px;
+    overflow: hidden;
+    background-color: #F0ECEC;
+}
+.border_section{
+    border-width: 6px;
+    border-style: solid;
+    border-color: #b0c4de;
+    margin:13px;
+    padding: 15px;
+    height:530px;
+    overflow: hidden;
+    background-color: #F0ECEC;
+}
+.page_header{
+    margin: 20px 20px;
+    padding: 20px 20px 20px 20px;
+} 
+
+.content_main{
+position:absolute;
+top:100px;
+left: 90px; 
+right:90px;
+}
 .flex-caption{
-  
-  width: 900px;
-position: absolute;
-top: 28%;
-left: 50%;
-margin-left: -450px;
-text-align: center;
-z-index: 120;
+position:absolute;
+top:50px;
+left: 120px;
   color: #000;
   font-weight: 900;
 font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+float:left;
+width:350px;
 
 } 
 .flex-external{
@@ -481,10 +513,10 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   
 .flex-caption h2{
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
   color: #000;
-  letter-spacing:-2px;
+  letter-spacing:-1px;
   line-height:120%;
 }
 
@@ -493,9 +525,9 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .flex-caption p{
-  font-size: 20px;
+  font-size: 17px;
    font-weight: 900;
-   letter-spacing:-2px;
+   letter-spacing:-1px;
    line-height:120%;
 }
 
@@ -512,6 +544,7 @@ a.frmore{
   font-weight: 900;  
   float:left;
   font-size: 13px;
+  text-align: center;
 }
 a.frmore:nth-child(1){
    background-color:#99cc99; 

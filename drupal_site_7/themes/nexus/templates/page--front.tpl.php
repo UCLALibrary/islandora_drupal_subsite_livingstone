@@ -102,17 +102,17 @@
                     <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
                     <div class="flex-caption">
                         
-    <h2>LIVINGSTONE ONLINE</h2>
+  <!--  <h2>LIVINGSTONE ONLINE</h2>
 <p>
                     THE WORDS OF EXPLORER DAVID LIVINGSTONE
-                </p>
-                  
-    
-<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
+                </p>-->
+                  <?php print render($page['title']); ?>
+     <?php print render($page['section']); ?>
+<!--<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
 <a class="frmore" href="node/69">Our Technology</a>
 <a class="frmore" href="node/70">Behind the Scenes</a>
 <a class="frmore" href="node/67">Life &amp; Times</a>
-<a class="frmore" href="node/68">Resources</a>
+<a class="frmore" href="node/68">Resources</a>-->
        
  
                         
