@@ -65,20 +65,7 @@
  */
 ?>
 <div id="page">
-    <header>   
- <div class="flex-caption">
-       <?php print render($page['title']); ?>
- </div>   
-        <div class="first_menu"> 
-          <?php print render($page['header']); ?>
-            <?php print render($page['section']); ?>
-        </div>
-           
     
-    
-     
-    
-  </header>
 
 
   
@@ -93,8 +80,8 @@
 
  
     
-    <div class="flex-direction-nav"><a class="flex-prev" href="<?php print base_path() ?>">Previous</a><a class="flex-next" href="<?php print base_path() ?>">Next</a></div>
-    <div class="content_main">
+    <div class="flex-direction-nav"><a title="livingstone online" class="flex-prev" href="<?php print base_path() . 'livingstone online' ?>">Previous</a><a title="our technology" class="flex-next" href="<?php print base_path() . 'our technology' ?>">Next</a></div>
+    <div class="content_section">
           <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">
           <section id="content" role="main" class="clearfix">

@@ -316,6 +316,21 @@ h1#site-title a:link, h1#site-title a:visited{
 .region-section{
     float:right;
 }
+
+.external_menu .pane-content{
+    float:right;
+    
+}
+.internal_menu_region_class .pane-content{
+    float:right;
+}
+.external_menu li{
+    float:left;
+    list-style: none;
+    }
+    .external_menu input{
+        float:left;
+    }
 #main-menu {
   padding:0px 10px; 
   border-bottom: none;  
@@ -335,6 +350,7 @@ h1#site-title a:link, h1#site-title a:visited{
   padding: 0 0px;
   height: 35px;
 }
+
 #search-block-form input[type=text]{
     width:200px;
 }
@@ -457,26 +473,44 @@ img.grayscale {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
-
-.border_section_left{
+.border_section_basic{
     border-width: 6px;
     border-style: solid;
-    border-color: #b0c4de;
-    margin:13px;
-    padding: 15px;
-    height:250px;
-    overflow: hidden;
-    background-color: #F0ECEC;
+     margin:13px;
+     overflow: hidden;
+   /*background-color: #F0ECEC;*/
+}
+.border_section_left_top{ 
+    height:220px;   
+   
+}
+.livingstone_online{
+    border-color: #99cc99;
+}
+.yellow_class{
+    border-color: #ffcc33;
+}
+.lifeandtimes_color_class{
+    border-color: #cc9999;
+}
+.our_technology_color_class{
+    border-color: #a48bc2;
+}
+.behind_the_scenes_color_class{
+    border-color: #99ccff;
+}
+.resources_color_class{
+    border-color: #cccc99;
+}
+.border_section_left_bottom{
+    
+    height:278px;
+    
 }
 .border_section{
-    border-width: 6px;
-    border-style: solid;
-    border-color: #b0c4de;
-    margin:13px;
-    padding: 15px;
+    
     height:530px;
-    overflow: hidden;
-    background-color: #F0ECEC;
+   
 }
 .page_header{
     margin: 20px 20px;
@@ -489,6 +523,11 @@ top:100px;
 left: 90px; 
 right:90px;
 }
+.content_section{
+
+margin: 0px 40px 0px 40px;
+
+}
 .flex-caption{
 position:absolute;
 top:50px;
@@ -500,6 +539,15 @@ float:left;
 width:350px;
 
 } 
+
+.header_title_region{
+
+  color: #000;
+  font-weight: 900;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+
+}
 .flex-external{
   width: 800px;
   position: absolute;
@@ -530,6 +578,28 @@ width:350px;
    letter-spacing:-1px;
    line-height:120%;
 }
+.header_title_region .pane-content{
+    margin-top: 27px;
+}
+.header_title_region h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 900;
+  color: #000;
+  letter-spacing:-1px;
+  line-height:120%;
+}
+
+.header_title_region h2 a:link, .header_title_region h2 a:visited{
+  color: #fff;
+}
+
+.header_title_region p{
+  font-size: 17px;
+   font-weight: 900;
+   letter-spacing:-1px;
+   line-height:120%;
+}
 
 
 
@@ -540,7 +610,7 @@ a.frmore{
   width: 130px;
   /*border: 1px solid #000;*/
   padding: 2px 2px 2px 2px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 0px 10px 10px;
   font-weight: 900;  
   float:left;
   font-size: 13px;
@@ -1270,8 +1340,8 @@ border-radius: 7px;
 -webkit-border-radius: 7px;
 }
 #search-block-form .search {
-margin-top: 8px;
-padding: 6px 15px 6px 30px;
+margin-top: 3px;
+/*padding: 6px 15px 6px 30px;*/
 background: url('./images/search-button.png') no-repeat 1px 1px;
 }
 .tftextinput4 {
