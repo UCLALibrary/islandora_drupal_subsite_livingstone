@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Section Page Level 2 feature.
+ */
+
+include_once 'section_page_level_2.features.inc';
