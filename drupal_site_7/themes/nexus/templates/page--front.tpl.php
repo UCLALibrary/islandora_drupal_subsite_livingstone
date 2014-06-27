@@ -67,21 +67,22 @@
 
 <div id="page">
 
-    <div id="parent">
+   
         <?php if ($page['header']) : ?> 
             <header id="masthead">
 
-                <nav id="navigation" >
+              
 
                     <?php print render($page['header']); ?>
 
 
-                </nav>
 
             </header>
         <?php endif; ?>
 
-        <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
+ <ul class="flex-direction-nav"><li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li><li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstone online' ?>">Next</a></li></ul>
+
+<?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
 
             <div id="slider">
                 <div class="flexslider">
@@ -99,7 +100,7 @@
 
                         </li>
                     </ul>
-                    <ul class="flex-direction-nav"><li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li><li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstone online' ?>">Next</a></li></ul>
+                   
                     <div class="flex-caption">
                         
   <!--  <h2>LIVINGSTONE ONLINE</h2>
@@ -122,9 +123,7 @@
                 </div>  
             </div>
         <?php endif; ?>
-
-
-    </div>
+   
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
             <div class="row">
