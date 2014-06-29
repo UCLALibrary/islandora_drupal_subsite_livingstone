@@ -129,19 +129,19 @@
             <div class="row">
                         
           <div class=" block-center col-sm-2">  
-               <a href="http://www.library.ucla.edu/"><img title="UCLA Library" width="180" height="31" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/ucla.png'; ?>"></a>
+               <a href="http://www.library.ucla.edu/"><img title="UCLA Library" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/ucla.png'; ?>"></a>
           </div>         
           <div class="block-center col-sm-2">
-       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img title="National Trust for Scotland" width="150" height="87" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NTS.png'; ?>"></a>
+       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img title="National Trust for Scotland" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NTS.png'; ?>"></a>
           </div>        
   <div class="block-center col-sm-2">
-        <a href="http://www.neh.gov/"><img title="National Endowment for the Humanities" width="205" height="55" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/neh.png'; ?>"></a>
+        <a href="http://www.neh.gov/"><img title="National Endowment for the Humanities" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/neh.png'; ?>"></a>
           </div>         
  <div class="block-center col-sm-2">
-        <a href="http://www.nls.uk/"><img title="National Library of Scotland" width="150" height="90" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NLS.png'; ?>"></a>
+        <a href="http://www.nls.uk/"><img title="National Library of Scotland" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NLS.png'; ?>"></a>
           </div>      
   <div class="block-center col-sm-2">
-      <a href="www.unl.edu"><img title="University of NebraskaLincoln" width="130" height="90" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/nebraska.png'; ?>"></a>
+      <a href="www.unl.edu"><img title="University of NebraskaLincoln" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/nebraska.png'; ?>"></a>
           </div>  
        
             </div>
