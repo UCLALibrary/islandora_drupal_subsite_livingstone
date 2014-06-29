@@ -277,14 +277,14 @@ a:focus {
   z-index: 120;
  width:100%;
  max-width: 100%;
-  top:20px;
+  top:15px;
   
   height:60px;
  
 }
 #colophon{
     position: relative;
-    top:475px;
+    top:500px;
    
 }
 #slider{
@@ -470,7 +470,7 @@ img.grayscale {
   
   width: 900px;
 position: absolute;
-top: 230px;
+top: 160px;
 left: 50%;
 margin-left: -450px;
 text-align: center;
