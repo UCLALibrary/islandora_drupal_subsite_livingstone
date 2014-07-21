@@ -449,31 +449,27 @@ function level_2_v1_0_default_page_manager_pages() {
     $display->content['new-e875b944-3885-416d-81b2-df130399fd46'] = $pane;
     $display->panels['left_top_region'][0] = 'new-e875b944-3885-416d-81b2-df130399fd46';
     $pane = new stdClass();
-    $pane->pid = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->pid = 'new-15679aaf-f318-4dbe-9895-abd684517b8c';
     $pane->panel = 'livingstone_title';
     $pane->type = 'block';
-    $pane->subtype = 'block-11';
+    $pane->subtype = 'bean-livingstone-header-info';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
-    $display->content['new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29'] = $pane;
-    $display->panels['livingstone_title'][0] = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->uuid = '15679aaf-f318-4dbe-9895-abd684517b8c';
+    $display->content['new-15679aaf-f318-4dbe-9895-abd684517b8c'] = $pane;
+    $display->panels['livingstone_title'][0] = 'new-15679aaf-f318-4dbe-9895-abd684517b8c';
     $pane = new stdClass();
     $pane->pid = 'new-566ce0d6-083f-4111-8154-06458eed6506';
     $pane->panel = 'right_region';
@@ -949,31 +945,27 @@ function level_2_v1_0_default_page_manager_pages() {
     $display->content['new-6488fea2-ab88-49ab-aa51-c01b531700b1'] = $pane;
     $display->panels['left_top_region'][0] = 'new-6488fea2-ab88-49ab-aa51-c01b531700b1';
     $pane = new stdClass();
-    $pane->pid = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->pid = 'new-07438add-5508-4b33-8db6-e5941ce14aac';
     $pane->panel = 'livingstone_title';
     $pane->type = 'block';
-    $pane->subtype = 'block-11';
+    $pane->subtype = 'bean-livingstone-header-info';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
-    $display->content['new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29'] = $pane;
-    $display->panels['livingstone_title'][0] = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->uuid = '07438add-5508-4b33-8db6-e5941ce14aac';
+    $display->content['new-07438add-5508-4b33-8db6-e5941ce14aac'] = $pane;
+    $display->panels['livingstone_title'][0] = 'new-07438add-5508-4b33-8db6-e5941ce14aac';
     $pane = new stdClass();
     $pane->pid = 'new-c13775e7-f615-435b-80e1-c24157d7b7cd';
     $pane->panel = 'right_region';
@@ -1449,31 +1441,27 @@ function level_2_v1_0_default_page_manager_pages() {
     $display->content['new-1156c77f-8184-4601-b37e-321bf67a728e'] = $pane;
     $display->panels['left_top_region'][0] = 'new-1156c77f-8184-4601-b37e-321bf67a728e';
     $pane = new stdClass();
-    $pane->pid = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->pid = 'new-c56f91c1-63d5-4b29-9b00-469de16b1762';
     $pane->panel = 'livingstone_title';
     $pane->type = 'block';
-    $pane->subtype = 'block-11';
+    $pane->subtype = 'bean-livingstone-header-info';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
-    $display->content['new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29'] = $pane;
-    $display->panels['livingstone_title'][0] = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->uuid = 'c56f91c1-63d5-4b29-9b00-469de16b1762';
+    $display->content['new-c56f91c1-63d5-4b29-9b00-469de16b1762'] = $pane;
+    $display->panels['livingstone_title'][0] = 'new-c56f91c1-63d5-4b29-9b00-469de16b1762';
     $pane = new stdClass();
     $pane->pid = 'new-4ab308c5-2778-40ca-b9fb-fa592d89fb19';
     $pane->panel = 'right_region';
@@ -2445,31 +2433,27 @@ function level_2_v1_0_default_page_manager_pages() {
     $display->content['new-c91c54b4-0cd2-43a4-999b-df694f750e4b'] = $pane;
     $display->panels['left_top_region'][0] = 'new-c91c54b4-0cd2-43a4-999b-df694f750e4b';
     $pane = new stdClass();
-    $pane->pid = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->pid = 'new-3e9638c9-1db7-4a13-ad8d-37d402ed4ee0';
     $pane->panel = 'livingstone_title';
     $pane->type = 'block';
-    $pane->subtype = 'block-11';
+    $pane->subtype = 'bean-livingstone-header-info';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
-    $display->content['new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29'] = $pane;
-    $display->panels['livingstone_title'][0] = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->uuid = '3e9638c9-1db7-4a13-ad8d-37d402ed4ee0';
+    $display->content['new-3e9638c9-1db7-4a13-ad8d-37d402ed4ee0'] = $pane;
+    $display->panels['livingstone_title'][0] = 'new-3e9638c9-1db7-4a13-ad8d-37d402ed4ee0';
     $pane = new stdClass();
     $pane->pid = 'new-15bd7193-5673-4a8b-847c-14108a3125b8';
     $pane->panel = 'right_region';
@@ -2945,31 +2929,27 @@ function level_2_v1_0_default_page_manager_pages() {
     $display->content['new-1745b065-5e0b-4577-9413-9641fb91cd7c'] = $pane;
     $display->panels['left_top_region'][0] = 'new-1745b065-5e0b-4577-9413-9641fb91cd7c';
     $pane = new stdClass();
-    $pane->pid = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->pid = 'new-17d30d6a-8677-45da-9cb9-73a0c7e72a50';
     $pane->panel = 'livingstone_title';
     $pane->type = 'block';
-    $pane->subtype = 'block-11';
+    $pane->subtype = 'bean-livingstone-header-info';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
-    $display->content['new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29'] = $pane;
-    $display->panels['livingstone_title'][0] = 'new-26bfaf9d-4d55-4a14-9a3b-6439efb75e29';
+    $pane->uuid = '17d30d6a-8677-45da-9cb9-73a0c7e72a50';
+    $display->content['new-17d30d6a-8677-45da-9cb9-73a0c7e72a50'] = $pane;
+    $display->panels['livingstone_title'][0] = 'new-17d30d6a-8677-45da-9cb9-73a0c7e72a50';
     $pane = new stdClass();
     $pane->pid = 'new-9303b226-d823-47a1-871c-ab0a9147dc11';
     $pane->panel = 'right_region';
