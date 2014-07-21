@@ -319,7 +319,7 @@ h1#site-title a:link, h1#site-title a:visited{
 
 .external_menu .pane-content{
     float:right;
-    
+    padding-left: 30px;
 }
 .internal_menu_region_class .pane-content{
     float:right;
@@ -327,6 +327,9 @@ h1#site-title a:link, h1#site-title a:visited{
 .external_menu li{
     float:left;
     list-style: none;
+    }
+    .external_menu li a{
+    padding: 10px;
     }
     .external_menu input{
         float:left;
@@ -548,40 +551,38 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
 
 }
-.pic .text {
-   
-    height: 100%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    text-align: center;
-    width: 100%;
-}
-.pic img{
-   
-    display: block;
-    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
-    transform: scale(1.12);
 
-}
-.pic .text .info {
-    top: 40%;
-}
 
-.pic .text .info {
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    width: 85%;
-}
-.text p{
-    margin: 0;
-}
-.text{ background:#FFF; } 
-.pic:hover .text { opacity:0.6; text-align:justify; color:#000000; font-size:20px; font-weight:700; font-family:"Times New Roman", Times, serif; padding:30px; }
+
+.project { position: relative; margin-bottom: 10px; }
+	.project p { color: #ccc; font-style: italic; font-weight: 300; font-size: .9em; text-transform: none; }
+	
+	.project img { display: block; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale(1.12); transform: scale(1.12); }
+	.project:hover img {opacity: 0.5; -webkit-transform: scale(1); transform: scale(1);	}
+
+	
+	.project h3 { color: #fff; font-size: 22px; }
+	.project .hover { background-color: rgba(63, 73, 83, 0.85); height: 100%; left: 0; opacity: 0; position: absolute; top:0; text-align: center; width: 100%; }
+	.project .hover .info { position: absolute; text-align: center; top: 25%; width: 100%; }
+	.project .hover:hover { opacity: 1; }
+
+
+
+
 .sectionPageImage{
     outline: none;max-width: 100%;width: 100%;display: block;
+}
+.left_column_width{
+    width:30%;
+}
+.right_column_width{
+    width:70%;
+}
+.right_center_column_width{
+    width:50%;
+}
+.right_right_column_width{
+    width:20%;
 }
 .imageLeft{
     max-height: 276px;
@@ -604,14 +605,13 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
    
   font-size: 20px;
   font-weight: bold;
-   
-   line-height:120%;
+   margin-bottom:10px;
+   /*line-height:120%;*/
 }
 .section_block p{
    font-size: 15px;
    font-style: italic;
-
-  line-height:120%;
+  line-height:70%;
 }
 .flex-external{
   width: 800px;
@@ -643,12 +643,12 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
    letter-spacing:-1px;
    line-height:120%;
 }
-.header_title_region .pane-content{
-    margin-top: 27px;
+.header_title_region h2{
+    margin-top: 30px;
 }
 .header_title_region h2{
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   color: #000;
   letter-spacing:-1px;
@@ -660,7 +660,7 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .header_title_region p{
-  font-size: 17px;
+  font-size: 15px;
    font-weight: 900;
    letter-spacing:-1px;
    line-height:120%;
@@ -672,13 +672,13 @@ a.frmore{
  
   display: block;  
   color: #000;
-  width: 130px;
+  width: 98px;
   /*border: 1px solid #000;*/
   padding: 2px 2px 2px 2px;
   margin: 10px 0px 10px 10px;
   font-weight: 900;  
   float:left;
-  font-size: 13px;
+  font-size: 10px;
   text-align: center;
 }
 a.frmore:nth-child(1){

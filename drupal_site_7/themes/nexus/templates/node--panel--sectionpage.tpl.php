@@ -80,28 +80,39 @@
   <?php if (!$page): ?>
       <header>
   <?php endif; ?>
+          <!--
       <?php print render($title_prefix); ?>
       <?php if (!$page): ?>
       <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-  
+  -->
     
 
     <?php if (!$page): ?>
       </header>
   <?php endif; ?>
 
-  <div class="content pic"<?php print $content_attributes; ?>>
+   <!--<div class="content pic"<?php print $content_attributes; ?>>
      
    <img  src="<?php print file_create_url($node->field_section_page_image['und'][0]['uri']); ?>"  alt="<?php print $node->field_section_page_image['und'][0]['alt']; ?>" title="<?php print $node->field_section_page_image['und'][0]['title']; ?>"  class="sectionPageImage imageLeft"/>
-    <div class="text">
+   <div class="text">
        <div class="info">
        <?php print render($content['body']);?>
        </div>
-   </div>
-  </div>
-
+   </div> 
+  </div>-->
+<div class="project"<?php print $content_attributes; ?>>
+	<a href="<?php print $node_url ?>">
+            <img src="<?php print file_create_url($node->field_section_page_image['und'][0]['uri']); ?>" alt="<?php print $node->field_section_page_image['und'][0]['alt']; ?>" title="<?php print $node->field_section_page_image['und'][0]['title']; ?>" class="sectionPageImage imageLeft">
+		<div class="hover">
+						<div class="info">
+							<h3><?php print $title ?></h3>
+							<p><?php print render($content['field_section_page_tag_line']);?></p>
+						</div>
+					</div>
+				</a>
+			</div>
   
 <?php if (!$page): ?>
   </article> <!-- /.node -->
