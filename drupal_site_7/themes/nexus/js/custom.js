@@ -11,6 +11,12 @@ jQuery(window).load(function() {
 	jQuery('#main-menu > ul').mobileMenu({
 		prependTo:'.mobilenavi'
 	});
+        jQuery(".header_title_region").click(function(){
+            window.location.href = "http://"+window.location.hostname+"/livingstone";
+           
+            
+            
+        });
 
 });
 
