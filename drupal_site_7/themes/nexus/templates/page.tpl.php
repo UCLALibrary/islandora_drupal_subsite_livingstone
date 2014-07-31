@@ -65,20 +65,22 @@
  */
 ?>
 <div id="page">
-    <header>   
- <div class="flex-caption">
-       <?php print render($page['title']); ?>
- </div>   
-        <div class="first_menu"> 
-          <?php print render($page['header']); ?>
-            <?php print render($page['section']); ?>
-        </div>
-           
-    
-    
-     
-    
+  <header id="masthead" class="site-header container" role="banner">
+    <div class="row">
+      <div id="logo" class="site-branding">
+          <div id="site-logo" class="flex-caption"><a href="/livingstone"><?php print render($page['title']); ?></a>
+      </div>
+      <div class="mainmenu">
+        <div class="mobilenavi"></div>
+        <nav id="navigation" role="navigation">
+          
+           <?php print render($page['header']); ?>
+            <?php print render($page['section']); ?>       
+        </nav>
+      </div>
+    </div>
   </header>
+
 
 
   

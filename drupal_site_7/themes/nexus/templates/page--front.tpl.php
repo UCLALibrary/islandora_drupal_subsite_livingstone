@@ -125,23 +125,23 @@
         <?php endif; ?>
    
     <footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="container">
+        <div class="footer_container">
             <div class="row">
                         
-          <div class=" block-center col-sm-2">  
-               <a href="http://www.library.ucla.edu/"><img title="UCLA Library" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/ucla.png'; ?>"></a>
+          <div class=" block-center">  
+               <a  href="http://www.library.ucla.edu/"><img class="ucla" title="UCLA Library"  src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/img_trans.gif'; ?>"></a>
           </div>         
-          <div class="block-center col-sm-2">
-       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img title="National Trust for Scotland" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NTS.png'; ?>"></a>
+          <div class="block-center">
+       <a href="http://www.nts.org.uk/property/davidlivingstonecentre/"><img class="nts" title="National Trust for Scotland"  src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/img_trans.gif'; ?>"></a>
           </div>        
-  <div class="block-center col-sm-2">
-        <a href="http://www.neh.gov/"><img title="National Endowment for the Humanities" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/neh.png'; ?>"></a>
+  <div class="block-center ">
+        <a href="http://www.neh.gov/"><img class="neh" title="National Endowment for the Humanities" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/img_trans.gif'; ?>"></a>
           </div>         
- <div class="block-center col-sm-2">
-        <a href="http://www.nls.uk/"><img title="National Library of Scotland" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/NLS.png'; ?>"></a>
+ <div class="block-center">
+        <a href="http://www.nls.uk/"><img class="nls" title="National Library of Scotland"  src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/img_trans.gif'; ?>"></a>
           </div>      
-  <div class="block-center col-sm-2">
-      <a href="www.unl.edu"><img title="University of NebraskaLincoln" width="180px" height="50px" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/nebraska.png'; ?>"></a>
+  <div class="block-center">
+      <a href="www.unl.edu"><img class="unl" title="University of NebraskaLincoln"  src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/img_trans.gif'; ?>"></a>
           </div>  
        
             </div>
