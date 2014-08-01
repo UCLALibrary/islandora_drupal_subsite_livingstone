@@ -143,7 +143,7 @@ function nexus_menu_link__menu_external_links(array $variables) {
      $element['#title'] = '<img title="home" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/home.png"/>'; 
   }
     if($element['#title'] == 'Mail'){
-     $element['#title'] = '<img title="mail" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/mail.png"/>'; 
+     $element['#title'] = '<img title="mail" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/mail.jpg"/>'; 
   }
     if($element['#title'] == 'Twitter'){
      $element['#title'] = '<img title="twitter" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/twitter.png"/>'; 
