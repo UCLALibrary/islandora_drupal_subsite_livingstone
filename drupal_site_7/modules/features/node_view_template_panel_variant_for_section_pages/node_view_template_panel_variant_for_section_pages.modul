@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Node View Template panel variant for section pages feature.
- */
-
-include_once 'node_view_template_panel_variant_for_section_pages.features.inc';

@@ -1,16 +1,13 @@
 <?php
 /**
  * @file
- * node_view_template_panel_variant_for_section_pages.features.inc
+ * level_3_v1_0.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function node_view_template_panel_variant_for_section_pages_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "page_manager" && $api == "pages_default") {
-    return array("version" => "1");
-  }
+function level_3_v1_0_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -19,14 +16,14 @@ function node_view_template_panel_variant_for_section_pages_ctools_plugin_api($m
 /**
  * Implements hook_views_api().
  */
-function node_view_template_panel_variant_for_section_pages_views_api($module = NULL, $api = NULL) {
+function level_3_v1_0_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function node_view_template_panel_variant_for_section_pages_node_info() {
+function level_3_v1_0_node_info() {
   $items = array(
     'section_page' => array(
       'name' => t('Section Page'),

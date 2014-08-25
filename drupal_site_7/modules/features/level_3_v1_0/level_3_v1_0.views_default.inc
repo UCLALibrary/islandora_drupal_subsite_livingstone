@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * node_view_template_panel_variant_for_section_pages.views_default.inc
+ * level_3_v1_0.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function node_view_template_panel_variant_for_section_pages_views_default_views() {
+function level_3_v1_0_views_default_views() {
   $export = array();
 
   $view = new view();

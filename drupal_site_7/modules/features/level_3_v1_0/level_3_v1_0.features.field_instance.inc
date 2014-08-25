@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * node_view_template_panel_variant_for_section_pages.features.field_instance.inc
+ * level_3_v1_0.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function node_view_template_panel_variant_for_section_pages_field_default_field_instances() {
+function level_3_v1_0_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-section_page-body'

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * node_view_template_panel_variant_for_section_pages.features.field_base.inc
+ * level_3_v1_0.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function node_view_template_panel_variant_for_section_pages_field_default_field_bases() {
+function level_3_v1_0_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'

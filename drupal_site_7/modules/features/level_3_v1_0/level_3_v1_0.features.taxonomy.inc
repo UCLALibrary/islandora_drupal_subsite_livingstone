@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * node_view_template_panel_variant_for_section_pages.features.taxonomy.inc
+ * level_3_v1_0.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function node_view_template_panel_variant_for_section_pages_taxonomy_default_vocabularies() {
+function level_3_v1_0_taxonomy_default_vocabularies() {
   return array(
     'site_section' => array(
       'name' => 'Site Section',

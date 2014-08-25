@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * node_view_template_panel_variant_for_section_pages.strongarm.inc
+ * level_3_v1_0.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function node_view_template_panel_variant_for_section_pages_strongarm() {
+function level_3_v1_0_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
