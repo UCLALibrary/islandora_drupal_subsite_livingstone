@@ -204,3 +204,20 @@ function nexus_form_element($variables) {
   return $output;
 }
 
+function taxonomy_select_nodes_from_nid($tid, $nid, $direction = 'next', $limit = 1) {
+    if (!variable_get('taxonomy_maintain_index_table', TRUE)) {
+        return array();
+    }
+    $query = db_select('taxonomy_index', 't');
+    $query->addTag('node_access');
+    $query->condition('tid', $tid);
+    $query->condition('nid', $nid, $direction == 'next' ? '>' : '<');
+    if ($limit !== FALSE) {
+        $query->range(0, $limit);
+    }
+    $query->addField('t', 'nid');
+    $query->addField('t', 'tid');
+    $query->orderBy('t.nid', $direction == 'next' ? 'ASC' : 'DESC');
+    return $query->execute()->fetchCol();
+}
+

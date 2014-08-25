@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the section page feature.
- */
-
-include_once 'section_page.features.inc';
