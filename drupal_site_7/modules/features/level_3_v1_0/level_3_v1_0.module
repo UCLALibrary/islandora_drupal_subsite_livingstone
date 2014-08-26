@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the level 3 v1.0 feature.
- */
-
-include_once 'level_3_v1_0.features.inc';
