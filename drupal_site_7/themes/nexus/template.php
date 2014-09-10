@@ -121,7 +121,7 @@ if (drupal_is_front_page()) {
 function nexus_menu_link__main_menu(array $variables) {
 $element = $variables['element'];
   
-  return '<a title="'.$element['#title'].'" class="frmore" href="'.base_path().$element['#href'].'">' . $element['#title'] . "</a>\n";
+  return '<li class="frmore"><a title="'.$element['#title'].'"  href="'.base_path().$element['#href'].'">' . $element['#title'] . "</a></li>\n";
 }
 function nexus_menu_tree__main_menu($variables) {
   return '' . $variables['tree'] . '';
