@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Level 2 v1.0 feature.
+ */
+
+include_once 'level_2_v1_0_stage.features.inc';
