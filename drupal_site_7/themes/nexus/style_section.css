@@ -318,7 +318,13 @@ h1#site-title a:link, h1#site-title a:visited{
 .region-section{
     float:right;
 }
-
+.img_menu{
+    height:25px;
+}
+.img_menu_mail{   
+    width:22px;
+    height:21px;
+}
 .external_menu .pane-content{
     float:right;
     padding-left: 30px;
