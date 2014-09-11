@@ -140,16 +140,16 @@ function nexus_menu_link__menu_external_links(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";*/
   if($element['#title'] == 'Home'){
-     $element['#title'] = '<img title="home" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/home.png"/>'; 
+     $element['#title'] = '<img title="home" class="img_menu"   src="'.base_path().drupal_get_path('theme', 'nexus').'/images/home.png"/>'; 
   }
     if($element['#title'] == 'Mail'){
-     $element['#title'] = '<img title="mail" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/mail.jpg"/>'; 
+     $element['#title'] = '<img title="mail" class="img_menu_mail" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/mail.jpg"/>'; 
   }
     if($element['#title'] == 'Twitter'){
-     $element['#title'] = '<img title="twitter" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/twitter.png"/>'; 
+     $element['#title'] = '<img title="twitter" class="img_menu"  src="'.base_path().drupal_get_path('theme', 'nexus').'/images/twitter.png"/>'; 
   }
     if($element['#title'] == 'WordPress'){
-     $element['#title'] = '<img title="wordpress" height="25px" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/wordpress.png"/>'; 
+     $element['#title'] = '<img title="wordpress" class="img_menu" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/wordpress.png"/>'; 
   }
   
   //$output = l($element['#title'], $element['#href'], $element['#localized_options']);
