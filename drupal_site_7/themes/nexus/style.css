@@ -273,7 +273,7 @@ a:focus {
 
 #masthead{
     
- position:relative;
+ position:absolute;
   z-index: 120;
  width:100%;
  max-width: 100%;
@@ -283,13 +283,13 @@ a:focus {
  
 }
 #colophon{
-    position: relative;
-    top:500px;
+   position: relative;
+    /*top:500px;*/
    
 }
 #slider{
-    position: absolute;
-    top:1px;
+   /* position: absolute;
+    top:1px;*/
     width:100%;
     max-width: 100%;
     
