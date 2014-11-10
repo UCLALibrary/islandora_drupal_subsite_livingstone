@@ -595,7 +595,7 @@ margin-right:10px;
 
 
 .project { position: relative; margin-bottom: 10px; }
-	.project p { color: #ccc; font-style: italic; font-weight: 300; font-size: .9em; text-transform: none; }
+	.project p { color: #ccc; font-style: italic; font-weight: 300; font-size: 15px; text-transform: none; }
 	
 	.project img { display: block; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale(1.12); transform: scale(1.12); }
 	.project:hover img {opacity: 0.5; -webkit-transform: scale(1); transform: scale(1);	}
@@ -606,7 +606,9 @@ margin-right:10px;
 	.project .hover .info { position: absolute; text-align: center; top: 25%; width: 100%; }
 	.project .hover:hover { opacity: 1; }
 
-
+  .project .field.field-name-field-section-page-tag-line .field-item.even {
+    padding: 0 20px;
+  }
 
 
 .sectionPageImage{

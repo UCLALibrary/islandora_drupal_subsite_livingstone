@@ -515,7 +515,6 @@ line-height: 100%;
 
 
 .region-section{
-   
     position:relative;
     left:8%;
 }
@@ -525,16 +524,11 @@ li.frmore a{
     font-size: 15px;
 }
 li.frmore{
- 
   display: inline;  
-  
-  width: 120px;
-  /*border: 1px solid #000;*/
+  width: 125px;
   padding: 1px 1px 1px 1px;
   margin: 10px 10px 10px 0px;
-  
   float:left;
-  
 }
 li.frmore:nth-child(1){
    background-color:#99cc99; 
@@ -559,7 +553,9 @@ li.frmore:nth-child(5){
 li.frmore:nth-child(6){
    background-color:#cccc99; 
 }
-
+li.frmore:hover {
+  opacity: .8;
+}
 
 
 #preface-area {
@@ -595,9 +591,9 @@ li.frmore:nth-child(6){
     height:25px;
 }
 .img_menu_mail{
-    padding-top:3px;
+    padding-top:4px;
     width:22px;
-    height:21px;
+    height:20px;
 }
 .footer-block{
   color: #aaa;
