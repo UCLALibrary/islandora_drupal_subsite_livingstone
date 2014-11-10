@@ -153,7 +153,7 @@ function nexus_menu_link__menu_external_links(array $variables) {
   }
   
   //$output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '><li class="leaf"><a href="'.$element['#href'].'"target="_blank"/>' . $element['#title'] . "</a></li>\n";
+  return '<li' . drupal_attributes($element['#attributes']) . '><li class="leaf"><a href="'.$element['#href'].'"/>' . $element['#title'] . "</a></li>\n";
 }
 
 function nexus_form_element($variables) {

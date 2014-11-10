@@ -67,18 +67,6 @@
 <div id="page">
     
 
-
-  
-
- 
-
-  
-
-  
-
- 
-
- 
     
     <div class="flex-direction-nav"><a title="in his own words" class="flex-prev" href="<?php print base_path() . 'in his own words' ?>">Previous</a><a title="behind the scenes" class="flex-next" href="<?php print base_path(). 'behind the scenes' ?>">Next</a></div>
     <div class="content_section">
