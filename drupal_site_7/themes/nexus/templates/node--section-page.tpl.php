@@ -74,18 +74,18 @@
  * @see template_process()
  */
 ?>
-<div>
+<div class="prevnextnode">
             <?php
             $prev_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'prev');
             
             if(sizeof($prev_node_nid_arr)){
                 $prev_node=node_load($prev_node_nid_arr[0]);
-                print '<a href='. base_path() .'node/'. $prev_node->nid.'&nbsp;&nbsp;&nbsp;&nbsp;> previous   </a>';
+                print '<a class="prevnode" href='. base_path() .'node/'. $prev_node->nid.'&nbsp;&nbsp;&nbsp;&nbsp;> previous   </a>';
             }
             $next_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'next');
             if(sizeof($next_node_nid_arr)){
                 $next_node=node_load($next_node_nid_arr[0]);
-                print '&nbsp;&nbsp;&nbsp;&nbsp;<a href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
+                print '&nbsp;&nbsp;&nbsp;&nbsp;<a class="nextnode" href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
             }
             ?>
         </div>
@@ -132,18 +132,18 @@
   </article> <!-- /.node -->
 <?php endif; ?>
 
-  <div>
+  <div class="prevnextnode foot">
             <?php
             $prev_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'prev');
             
             if(sizeof($prev_node_nid_arr)){
                 $prev_node=node_load($prev_node_nid_arr[0]);
-                print '<a href='. base_path() .'node/'. $prev_node->nid.'&nbsp;&nbsp;&nbsp;&nbsp;> previous   </a>';
+                print '<a class="prevnode foot" href='. base_path() .'node/'. $prev_node->nid.'&nbsp;&nbsp;&nbsp;&nbsp;> previous   </a>';
             }
             $next_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'next');
             if(sizeof($next_node_nid_arr)){
                 $next_node=node_load($next_node_nid_arr[0]);
-                print '&nbsp;&nbsp;&nbsp;&nbsp;<a href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
+                print '&nbsp;&nbsp;&nbsp;&nbsp;<a class="nextnode foot" href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
             }
             ?>
         </div>
