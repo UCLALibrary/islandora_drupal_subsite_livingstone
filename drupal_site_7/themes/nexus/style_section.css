@@ -57,11 +57,11 @@ body {
 
 /* Links */
 a {
-  color: #f4473a;
+  color: #000;
 
 }
 a:visited {
-  color: #f4473a;
+  color: #000;
 }
 a:hover,
 a:focus,
@@ -519,10 +519,184 @@ img.grayscale {
     background-color: #F0F0F0;
    
 }
-.pane-node-content{
-    width: 600px;
-margin: -8px auto 100px;
+/* level 3 pages */
+.prevnode {
+  background: url("images/bg_direction_nav.png") no-repeat 0 0 #EDEAEA; 
+  border-radius: 0px 6px 6px 0px ;
+  border: 1px solid #eee;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 100px;
+  text-indent: -9999px;
+  width: 50px;
+  z-index: 110;
 }
+.nextnode  {
+  background: url("images/bg_direction_nav.png") no-repeat 100% 0 #EDEAEA;
+  border-radius: 6px 0px 0px 6px;  
+  border: 1px solid #eee;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 100px;
+  text-indent: -9999px;
+  width: 50px;
+  z-index: 110;
+}
+.node-type-section-page .pane-node-content {
+    margin: 0 auto;
+}
+.node-type-section-page  p.insetimage {
+  margin: 2% 5% !important;
+  text-align: center;
+}
+.node-type-section-page  h2.pane-title,
+.node-type-section-page  .field.field-name-field-section-page-date,
+.node-type-section-page  .field.field-name-field-section-page-byline,
+.node-type-section-page  .field.field-name-field-social-media-links,
+.node-type-section-page  .field.field-name-field-section-page-tag-line,
+.node-type-section-page .pane-node-content p {
+  margin: 1.5% 20%;
+}
+.node-type-section-page  .field.field-name-field-section-page-byline {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.node-type-section-page  .field.field-name-field-section-page-date {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.node-type-section-page  .field.field-name-field-section-page-tag-line p {
+  font-style: italic;
+  margin: 0 0 30px 0;
+}
+  
+.node-type-section-page .field.field-name-field-section-page-tag-line .field-item:before {
+  content: "Overview:  ";
+  float: left;
+  font-style: italic;  
+  font-weight: bold;
+  margin-right: 10px;
+}
+.node-type-section-page .pane-node-content h2.pane-title {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.node-type-section-page .field.field-name-body {
+  margin-bottom: 50px;
+}
+.node-type-section-page  .field.field-name-field-social-media-links .field-items {
+  border-top: 1px solid #999;
+  margin: 2% 10%;
+  padding-top: 30px;
+  text-align: center;
+}
+.node-type-section-page .field.field-name-field-social-media-links .field-item:before {
+  background: url("images/lo-sm.png") no-repeat scroll 0 0 transparent;
+  color: #999;
+  content: " Share:";
+  float: left;
+  font-size: 18px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 5px 0 0 70px;
+}
+.node-type-section-page .addthis_toolbox {
+  padding-top: 5px;
+}
+.node-type-section-page  .field.field-name-field-social-media-links .field-item {
+  margin: 0 auto;
+  width: 415px;
+}
+.prevnode.foot {
+  background: url("images/footarrows-sm.png") no-repeat scroll 0 0 transparent;
+  border: 0 solid #eee;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 20px;
+  margin: -60px 0 0 30%;
+  text-indent: -9999px;
+  width: 19px;
+  z-index: 110;
+}
+.nextnode.foot {
+  background: url("images/footarrows-sm.png") no-repeat scroll 100% 50% transparent;
+  border: 0 solid #eee;
+  border-radius: 6px 0 0 6px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 20px;
+  margin: -60px 30% 0 0;
+  text-indent: -9999px;
+  width: 19px;
+  z-index: 110;
+}
+.node-type-section-page .at300b {
+  margin-right: 20px;
+}
+.slidercontent {
+  display: inline-block;
+}
+.slidertitle {
+  float: left;
+  line-height: 1em;
+  margin-top: 30px;
+  padding: 0 10px;
+  width: 50%;
+    text-align: center;
+  text-transform: uppercase;
+    font-weight: bold;
+  position: relative;
+}
+.slidertitle a {
+  color: #000;
+}
+.sliderimg {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+.sliderimg img {
+  width: auto;
+}
+
+
+/* level 3 slider */
+.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #A48BC2;
+  text-align: center;
+}
+.view-image-banner-scroll .jcarousel-skin-tango .jcarousel-container-horizontal {
+  padding: 0px;
+}
+.view-image-banner-scroll .jcarousel-skin-tango .jcarousel-item {
+  background: none ;
+  border: 1px solid #7c7a7a;
+  height: 130px;
+  list-style: outside none none;
+  overflow: hidden;
+  padding: 10px 0 5px;
+  width: 280px;
+}
+.view-image-banner-scroll .jcarousel-skin-tango .jcarousel-container {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 0 none;
+  border-radius: 0;
+  margin: auto;
+  padding: 5px 0;
+}
+
+
 .livingstone_online{
     border-color: #99cc99;    
 }
@@ -861,13 +1035,6 @@ li.frmore:nth-child(6){
   max-width: 97.4%;
   margin: 0.5em 1em 0.5em 0;
   float: left;
-}
-.page-node #content-wrap img {
-  border: 1px solid #CCCCCC;
-  padding: 6px;
-  height: auto;
-  max-width: 97.4%;
-  margin: 0.5em 1em 0.5em 0;
 }
 
 .region-content-top {

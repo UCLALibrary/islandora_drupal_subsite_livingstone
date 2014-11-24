@@ -43,5 +43,6 @@ function level_2_v1_0_stage_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
