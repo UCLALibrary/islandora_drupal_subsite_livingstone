@@ -36,17 +36,23 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: section page image */
   $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_section_page_image']['alter']['text'] = '<div class="slidercontent">
+<span class="slidertitle">[title]</span><span class="sliderimg">[field_section_page_image]</span>
+</div>';
   $handler->display->display_options['fields']['field_section_page_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'slider_image_100x100',
     'image_link' => 'content',
   );
   /* Sort criterion: Content: Nid */
