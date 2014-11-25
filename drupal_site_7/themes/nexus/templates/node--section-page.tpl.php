@@ -85,7 +85,7 @@
             $next_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'next');
             if(sizeof($next_node_nid_arr)){
                 $next_node=node_load($next_node_nid_arr[0]);
-                print '&nbsp;&nbsp;&nbsp;&nbsp;<a class="nextnode" href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
+                print '<a class="nextnode" href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
             }
             ?>
         </div>
@@ -143,7 +143,7 @@
             $next_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'next');
             if(sizeof($next_node_nid_arr)){
                 $next_node=node_load($next_node_nid_arr[0]);
-                print '&nbsp;&nbsp;&nbsp;&nbsp;<a class="nextnode foot" href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
+                print '<a class="nextnode foot" href=' . base_path() .'node/'. $next_node->nid.'>  next </a>';
             }
             ?>
-        </div>
+  </div>

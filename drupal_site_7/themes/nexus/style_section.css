@@ -547,6 +547,9 @@ img.grayscale {
 .node-type-section-page .pane-node-content {
     margin: 0 auto;
 }
+.node-type-section-page .panel-pane.pane-node-content .content {
+  margin-top: -15px;
+}
 .node-type-section-page  p.insetimage {
   margin: 2% 5% !important;
   text-align: center;
