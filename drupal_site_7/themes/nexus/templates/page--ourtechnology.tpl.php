@@ -67,20 +67,8 @@
 <div id="page">
     
 
-
-  
-
- 
-
-  
-
-  
-
- 
-
- 
     
-    <div class="flex-direction-nav"><a title="our technology" class="flex-prev" href="<?php print base_path() . 'our technology' ?>">Previous</a><a title="life and times" class="flex-next" href="<?php print base_path() . 'life and times' ?>">Next</a></div>
+    <div class="flex-direction-nav"><a title="In His Own Words" class="flex-prev" href="<?php print base_path() . 'inhisownwords' ?>">Previous</a><a title="Behind the Scenes" class="flex-next" href="<?php print base_path(). 'behindthescenes' ?>">Next</a></div>
     <div class="content_section">
           <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">

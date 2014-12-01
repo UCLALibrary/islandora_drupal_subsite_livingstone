@@ -64,6 +64,13 @@
  * @see template_process()
  */
 ?>
+  <div id="fixedbar">
+    <span class="fixedbar_left"><a href="home"><img class="fixedheaderlogo" src="/sites/livingstone.local/themes/nexus/images/lo-sm.png"></a></span>  
+    <span class="fixedbar_center"><?php print $breadcrumb; ?></span>
+    <span class="fixedbar_right"><?php print $search_box; ?></span>    
+     
+    <?php print render($page['fixedbar']); ?>  
+  </div>
 <div id="page">
   <header id="masthead" class="site-header container" role="banner">
     <div class="row">
@@ -72,8 +79,8 @@
       </div>
       <div class="mainmenu">
         <div class="mobilenavi"></div>
+        
         <nav id="navigation" role="navigation">
-          
            <?php print render($page['header']); ?>
             <?php print render($page['section']); ?>       
         </nav>
@@ -81,20 +88,7 @@
     </div>
   </header>
 
-
-
   
-
- 
-
-  
-
-  
-
- 
-
- 
-    
     <!--<div class="flex-direction-nav"><a class="flex-prev" href="<?php print base_path() ?>">Previous</a><a class="flex-next" href="<?php print base_path() ?>">Next</a></div>-->
     <div class="content_main">
           <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>

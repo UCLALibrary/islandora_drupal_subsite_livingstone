@@ -66,7 +66,7 @@
 ?>
 <div id="page">
     
-    <div class="flex-direction-nav"><a title="Life and Times" class="flex-prev" href="<?php print base_path() . 'lifeandtimes' ?>">Previous</a><a title="home" class="flex-next" href="<?php print base_path() ?>">Next</a></div>
+    <div class="flex-direction-nav"><a title="Behind the Scenes" class="flex-prev" href="<?php print base_path() . 'behindthescenes' ?>">Previous</a><a title="Resources" class="flex-next" href="<?php print base_path() . 'resources' ?>">Next</a></div>
     <div class="content_section">
           <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">

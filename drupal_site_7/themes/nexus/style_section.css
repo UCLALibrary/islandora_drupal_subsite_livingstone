@@ -373,7 +373,7 @@ margin-bottom:0px;
 margin-left:0px;
 padding: 0 0px;*/
 }
-
+#search-block-form--2 input[type=text],
 #search-block-form input[type=text]{
     width:200px;
 }
@@ -520,6 +520,45 @@ img.grayscale {
    
 }
 /* level 3 pages */
+#breadcrumb:before {
+  background: none repeat scroll 0 0 #999;
+  content: "Livingstone Online";
+  margin: 0 25px 0 0;
+  padding: 3px 5px;
+}
+.breadcrumb-0 {
+  display: none;
+}
+.breadcrumb-1 {
+  margin: 1.5% 0;
+  padding: 3px 5px;
+}
+.breadcrumb-2:before {
+  content: " /";
+  margin: 0 3px;
+}
+.behind-scenes .breadcrumb-1 {
+  background-color: #99ccff;
+}
+.livingstone-online .breadcrumb-1 {
+  background-color: #99cc99;    
+}
+.yellow_class{
+    border-color: #ffcc33;
+}
+.life-and-times .breadcrumb-1 {
+  background-color: #cc9999;
+}
+.our_technology_color_class{
+    border-color: #a48bc2;
+}
+.his-own-words .breadcrumb-1 {
+  background-color: #FFCC33;
+}
+.resources .breadcrumb-1 {
+  background-color: #cccc99;
+}
+
 .prevnode {
   background: url("images/bg_direction_nav.png") no-repeat 0 0 #EDEAEA; 
   border-radius: 0px 6px 6px 0px ;
@@ -674,11 +713,37 @@ img.grayscale {
 }
 
 
-/* level 3 slider */
+/* level 3 slider 
 .view-image-banner-scroll .jcarousel-skin-tango {
   background: #A48BC2;
   text-align: center;
+}*/
+.life-and-times.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #cc9999;
+  text-align: center;
 }
+.behind-scenes.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #A1CAEF;
+  text-align: center;
+}
+.his-own-words.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #FFCC33;
+  text-align: center;
+}
+.resources.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #cccc99;
+  text-align: center;
+}
+.our-technology.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #a48bc2;
+  text-align: center;
+}
+.livingstone-online.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #99cc99;
+  text-align: center;
+}
+
+
 .view-image-banner-scroll .jcarousel-skin-tango .jcarousel-container-horizontal {
   padding: 0px;
 }
@@ -1060,7 +1125,83 @@ li.frmore:nth-child(6){
   margin-bottom: 30px;
 }
 
+/* hidden fixed navigation */
+.messages.error {
+  display: none;
+}
+.breadcrumb {
+  color: #fff;
+  padding: 8px 15px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: #000;
+  border-radius: 0px;
+}
+.breadcrumb a {
+  color:#fff;
+}
+img.fixedheaderlogo {
+  height: 55px;
+  margin-top: 5px;
+  width: auto;
+}
+.fixedbar_left {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  width: 20%;
+}
+.fixedbar_right {
+  display: inline-block;
+  margin: 0;
+  text-align: right;
+  width: 20%;
+}
+.fixedbar_center {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  width: 58%;
+}
+#fixedbar {
+  background: none repeat scroll 0 0 white;
+  border-bottom: 2px solid #eee;
+  display: none;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 
+#fixednav { 
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+#fixednav li { }
+
+#fixednav li a {
+  display: block;
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  color: #96aed8;
+  line-height: 80px;
+  text-decoration: none;
+  padding: 0px 8px;
+  margin-right: 6px; 
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear; 
+}
+
+#fixednav li a:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+}
 /* -------------- Form Elements  ------------- */
 
 fieldset { background: #ffffff; border: 1px solid #cccccc; margin-top: 10px; margin-bottom: 32px;
@@ -1618,15 +1759,17 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 #forum .name a{ 
   font-size: 16px;
 }
-
+#search-block-form--2 input[type=text],
 #search-block-form input[type=text] {
 border: 1px solid #d0d0d0;
 background-color: #F0ECEC;
 height:25px;
 }
+#search-block-form--2 input[type=text],
 #search-block-form input[type=text] {
 /*color: #bcbcbc;*/
 }
+#search-block-form--2 .rounded,
 #search-block-form .rounded {
 border-radius: 7px;
 -moz-border-radius: 7px;
@@ -1653,6 +1796,7 @@ border-top-left-radius: 5px 5px;
 border-bottom-left-radius: 5px 5px;
 height:25px;
 }
+#search-block-form--2,
 #search-block-form{
     display:inline;
 }
