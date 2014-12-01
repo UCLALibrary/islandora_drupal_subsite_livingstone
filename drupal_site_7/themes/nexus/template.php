@@ -9,25 +9,37 @@ function nexus_html_head_alter(&$head_elements) {
   );
 }
 
-/**
- * Insert themed breadcrumb page navigation at top of the node content.
- */
-function nexus_breadcrumb($variables) {
-  $breadcrumb = $variables['breadcrumb'];
-  if (!empty($breadcrumb)) {
-    // Use CSS to hide titile .element-invisible.
-    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
-    // comment below line to hide current page to breadcrumb
-$breadcrumb[] = drupal_get_title();
-    $output .= '<nav class="breadcrumb">' . implode(' » ', $breadcrumb) . '</nav>';
-    return $output;
+function nexus_breadcrumb($breadcrumb) {
+   $themed_breadcrumb_class = token_replace('[current-page:url:args:first]'); 
+  if (empty($breadcrumb)) {
+    return $themed_breadcrumb = 'Livingstone Online <div id="breadcrumb" class="' . $themed_breadcrumb_class . '"></div>';
+  }
+  else {
+    $themed_breadcrumb = '<div id="breadcrumb" class="' . $themed_breadcrumb_class . '">';
+    $array_size = count($breadcrumb['breadcrumb']);
+    $i = 0;
+    while ( $i < $array_size ) {
+      $themed_breadcrumb .= '<span class="breadcrumb-';
+      $themed_breadcrumb .= $i;
+      $themed_breadcrumb .=  '">' . $breadcrumb['breadcrumb'][$i] . '</span>';
+      if ( $i + 1 != $array_size ) {
+        $themed_breadcrumb .=  '  ';
+      }
+      $i++;
+    }
+    $themed_breadcrumb .= '</div>';
+    return $themed_breadcrumb;
   }
 }
+
 
 /**
  * Override or insert variables into the page template.
  */
 function nexus_preprocess_page(&$vars) {
+  $search_box = drupal_render(drupal_get_form('search_block_form'));
+  $vars['search_box'] = $search_box;
+
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],

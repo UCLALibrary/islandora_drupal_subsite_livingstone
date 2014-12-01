@@ -41,3 +41,18 @@ jQuery(window).load(function() {
 		}, false );
 	}
 })();
+
+jQuery(document).ready( function($) {
+
+  $(window).on('scroll',function() {
+    var scrolltop = $(this).scrollTop();
+
+    if(scrolltop >= 215) {
+      $('#fixedbar').fadeIn(250);
+    }
+    
+    else if(scrolltop <= 210) {
+      $('#fixedbar').fadeOut(250);
+    }
+  });
+});

@@ -65,22 +65,8 @@
  */
 ?>
 <div id="page">
-    
-
-
-  
-
  
-
-  
-
-  
-
- 
-
- 
-    
-    <div class="flex-direction-nav"><a title="livingstone online" class="flex-prev" href="<?php print base_path() . 'livingstone online' ?>">Previous</a><a title="our technology" class="flex-next" href="<?php print base_path() . 'our technology' ?>">Next</a></div>
+    <div class="flex-direction-nav"><a title="About This Site" class="flex-prev" href="<?php print base_path() . 'livingstoneonline' ?>">Previous</a><a title="Our Technology" class="flex-next" href="<?php print base_path() . 'ourtechnology' ?>">Next</a></div>
     <div class="content_section">
           <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">
