@@ -140,7 +140,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Behind The Scenes';
   $page->admin_description = '';
-  $page->path = 'behind the scenes';
+  $page->path = 'behindthescenes';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -720,7 +720,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'In His Own Words';
   $page->admin_description = '';
-  $page->path = 'in his own words';
+  $page->path = 'inhisownwords';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -1216,7 +1216,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Life & Times';
   $page->admin_description = '';
-  $page->path = 'life and times';
+  $page->path = 'lifeandtimes';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -1796,7 +1796,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Livingstone Online';
   $page->admin_description = '';
-  $page->path = 'livingstone online';
+  $page->path = 'livingstoneonline';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -2292,7 +2292,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Our Technology';
   $page->admin_description = '';
-  $page->path = 'our technology';
+  $page->path = 'ourtechnology';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();

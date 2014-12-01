@@ -22,7 +22,7 @@ function level_2_v1_0_stage_file_default_displays() {
   $file_display->api_version = 1;
   $file_display->name = 'image__default__file_field_file_rendered';
   $file_display->weight = 0;
-  $file_display->status = TRUE;
+  $file_display->status = FALSE;
   $file_display->settings = array(
     'file_view_mode' => 'default',
   );
@@ -40,7 +40,7 @@ function level_2_v1_0_stage_file_default_displays() {
   $file_display->api_version = 1;
   $file_display->name = 'image__default__file_field_file_url_plain';
   $file_display->weight = 0;
-  $file_display->status = TRUE;
+  $file_display->status = FALSE;
   $file_display->settings = '';
   $export['image__default__file_field_file_url_plain'] = $file_display;
 
@@ -74,7 +74,7 @@ function level_2_v1_0_stage_file_default_displays() {
   $file_display->api_version = 1;
   $file_display->name = 'image__media_original__file_field_file_rendered';
   $file_display->weight = -48;
-  $file_display->status = TRUE;
+  $file_display->status = FALSE;
   $file_display->settings = array(
     'file_view_mode' => 'default',
   );
@@ -92,7 +92,7 @@ function level_2_v1_0_stage_file_default_displays() {
   $file_display->api_version = 1;
   $file_display->name = 'image__media_original__file_field_file_url_plain';
   $file_display->weight = -47;
-  $file_display->status = TRUE;
+  $file_display->status = FALSE;
   $file_display->settings = '';
   $export['image__media_original__file_field_file_url_plain'] = $file_display;
 

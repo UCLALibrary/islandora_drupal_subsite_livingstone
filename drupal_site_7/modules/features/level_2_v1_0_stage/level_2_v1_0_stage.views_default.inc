@@ -55,6 +55,14 @@ function level_2_v1_0_stage_views_default_views() {
     'image_style' => 'slider_image_100x100',
     'image_link' => 'content',
   );
+  /* Field: Content: Sections */
+  $handler->display->display_options['fields']['field_section_page_sections']['id'] = 'field_section_page_sections';
+  $handler->display->display_options['fields']['field_section_page_sections']['table'] = 'field_data_field_section_page_sections';
+  $handler->display->display_options['fields']['field_section_page_sections']['field'] = 'field_section_page_sections';
+  $handler->display->display_options['fields']['field_section_page_sections']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_sections']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_section_page_sections']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_section_page_sections']['type'] = 'taxonomy_term_reference_plain';
   /* Sort criterion: Content: Nid */
   $handler->display->display_options['sorts']['nid']['id'] = 'nid';
   $handler->display->display_options['sorts']['nid']['table'] = 'node';
