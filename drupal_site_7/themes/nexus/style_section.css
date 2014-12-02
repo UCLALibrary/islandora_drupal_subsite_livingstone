@@ -520,6 +520,11 @@ img.grayscale {
    
 }
 /* level 3 pages */
+.panel-display.panel-1col .panel-pane.pane-node-content {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  box-shadow: 0 0 4px 0 #eee;
+}
 #breadcrumb:before {
   background: none repeat scroll 0 0 #999;
   content: "Livingstone Online";
@@ -558,7 +563,12 @@ img.grayscale {
 .resources .breadcrumb-1 {
   background-color: #cccc99;
 }
-
+.prevnextnode_mid {
+  max-width: 1230px;
+  position: fixed;
+  top: 50%;
+  width: 100%;
+}
 .prevnode {
   background: url("images/bg_direction_nav.png") no-repeat 0 0 #EDEAEA; 
   border-radius: 0px 6px 6px 0px ;
@@ -1775,7 +1785,7 @@ border-radius: 7px;
 -moz-border-radius: 7px;
 -webkit-border-radius: 7px;
 }
-li .search {
+li .search, #search-block-form--2 .search {
 margin-top: 10px;
 margin-left: 30px;
 background: url('./images/search-button.png') no-repeat 1px 1px;

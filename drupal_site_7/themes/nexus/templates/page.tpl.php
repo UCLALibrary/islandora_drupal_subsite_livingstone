@@ -65,7 +65,7 @@
  */
 ?>
   <div id="fixedbar">
-    <span class="fixedbar_left"><a href="home"><img class="fixedheaderlogo" src="/sites/livingstone.local/themes/nexus/images/lo-sm.png"></a></span>  
+    <span class="fixedbar_left"><a href="home"><img class="fixedheaderlogo" src="http://digital-stage.library.ucla.edu/livingstone/sites/digital-stage.library.ucla.edu.livingstone/themes/nexus/images/lo-sm.png"></a></span>  
     <span class="fixedbar_center"><?php print $breadcrumb; ?></span>
     <span class="fixedbar_right"><?php print $search_box; ?></span>    
      

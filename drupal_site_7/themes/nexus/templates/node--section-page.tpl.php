@@ -74,7 +74,7 @@
  * @see template_process()
  */
 ?>
-<div class="prevnextnode">
+<div class="prevnextnode_mid">
             <?php
             $prev_node_nid_arr = taxonomy_select_nodes_from_nid($node->field_section_page_sections['und'][0]['tid'], $node->nid, 'prev');
             
