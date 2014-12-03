@@ -404,7 +404,16 @@ h1#site-title a:link, h1#site-title a:visited{
   padding: 5px 5px;
  
 }
-
+.external_menu li a, 
+#main-menu li a {
+  color: #444;
+  font-size: 30px;
+} 
+.external_menu li a:hover,
+#main-menu li a:hover {
+  color: #999;
+  font-size: 30px;
+} 
 #main-menu li ul a { 
   width: 150px;
 }
@@ -429,7 +438,7 @@ h1#site-title a:link, h1#site-title a:visited{
 }
 
 #main-menu > ul > li > a {
-  padding : 10px;
+  padding : 0 10px;
 }
 
 /* Layout */

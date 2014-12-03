@@ -65,12 +65,27 @@
  */
 ?>
   <div id="fixedbar">
-    <span class="fixedbar_left"><a href="home"><img class="fixedheaderlogo" src="http://digital-stage.library.ucla.edu/livingstone/sites/digital-stage.library.ucla.edu.livingstone/themes/nexus/images/lo-sm.png"></a></span>  
-    <span class="fixedbar_center"><?php print $breadcrumb; ?></span>
-    <span class="fixedbar_right"><?php print $search_box; ?></span>    
+    <div class="fixedbar_left">
+    <div class="fixedleft_1"><a href="#" class="slideout-menu-toggle"><i class="fa fa-bars"></i> </a></div>
+    <div class="fixedleft_2"><a href="home"><img class="fixedheaderlogo" src="http://digital-stage.library.ucla.edu/livingstone/sites/digital-stage.library.ucla.edu.livingstone/themes/nexus/images/lo-sm.png"></a>  </div>
+    </div>
+    <div class="fixedbar_center"><?php print $breadcrumb; ?></div>
+    <div class="fixedbar_right"><?php print $search_box; ?></div>    
      
     <?php print render($page['fixedbar']); ?>  
+    <div class="slideout-menu">
+  <h3>Sections <a href="#" class="slideout-menu-toggle">&times;</a></h3>
+  <ul>
+  <?php print render($page['section']); ?>
+  <?php print render($page['header']); ?>
+  </ul>
+</div>
+<!--/.slideout-menu-->
   </div>
+
+
+
+
 <div id="page">
   <header id="masthead" class="site-header container" role="banner">
     <div class="row">
@@ -82,7 +97,7 @@
         
         <nav id="navigation" role="navigation">
            <?php print render($page['header']); ?>
-            <?php print render($page['section']); ?>       
+            <div id="my-menu"><?php print render($page['section']); ?> </div>
         </nav>
       </div>
     </div>

@@ -1,3 +1,43 @@
+jQuery(document).ready( function($) {
+
+  $(window).on('scroll',function() {
+    var scrolltop = $(this).scrollTop();
+
+    if(scrolltop >= 215) {
+      $('#fixedbar').fadeIn(250);
+    }
+    
+    else if(scrolltop <= 210) {
+      $('#fixedbar').fadeOut(250);
+    }
+  });
+
+});
+
+jQuery(document).ready( function($) {
+    $('.slideout-menu-toggle').on('click', function(event){
+    	event.preventDefault();
+    	// create menu variables
+    	var slideoutMenu = $('.slideout-menu');
+    	var slideoutMenuWidth = $('.slideout-menu').width();
+    	
+    	// toggle open class
+    	slideoutMenu.toggleClass("open");
+    	
+    	// slide menu
+    	if (slideoutMenu.hasClass("open")) {
+	    	slideoutMenu.animate({
+		    	left: "0px"
+	    	});	
+    	} else {
+	    	slideoutMenu.animate({
+		    	left: -slideoutMenuWidth
+	    	}, 250);	
+    	}
+    });
+});
+
+
 jQuery(window).load(function() {
     
   /* Navigation */
@@ -13,12 +53,9 @@ jQuery(window).load(function() {
 	});
         jQuery(".header_title_region").click(function(){
             window.location.href = "http://"+window.location.hostname+"/livingstone";
-           
-            
-            
+             
         });
         
-
 });
 
 
@@ -42,17 +79,3 @@ jQuery(window).load(function() {
 	}
 })();
 
-jQuery(document).ready( function($) {
-
-  $(window).on('scroll',function() {
-    var scrolltop = $(this).scrollTop();
-
-    if(scrolltop >= 215) {
-      $('#fixedbar').fadeIn(250);
-    }
-    
-    else if(scrolltop <= 210) {
-      $('#fixedbar').fadeOut(250);
-    }
-  });
-});
