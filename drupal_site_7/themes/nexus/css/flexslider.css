@@ -67,7 +67,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav {width: 100%; position: absolute;
  
   /*margin: -100px 0 0;*/
- top:70%;
+ top:80%;
   text-align: center;
   z-index: 120;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}

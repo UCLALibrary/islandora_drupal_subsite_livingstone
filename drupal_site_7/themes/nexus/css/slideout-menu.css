@@ -1,0 +1,83 @@
+
+.slideout-menu {
+	border-right: 2px solid #eee;
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 220px;
+	height: 100%;
+	background: #fff;
+	z-index: 100;
+	transition: all 0.5s ease;
+}
+.slideout-menu h3 {
+  color: #999;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 40px;
+  padding: 12px 10px;
+  position: relative;
+}
+.slideout-menu .slideout-menu-toggle {
+  background: none repeat scroll 0 0 #eee;
+  color: #000;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  padding: 6px 9px 5px;
+  position: absolute;
+  right: 30px;
+  text-decoration: none;
+  top: 12px;
+  vertical-align: top;
+}
+.slideout-menu-toggle {
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 26px;
+  margin-right: 20px;
+  padding: 3px 6px;
+  position: relative;
+  top: 10px;
+}
+.slideout-menu .slideout-menu-toggle:hover {
+	color: #000;
+}
+.slideout-menu .region-section {
+  float: left;
+}
+.slideout-menu ul {
+  list-style: outside none none;
+}
+.slideout-menu li.frmore {
+  display: block;
+  margin: 20px 0 20px 10px;
+  padding: 2px 2px 2px 6px;
+  width: 130px;
+}
+.slideout-menu #search-block-form {
+  display: none;
+}
+.slideout-menu #main-menu {
+  border-bottom: medium none;
+  clear: both;
+  float: none;
+  padding: 0;
+}
+.slideout-menu #main-menu ul {
+  list-style: outside none none;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-top: 0;
+}
+.slideout-menu #main-menu li {
+  float: none;
+  list-style: outside none none;
+  margin-left: 30px;
+}
+.fixedleft_1, .fixedleft_2 {
+	float: left;
+}
