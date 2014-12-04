@@ -560,18 +560,38 @@ img.grayscale {
 .resources .breadcrumb-1 {
   background-color: #cccc99;
 }
-
+#block-nodequeue-pager-1,
 .prevnextnode_mid {
   max-width: 1230px;
   position: fixed;
   top: 50%;
   width: 100%;
 }
+#block-nodequeue-pager-1 .item-list ul {
+  margin: 0;
+  padding: 0 ;
+}
 .prevnode {
   background: url("images/bg_direction_nav.png") no-repeat 0 0 #EDEAEA; 
   border-radius: 0px 6px 6px 0px ;
   border: 1px solid #eee;
   cursor: pointer;
+  display: block;
+  float: left;
+  height: 100px;
+  text-indent: -9999px;
+  width: 50px;
+  z-index: 110;
+}
+#block-nodequeue-pager-1 li.first {
+    display: block;
+   text-indent: -9999px; 
+}
+#block-nodequeue-pager-1 li.first .title{
+  background: url("images/bg_direction_nav.png") no-repeat 0 0 #EDEAEA; 
+  border-radius: 0px 6px 6px 0px ;
+  border: 1px solid #eee;
+
   display: block;
   float: left;
   height: 100px;
@@ -596,6 +616,22 @@ img.grayscale {
   border-radius: 6px 0px 0px 6px;  
   border: 1px solid #eee;
   cursor: pointer;
+  display: block;
+  float: right;
+  height: 100px;
+  text-indent: -9999px;
+  width: 50px;
+  z-index: 110;
+}
+#block-nodequeue-pager-1 li.last {
+    display: block;
+   text-indent: -9999px;   
+}
+#block-nodequeue-pager-1 li.last .title{
+  background: url("images/bg_direction_nav.png") no-repeat 100% 0 #EDEAEA; 
+  border-radius: 6px 0px 0px 6px;  
+  border: 1px solid #eee;
+
   display: block;
   float: right;
   height: 100px;

@@ -74,18 +74,6 @@
  * @see template_process()
  */
 ?>
-<div class="pn top">
-    <?php
-          $nextPost = pn_node($node, 'n');
-          $prevPost = pn_node($node, 'p'); 
-          if ($nextPost != NULL) {
-          print '<div class="newer_post">'. $nextPost .'</div>';
-          };
-          if ($prevPost != NULL) {
-          print '<div class="older_post">'. $prevPost .'</div>';
-          };
-      ?>
-</div>      
 
 <?php if (!$page): ?>
   <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -129,18 +117,4 @@
 <?php if (!$page): ?>
   </article> <!-- /.node -->
 <?php endif; ?>
-
-
-
-<div class="pn foot">
-      <?php
-          $nextPost = pn_node($node, 'n');
-          $prevPost = pn_node($node, 'p'); 
-          if ($nextPost != NULL) {
-          print '<div class="newer_post foot">'. $nextPost .'</div>';
-          };
-          if ($prevPost != NULL) {
-          print '<div class="older_post foot">'. $prevPost .'</div>';
-          };
-      ?>
-</div>      
+   
