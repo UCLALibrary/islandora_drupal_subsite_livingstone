@@ -22,6 +22,7 @@ function level_2_v1_0_stage_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -31,6 +32,16 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 0;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'about_this_site' => 'about_this_site',
+    'in_his_words' => 'in_his_words',
+    'our_technology' => 'our_technology',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -63,6 +74,11 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_sections']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_sections']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_section_page_sections']['type'] = 'taxonomy_term_reference_plain';
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   /* Sort criterion: Content: Nid */
   $handler->display->display_options['sorts']['nid']['id'] = 'nid';
   $handler->display->display_options['sorts']['nid']['table'] = 'node';
