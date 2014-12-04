@@ -16,8 +16,27 @@ CKEDITOR.addStylesSet( 'drupal',
 	// These styles are already available in the "Format" combo, so they are
 	// not needed here by default. You may enable them to avoid placing the
 	// "Format" combo in the toolbar, maintaining the same features.
-	{ name : 'Inset Image', element : 'p', attributes : { 'class' : 'insetimage' } },	
-	{ name : 'Align Image to Left', element : 'img', attributes : { 'class' : 'floatleft' } },
-	{ name : 'Align Image to Right', element : 'img', attributes : { 'class' : 'floatright' } },
-	{ name : 'Clear Float', element : 'p', attributes : { 'class' : 'clear' } },
+	{ name : 'Inset Image', element : 'p', attributes : { 'class' : 'insetimage' } },
+	{ name : 'Inset Image Table', element : 'table', attributes : { 'class' : 'insetimagetable' } },
+	{
+		name: 'Compact table',
+		element: 'table',
+		attributes: {
+			column: '1',
+			row: '2',
+			cellpadding: '0',
+			cellspacing: '0',
+			border: '0',
+			bordercolor: '#ccc',
+			class: 'insetimagetable'
+		},
+		styles: {
+			'border-collapse': 'collapse',
+			'text-align': 'center',
+			'font-style': 'italic'
+		}
+	},
+	//{ name : 'Align Image to Left', element : 'img', attributes : { 'class' : 'floatleft' } },
+	//{ name : 'Align Image to Right', element : 'img', attributes : { 'class' : 'floatright' } },
+	//{ name : 'Clear Float', element : 'p', attributes : { 'class' : 'clear' } },
 ]);

@@ -1020,7 +1020,11 @@ ol.search-results { padding-left: 0; }
   background-color: #D7D5D3;
   color: #100101;
 }
-
+/*** homepage  ***/
+.footerlogos {
+  padding: 10px 20px;
+  width:20%;
+}
 
 /*-------------------------------------------*
 /* Fix CKEditor style

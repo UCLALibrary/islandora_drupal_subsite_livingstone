@@ -81,3 +81,9 @@
 .fixedleft_1, .fixedleft_2 {
 	float: left;
 }
+.fixedleft_1 {
+  padding: 0 10px 10px;
+}
+.fixedleft_2 {
+	margin-left: 10px;
+}

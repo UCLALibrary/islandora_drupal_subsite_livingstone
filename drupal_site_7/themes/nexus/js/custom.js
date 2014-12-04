@@ -1,5 +1,6 @@
 jQuery(document).ready( function($) {
 
+
   $(window).on('scroll',function() {
     var scrolltop = $(this).scrollTop();
 

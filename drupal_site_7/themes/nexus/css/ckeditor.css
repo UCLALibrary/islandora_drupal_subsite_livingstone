@@ -1,6 +1,9 @@
 /* General indentation & positioning classes */
 
-
+body.cke_editable {
+  background-color: #ffffff;
+  font: 14px/1.6 "Oxygen",sans-serif;
+}
 .rteindent1 {
     margin-left: 40px;
 }
