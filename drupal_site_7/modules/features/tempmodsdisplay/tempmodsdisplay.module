@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the TempModsDisplay feature.
+ */
+
+include_once 'tempmodsdisplay.features.inc';
