@@ -65,65 +65,35 @@
  */
 ?>
 
-<div id="page">
-
-   
-        <?php if ($page['header']) : ?> 
-            <header id="masthead">
-
-              
-
-                    <?php print render($page['header']); ?>
-
-
-
-            </header>
-        <?php endif; ?>
-
- <ul class="flex-direction-nav"><li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li><li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstoneonline' ?>">Next</a></li></ul>
-
-<?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
-
-            <div id="slider">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-
-                        </li>
-                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-
-                        </li>
-                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-
-                        </li>
-                        <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-underlying-image.jpg'; ?>"/>
-
-                        </li>
-                    </ul>
-                   
-                    <div class="flex-caption">
-                        
-  <!--  <h2>LIVINGSTONE ONLINE</h2>
-<p>
-                    THE WORDS OF EXPLORER DAVID LIVINGSTONE
-                </p>-->
-                  <?php print render($page['title']); ?>
-     <?php print render($page['section']); ?>
-<!--<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
-<a class="frmore" href="node/69">Our Technology</a>
-<a class="frmore" href="node/70">Behind the Scenes</a>
-<a class="frmore" href="node/67">Life &amp; Times</a>
-<a class="frmore" href="node/68">Resources</a>-->
-       
- 
-                        
-
-
-                    </div>
-                </div>  
+<div id="page" class="page-row page-row-expanded">
+    <?php if ($page['header']) : ?> 
+        <header id="masthead">
+            <?php print render($page['header']); ?>
+        </header>
+    <?php endif; ?>
+    <ul class="flex-direction-nav"><li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li><li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstoneonline' ?>">Next</a></li></ul>
+        <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
+    <div id="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-1.png'; ?>"/></li>
+                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-2.png'; ?>"/></li>
+                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-3.png'; ?>"/></li>
+                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-4.png'; ?>"/></li>
+            </ul>
+            <div class="flex-caption">           
+                  <!--  <h2>LIVINGSTONE ONLINE</h2>
+                <p>THE WORDS OF EXPLORER DAVID LIVINGSTONE</p>-->
+                <?php print render($page['title']); ?>
+                <?php print render($page['section']); ?>
+                <!--<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
+                <a class="frmore" href="node/69">Our Technology</a>
+                <a class="frmore" href="node/70">Behind the Scenes</a>
+                <a class="frmore" href="node/67">Life &amp; Times</a>
+                <a class="frmore" href="node/68">Resources</a>-->
             </div>
+        </div>  
+    </div>
         <?php endif; ?>
-             <?php print render($page['footer']); ?>
-         
 </div>
-</div>
+    <?php print render($page['footer']); ?>

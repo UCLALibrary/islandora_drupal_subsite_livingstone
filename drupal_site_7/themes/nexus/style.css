@@ -7,6 +7,19 @@ www.devsaran.com
 
 /* Reset
 ================================================== */
+
+body {
+display: table;
+width: 100%;
+}
+ 
+.page-row, .region-footer {
+display: table-row;
+height: 1px;
+}
+ 
+.page-row-expanded { height: 100%; } 
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -288,8 +301,7 @@ a:focus {
    
 }
 #slider{
-   /* position: absolute;
-    top:1px;*/
+    position: relative;
     width:100%;
     max-width: 100%;
     
@@ -686,8 +698,25 @@ img.unl{
   color:#fff;
 }
 
-/* =Content
------------------------------------------------ */
+/* Sticky footer ------------------------- */
+#page {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -20%; 
+}
+#page:after {
+  content: "";
+  display: block;
+}
+.region.region-footer, .page-wrap:after {
+  height: 20%; 
+}
+.region.region-footer {
+  background: #000;
+  text-align: center;
+}
+
+/*  content ----------------------------  */
 
 .node h2.title a, h1.page-title {
   color: #000000;
@@ -1022,8 +1051,9 @@ ol.search-results { padding-left: 0; }
 }
 /*** homepage  ***/
 .footerlogos {
-  padding: 10px 20px;
-  width:20%;
+  padding: 20px 20px 0px;
+  max-width: 180px;
+  width:15%;
 }
 
 /*-------------------------------------------*
@@ -1336,6 +1366,7 @@ height:25px;
     display:inline;
 }
 
+/*
 @media screen and (max-width: 768px) {
   html{
     font-size: 60%;
@@ -1353,14 +1384,6 @@ height:25px;
     width: 100%;
     margin-bottom: 20px;
   }
-
-  #main-menu{
-    display:none;
-  }
-    
-  .flex-caption{
-    display: none;
-  }
-
+*/
 }
 

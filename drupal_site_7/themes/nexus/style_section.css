@@ -177,7 +177,7 @@ td{
 }
 
 #primary table {
-  margin: 0 0 1.5em;
+  margin: 0 auto 1.5em;
   width: 100%;
   border:1px solid #ddd;
   border-right:none;
@@ -529,7 +529,9 @@ img.grayscale {
   padding: 3px 5px;
 }
 .breadcrumb-0 {
-  display: none;
+  font-size: 20px;
+  margin-left: -10px;
+  margin-right: 10px;
 }
 .breadcrumb-1 {
   margin: 1.5% 0;
@@ -659,14 +661,12 @@ img.grayscale {
 }
 .node-type-section-page  p.insetimage {
   margin: 2% 5% !important;
-  text-align: center;
 }
 
 #primary table.insetimagetable td {
   border-right: 0px solid #ddd;
   border-top: 0px solid #ddd;
-  text-align: center;
-  font-style: italic;
+
 }
 #primary table.insetimagetable {
   -moz-border-bottom-colors: none;
@@ -678,8 +678,8 @@ img.grayscale {
   border-image: none;
   border-style: solid none solid solid;
   border-width: 0px medium 0px 0px;
-  margin: 0 0 1.5em;
-  width: 100%;
+  margin: 0 auto1.5em;
+  width: auto;
 }
 .node-type-section-page  h2.pane-title,
 .node-type-section-page  .field.field-name-field-section-page-date,
@@ -691,12 +691,10 @@ img.grayscale {
 }
 .node-type-section-page  .field.field-name-field-section-page-byline {
   font-size: 18px;
-  font-weight: 600;
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-date {
   font-size: 18px;
-  font-weight: 600;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -713,8 +711,11 @@ img.grayscale {
   margin-right: 10px;
 }
 .node-type-section-page .pane-node-content h2.pane-title {
+  border-bottom: 1px solid #ddd;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;  
   font-weight: bold;
-  font-size: 40px;
+  font-size: 46px;
+  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -838,10 +839,10 @@ img.grayscale {
 .view-image-banner-scroll .jcarousel-skin-tango .jcarousel-item {
   background: none ;
   border: 1px solid #7c7a7a;
-  height: 130px;
+  height: 120px;
   list-style: outside none none;
   overflow: hidden;
-  padding: 10px 0 5px;
+  padding: 9px 0 5px;
   width: 280px;
 }
 .view-image-banner-scroll .jcarousel-skin-tango .jcarousel-container {
