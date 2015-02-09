@@ -689,7 +689,7 @@ img.grayscale {
 .node-type-section-page .pane-node-content p {
   margin: 1.5% 20%;
 }
-.node-type-section-page .pane-node-content ul {
+.node-type-section-page .pane-node-content .field-item ul {
   margin: 1.5% 22%;
 }
 .node-type-section-page  .field.field-name-field-section-page-byline {
