@@ -542,7 +542,7 @@ line-height: 100%;
 li.frmore a{
     color: #000;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 12px;
 }
 li.frmore{
   display: inline;  
@@ -575,7 +575,8 @@ li.frmore:nth-child(6){
    background-color:#cccc99; 
 }
 li.frmore:hover {
-  opacity: .8;
+  /*opacity: .3;*/
+  background: #ccc;
 }
 
 
@@ -765,7 +766,7 @@ img.unl{
 }
 
 .region-preface-middle .block .preface-block .block, .footer-block .block, .region-footer .block, .region-header .block, .region-content-top .block {
-  margin-bottom: 30px;
+  margin-bottom: -10px;
 }
 
 
@@ -1051,8 +1052,8 @@ ol.search-results { padding-left: 0; }
 }
 /*** homepage  ***/
 .footerlogos {
-  padding: 20px 20px 0px;
-  max-width: 180px;
+  padding: 10px 20px 0px;
+  max-width: 130px;
   width:15%;
 }
 
@@ -1090,6 +1091,16 @@ ol.search-results { padding-left: 0; }
 /*-------------------------------------------*
 /* Menus and item lists 
 /*-------------------------------------------*/
+.fa.fa-envelope {
+  color: #506777;
+}
+.fa.fa-home,
+.fa.fa-wordpress {
+  color: #3e5b97;
+}
+.fa.fa-twitter {
+  color: #00abf2;
+}
 .item-list ul {
   margin: 0;
   padding: 0 0 0 1.5385em;

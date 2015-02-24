@@ -67,7 +67,7 @@
   <div id="fixedbar">
     <div class="fixedbar_left">
     <div class="fixedleft_1"><a href="#" class="slideout-menu-toggle"><i class="fa fa-bars"></i> </a></div>
-    <div class="fixedleft_2"><a href="home"><img class="fixedheaderlogo" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/lo-sm.png'; ?>"/></a>  </div>
+    <div class="fixedleft_2"><a href="home"><img class="fixedheaderlogo" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/lo-sm-30.jpg'; ?>"/></a>  </div>
     </div>
     <div class="fixedbar_center"><?php print $breadcrumb; ?></div>
     <div class="fixedbar_right"><?php print $search_box; ?></div>    
@@ -90,7 +90,7 @@
   <header id="masthead" class="site-header container" role="banner">
     <div class="row">
       <div id="logo" class="site-branding">
-          <div id="site-logo" class="flex-caption"><a href="/livingstone"><?php print render($page['title']); ?></a>
+          <div id="site-logo" class="flex-caption"><?php print render($page['title']); ?>
       </div>
       <div class="mainmenu">
         <div class="mobilenavi"></div>
