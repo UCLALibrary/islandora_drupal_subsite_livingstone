@@ -1488,7 +1488,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'In His Own Words';
   $page->admin_description = '';
-  $page->path = 'his-own-words';
+  $page->path = 'in-his-own-words';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
