@@ -57,17 +57,17 @@ body {
 
 /* Links */
 a {
-  color: #000;
+  color: #428bca;
 
 }
 a:visited {
-  color: #000;
+  color: #428bca;
 }
 a:hover,
 a:focus,
 a:active {
-  color:#000;
-  text-decoration: none;
+  color: #428bca;
+  text-decoration: underline;
 }
 
 /*set max img width*/
@@ -1103,8 +1103,6 @@ li.frmore:nth-child(5){
 li.frmore:nth-child(6){
    background-color:#cccc99; 
 }
-
-
 
 #preface-area {
   background: none repeat scroll 0 0 #ED564B;
