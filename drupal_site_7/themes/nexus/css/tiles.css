@@ -1,0 +1,19 @@
+
+.views-row {
+  float: left;
+  margin: 10px 10px;
+  width: 375px;
+  border: 3px solid #A48BC2;
+}
+.view-display-id-attachment_1 .views-row {
+	background: #eee;
+	border: 1px solid #ccc;
+	display: table;
+	height: 350px;
+	padding: 20px;
+}
+.view-display-id-attachment_1 .views-field-nothing  {
+	display: table-cell;
+	text-align: center;	
+	vertical-align: middle;	
+}
