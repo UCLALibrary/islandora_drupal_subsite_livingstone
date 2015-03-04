@@ -4,6 +4,8 @@ jQuery(window).load(function() {
     animation: "slide",
     direction: "horizontal",
     directionNav:true,
+    slideshowSpeed: 6000,
+    animationDuration: 2000,
     controlNav:false
   });
    jQuery('.flexslider').flexslider({

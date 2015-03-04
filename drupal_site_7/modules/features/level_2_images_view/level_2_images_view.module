@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Level 2 images view feature.
+ */
+
+include_once 'level_2_images_view.features.inc';

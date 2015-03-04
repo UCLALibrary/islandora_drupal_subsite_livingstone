@@ -51,19 +51,19 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: section page image */
+  /* Field: Content: Section Page Main Image */
   $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
   $handler->display->display_options['fields']['field_section_page_image']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_image']['alter']['text'] = '<div class="slidercontent">
-<span class="slidertitle">[title]</span><span class="sliderimg">[field_section_page_image]</span>
+<div class="slidertitle">[title]</div><div class="sliderimg">[field_section_page_image]</div>
 </div>';
   $handler->display->display_options['fields']['field_section_page_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
-    'image_style' => 'slider_image_100x100',
+    'image_style' => '65x65_square',
     'image_link' => 'content',
   );
   /* Field: Content: Sections */
@@ -111,7 +111,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'jcarousel';
-  $handler->display->display_options['style_options']['wrap'] = '0';
+  $handler->display->display_options['style_options']['wrap'] = 'circular';
   $handler->display->display_options['style_options']['skin'] = 'tango';
   $handler->display->display_options['style_options']['visible'] = '';
   $handler->display->display_options['style_options']['auto'] = '0';

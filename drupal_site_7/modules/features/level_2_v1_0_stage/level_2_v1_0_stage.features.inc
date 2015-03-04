@@ -69,8 +69,8 @@ function level_2_v1_0_stage_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => 110,
-          'height' => 110,
+          'width' => 101,
+          'height' => 101,
           'anchor' => 'center-center',
         ),
         'weight' => 2,

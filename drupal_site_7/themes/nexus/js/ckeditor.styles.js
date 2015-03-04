@@ -31,9 +31,7 @@ CKEDITOR.addStylesSet( 'drupal',
 			class: 'insetimagetable'
 		},
 		styles: {
-			'border-collapse': 'collapse',
-			'text-align': 'center',
-			'font-style': 'italic'
+			'border-collapse': 'collapse'
 		}
 	},
 	//{ name : 'Align Image to Left', element : 'img', attributes : { 'class' : 'floatleft' } },
