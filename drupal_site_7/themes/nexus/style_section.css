@@ -1904,15 +1904,15 @@ height:25px;
 #search-block-form{
     display:inline;
 }
-.block-islandora-solr-basic-facets{
+#block-islandora-solr-basic-facets{
     float:left;
     display:inline;
 }
-.block-islandora-solr-current-query{
+#block-islandora-solr-current-query{
     float:left;
     display:inline;
 }
-.block-islandora-solr-simple{
+#block-islandora-solr-simple{
     float:left;
 }
 
