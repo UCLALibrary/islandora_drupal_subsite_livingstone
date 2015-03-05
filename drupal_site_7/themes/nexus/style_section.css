@@ -1890,6 +1890,17 @@ border-top-left-radius: 5px 5px;
 border-bottom-left-radius: 5px 5px;
 height:25px;
 }
+#block-islandora-solr-basic-facets{
+    float:left;
+    display:inline;
+}
+#block-islandora-solr-current-query{
+    float:left;
+    display:inline;
+}
+#block-islandora-solr-simple{
+    float:left;
+}
 
 
 @media screen and (max-width: 768px) {
