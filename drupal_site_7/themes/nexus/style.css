@@ -62,7 +62,7 @@ body {
   nowhitespace: afterproperty;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  font: 14px/1.6 'Oxygen',sans-serif;
+  font: 19px/1.6 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   background-color: #000000;
  
       
@@ -91,7 +91,10 @@ img {
 
 /* Commons
 ================================================== */
-
+.row {
+    margin-right: 0px;
+    margin-left: 0;
+}
 /*clear floats*/
 .remove-margin {
   margin-right: 0 !important;
@@ -311,7 +314,9 @@ a:focus {
 }
 #site-logo {
   float: left;
-  padding: 15px 15px 0 0;
+  padding: 0px;
+  margin-left: 0px;
+  margin-top: 15px;
 }
 h1#site-title{
   text-transform: uppercase;
@@ -450,7 +455,7 @@ h1#site-title a:link, h1#site-title a:visited{
 }
 
 #main-menu > ul > li > a {
-  padding : 0 10px;
+  padding : 0 5px;
 }
 
 /* Layout */
@@ -542,13 +547,13 @@ line-height: 100%;
 li.frmore a{
     color: #000;
     font-weight: 900;
-    font-size: 12px;
+    font-size: 14px;
 }
 li.frmore{
   display: inline;  
-  width: 125px;
-  padding: 1px 1px 1px 1px;
-  margin: 10px 10px 10px 0px;
+  width: 127px;
+  padding: 0px 1px 3px 1px;
+  margin: 10px 7px 10px 0px;
   float:left;
 }
 li.frmore:nth-child(1){
@@ -718,6 +723,13 @@ img.unl{
 }
 
 /*  content ----------------------------  */
+.region.region-footer-first {
+  margin-left: 100px;
+  margin-top: -50px;
+}
+.region.region-footer-first a {
+  color: #fff;
+}
 
 .node h2.title a, h1.page-title {
   color: #000000;
@@ -919,7 +931,7 @@ left:-5px;
 padding:0;
 width: 30px;
 height: 25px;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 font-size: 14px;
 font-weight: bold;
 outline: none;
@@ -1093,6 +1105,7 @@ ol.search-results { padding-left: 0; }
 /*-------------------------------------------*/
 .fa.fa-envelope {
   color: #506777;
+  font-size: 24px;
 }
 .fa.fa-home,
 .fa.fa-wordpress {
@@ -1297,7 +1310,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 #forum .submitted {
   font-size: 12px;
-  font-family: Lucida Grande, Verdana, Arial, sans-serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   background: transparent;
   padding: 0;
 }
@@ -1364,7 +1377,7 @@ background: url('./images/search-button.png') no-repeat 1px 1px;
 .tftextinput4 {
 margin-top: 8px;
 padding: 0;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 font-size: 14px;
 color: #666;
 border: 1px solid #0076a3;

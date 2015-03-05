@@ -95,5 +95,6 @@
         </div>  
     </div>
         <?php endif; ?>
+    <?php print render($page['footer_first']); ?>        
 </div>
     <?php print render($page['footer']); ?>

@@ -129,4 +129,5 @@
           </aside> 
         <?php endif; ?>
     </div>
+     <?php print render($page['footer']); ?>
 </div>

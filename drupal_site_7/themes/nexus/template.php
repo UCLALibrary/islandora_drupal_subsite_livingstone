@@ -32,7 +32,9 @@ function nexus_breadcrumb($breadcrumb) {
   }
 }
 
-
+function nexus_preprocess_html(&$vars) {
+  $vars['attributes_array']['class'][] = $vars['classes_array'][] = 'page-' . drupal_html_class(drupal_get_title());
+}
 /**
  * Override or insert variables into the page template.
  */
