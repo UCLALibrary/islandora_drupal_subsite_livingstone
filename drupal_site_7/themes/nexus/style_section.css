@@ -936,7 +936,7 @@ img.grayscale {
     padding: 20px 20px 20px 20px;
 } 
 .content_main {
-  display: inline-block;
+  clear: both;
   margin: -8px auto 20px;
   max-width: 1260px;
 }
@@ -1018,8 +1018,6 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   letter-spacing: -1px;
   line-height: 120%;
   text-transform: uppercase;
-}
-  line-height:120%;*/
 }
 
 .flex-caption h2 a:link, .flex-caption h2 a:visited{

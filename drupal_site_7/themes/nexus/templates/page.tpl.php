@@ -106,7 +106,12 @@
   
     <!--<div class="flex-direction-nav"><a class="flex-prev" href="<?php print base_path() ?>">Previous</a><a class="flex-next" href="<?php print base_path() ?>">Next</a></div>-->
     <div class="content_main">
-          <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
+               <?php if ($page['sidebar_first']): ?>
+          <aside id="sidebar" class="col-sm-4" role="complementary">
+           <?php print render($page['sidebar_first']); ?>
+          </aside> 
+        <?php endif; ?> 
+          <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>         
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">
           <section id="content" role="main" class="clearfix">
             <!--<?php if (theme_get_setting('breadcrumbs')): ?><?php if ($breadcrumb): ?><div id="breadcrumbs"><?php print $breadcrumb; ?></div><?php endif;?><?php endif; ?>-->
@@ -123,11 +128,6 @@
             </div>
           </section>
         </div>
-        <?php if ($page['sidebar_first']): ?>
-          <aside id="sidebar" class="col-sm-4" role="complementary">
-           <?php print render($page['sidebar_first']); ?>
-          </aside> 
-        <?php endif; ?>
     </div>
      <?php print render($page['footer']); ?>
 </div>

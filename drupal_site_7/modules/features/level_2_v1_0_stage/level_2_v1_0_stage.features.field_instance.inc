@@ -374,7 +374,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 10,
     ),
   );
 
@@ -439,23 +439,27 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-section_page-field_level_2_intro'
-  $field_instances['node-section_page-field_level_2_intro'] = array(
+  // Exported field_instance: 'node-section_page-field_level_2_intro_node'
+  $field_instances['node-section_page-field_level_2_intro_node'] = array(
     'bundle' => 'section_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
+        'type' => 'list_default',
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
@@ -471,20 +475,110 @@ function level_2_v1_0_stage_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_level_2_intro',
-    'label' => 'Level 2 intro',
-    'required' => FALSE,
+    'field_name' => 'field_level_2_intro_node',
+    'label' => 'Level 2 Intro node',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-section_page-field_level_2_photocredit'
+  $field_instances['node-section_page-field_level_2_photocredit'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_level_2_photocredit',
+    'label' => 'Level 2 Photo credit',
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-section_page-field_level_2_teaser'
+  $field_instances['node-section_page-field_level_2_teaser'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_level_2_teaser',
+    'label' => 'Level 2 Teaser',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
     ),
   );
 
@@ -531,7 +625,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 7,
     ),
   );
 
@@ -578,7 +672,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 8,
     ),
   );
 
@@ -609,7 +703,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_section_page_image',
-    'label' => 'Section Page Main Image',
+    'label' => 'Level 2 Image',
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
@@ -639,7 +733,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -681,7 +775,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 1,
     ),
   );
 
@@ -728,7 +822,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'rows' => 1,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 9,
     ),
   );
 
@@ -782,7 +876,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'module' => 'addthis',
       'settings' => array(),
       'type' => 'addthis_button_widget',
-      'weight' => 9,
+      'weight' => 11,
     ),
   );
 
@@ -793,10 +887,12 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Caption');
   t('Carousel image');
   t('Date');
-  t('Level 2 intro');
+  t('Level 2 Image');
+  t('Level 2 Intro node');
+  t('Level 2 Photo credit');
+  t('Level 2 Teaser');
   t('Main Text');
   t('Overview');
-  t('Section Page Main Image');
   t('Sections');
   t('Sub Title');
   t('Tag Line');

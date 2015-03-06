@@ -48,8 +48,8 @@ function level_2_images_view_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => 375,
-          'height' => 350,
+          'width' => 400,
+          'height' => 400,
           'anchor' => 'center-center',
         ),
         'weight' => 2,

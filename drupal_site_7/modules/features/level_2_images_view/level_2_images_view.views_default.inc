@@ -77,7 +77,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Section Page Main Image */
+  /* Field: Content: Level 2 Image */
   $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
@@ -94,11 +94,33 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
+ <a class="[field_level_2_photocredit]" href="node/[nid]">
+     [field_section_page_image] 
+     <div class="hover">
+         <div class="info">
+         <h3">[title]</h3>
+         <p>[field_level_2_teaser]</p>
+         <div class="lev2-photocredit">[field_level_2_photocredit]</div>
+         </div>
+    </div>
+ </a>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
   $handler->display->display_options['sorts']['position']['field'] = 'position';
   $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
+  /* Sort criterion: Content: Level 2 Intro node (field_level_2_intro_node) */
+  $handler->display->display_options['sorts']['field_level_2_intro_node_value']['id'] = 'field_level_2_intro_node_value';
+  $handler->display->display_options['sorts']['field_level_2_intro_node_value']['table'] = 'field_data_field_level_2_intro_node';
+  $handler->display->display_options['sorts']['field_level_2_intro_node_value']['field'] = 'field_level_2_intro_node_value';
   /* Contextual filter: Taxonomy term: Term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
@@ -107,6 +129,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
   $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['use_alias'] = TRUE;
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
@@ -135,6 +158,95 @@ function level_2_images_view_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['name']['alter']['path'] = '[title]';
+  $handler->display->display_options['fields']['name']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['name']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['name']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['name']['convert_spaces'] = TRUE;
+  /* Field: Content: Level 2 Intro node */
+  $handler->display->display_options['fields']['field_level_2_intro_node']['id'] = 'field_level_2_intro_node';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['table'] = 'field_data_field_level_2_intro_node';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['field'] = 'field_level_2_intro_node';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['label'] = '';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_intro_node']['element_label_colon'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Level 2 Image */
+  $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
+  $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
+  $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
+  $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_section_page_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Level 2 Teaser */
+  $handler->display->display_options['fields']['field_level_2_teaser']['id'] = 'field_level_2_teaser';
+  $handler->display->display_options['fields']['field_level_2_teaser']['table'] = 'field_data_field_level_2_teaser';
+  $handler->display->display_options['fields']['field_level_2_teaser']['field'] = 'field_level_2_teaser';
+  $handler->display->display_options['fields']['field_level_2_teaser']['label'] = '';
+  $handler->display->display_options['fields']['field_level_2_teaser']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_teaser']['element_label_colon'] = FALSE;
+  /* Field: Content: Level 2 Photo credit */
+  $handler->display->display_options['fields']['field_level_2_photocredit']['id'] = 'field_level_2_photocredit';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['table'] = 'field_data_field_level_2_photocredit';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['field'] = 'field_level_2_photocredit';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['label'] = '';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['text'] = 'Photo credit: [field_level_2_photocredit]';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['hide_empty'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
+ <a href="[title]" class="[field_level_2_photocredit]">
+     [field_section_page_image] 
+     <div class="hover">
+         <div class="info">
+         <h3">[title]</h3>
+         <p>[field_level_2_teaser]</p>
+         <div class="lev2-photocredit">[field_level_2_photocredit]</div>
+         </div>
+    </div>
+ </a>
+</div>';
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = '[title]';
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'leveltwo';
 
   /* Display: Block */
@@ -155,11 +267,20 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['convert_spaces'] = TRUE;
+  /* Field: Content: Level 2 Intro node */
+  $handler->display->display_options['fields']['field_level_2_intro_node']['id'] = 'field_level_2_intro_node';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['table'] = 'field_data_field_level_2_intro_node';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['field'] = 'field_level_2_intro_node';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['label'] = '';
+  $handler->display->display_options['fields']['field_level_2_intro_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_intro_node']['element_label_colon'] = FALSE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -169,17 +290,51 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Section Page Main Image */
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Level 2 Image */
   $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
     'image_style' => '375x350',
-    'image_link' => 'content',
+    'image_link' => '',
   );
+  /* Field: Content: Level 2 Teaser */
+  $handler->display->display_options['fields']['field_level_2_teaser']['id'] = 'field_level_2_teaser';
+  $handler->display->display_options['fields']['field_level_2_teaser']['table'] = 'field_data_field_level_2_teaser';
+  $handler->display->display_options['fields']['field_level_2_teaser']['field'] = 'field_level_2_teaser';
+  $handler->display->display_options['fields']['field_level_2_teaser']['label'] = '';
+  $handler->display->display_options['fields']['field_level_2_teaser']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_teaser']['element_label_colon'] = FALSE;
+  /* Field: Content: Level 2 Photo credit */
+  $handler->display->display_options['fields']['field_level_2_photocredit']['id'] = 'field_level_2_photocredit';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['table'] = 'field_data_field_level_2_photocredit';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['field'] = 'field_level_2_photocredit';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['label'] = '';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
+ <a class="[field_level_2_photocredit]" href="node/[nid]">
+     [field_section_page_image] 
+     <div class="hover">
+         <div class="info">
+         <h3">[title]</h3>
+         <p>[field_level_2_teaser]</p>
+         <div class="lev2-photocredit">[field_level_2_photocredit]</div>
+         </div>
+    </div>
+ </a>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['block_description'] = 'section block';
 
   /* Display: Block 2 */
@@ -306,9 +461,9 @@ function level_2_images_view_views_default_views() {
     'page' => 'page',
   );
   $handler->display->display_options['displays'] = array(
-    'block_1' => 'block_1',
     'default' => 0,
     'page' => 0,
+    'block_1' => 0,
     'block_2' => 0,
     'ctools_context_1' => 0,
     'ctools_context_2' => 0,
@@ -348,7 +503,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Section Page Main Image */
+  /* Field: Content: Level 2 Image */
   $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
