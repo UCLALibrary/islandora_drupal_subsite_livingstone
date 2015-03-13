@@ -60,11 +60,11 @@ height:25px;
     width: 100%;
 }
 .page-livingstone-online .views-row .views-field.views-field-nothing {
-    border: 3px solid #99cc99; 
+    border: 6px solid #99cc99; 
     overflow: hidden;
 }
 .page-his-own-words .views-row .views-field.views-field-nothing{
-    border: 3px solid #ffcc33; 
+    border: 6px solid #ffcc33; 
     overflow: hidden;
 }
 .page-spectral-imaging .views-row .views-field.views-field-nothing {
@@ -72,15 +72,15 @@ height:25px;
     overflow: hidden;
 }
 .page-behind-the-scenes .views-row .views-field.views-field-nothing {
-    border: 3px solid #99ccff; 
+    border: 6px solid #99ccff; 
     overflow: hidden;   
 }
 .page-life-and-times .views-row .views-field.views-field-nothing {
-    border: 3px solid #cc9999;  
+    border: 6px solid #cc9999;  
     overflow: hidden;   
 }
 .page-resources .views-row .views-field.views-field-nothing {
-    border: 3px solid #cccc99;
+    border: 6px solid #cccc99;
     overflow: hidden;
 }
 
@@ -90,7 +90,7 @@ height:25px;
     margin-bottom: 0;
 }
 .project p { 
-    color: #fff; 
+    color: #000; 
     font-style: italic; 
     font-weight: 300; 
     font-size: 17px; 
@@ -99,7 +99,7 @@ height:25px;
 }
   
 .project .lev2-photocredit {
-  color: #fff;
+  color: #666;
   font-size: 15px;
   font-style: italic;
   font-weight: 300;
@@ -121,9 +121,9 @@ height:25px;
     -webkit-transform: scale(1.3); 
     transform: scale(1.3); 
 }
-.project h3 { color: #fff; font-size: 22px; }
+.project h3 { color: #fff; font-size: 24px; }
 .project.No .hover { 
-    background-color: rgba(63, 73, 83, 0.85); 
+    background-color: rgba(63, 73, 83, 0.70); 
     height: 100%; left: 0; 
     opacity: 0; 
     position: absolute; 

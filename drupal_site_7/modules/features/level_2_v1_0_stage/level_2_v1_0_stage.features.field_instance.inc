@@ -10,96 +10,6 @@
 function level_2_v1_0_stage_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-section_header-field_section_sub_title'
-  $field_instances['bean-section_header-field_section_sub_title'] = array(
-    'bundle' => 'section_header',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'masonry' => FALSE,
-          'masonry_animated' => 0,
-          'masonry_animation_duration' => 500,
-          'masonry_column_width' => '',
-          'masonry_column_width_units' => 'px',
-          'masonry_fit_width' => 0,
-          'masonry_gutter_width' => 0,
-          'masonry_images_first' => 1,
-          'masonry_resizable' => 1,
-          'masonry_rtl' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_section_sub_title',
-    'label' => 'Sub Title',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 1,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance: 'bean-section_title-field_abstract'
-  $field_instances['bean-section_title-field_abstract'] = array(
-    'bundle' => 'section_title',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'masonry' => FALSE,
-          'masonry_animated' => 0,
-          'masonry_animation_duration' => 500,
-          'masonry_column_width' => '',
-          'masonry_column_width_units' => 'px',
-          'masonry_fit_width' => 0,
-          'masonry_gutter_width' => 0,
-          'masonry_images_first' => 1,
-          'masonry_resizable' => 1,
-          'masonry_rtl' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_abstract',
-    'label' => 'Tag Line',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 1,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 12,
-    ),
-  );
-
   // Exported field_instance: 'file-image-field_alt_text'
   $field_instances['file-image-field_alt_text'] = array(
     'bundle' => 'image',
@@ -894,8 +804,6 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Main Text');
   t('Overview');
   t('Sections');
-  t('Sub Title');
-  t('Tag Line');
   t('Title Text');
   t('social media links');
 

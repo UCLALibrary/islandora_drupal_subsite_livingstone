@@ -316,7 +316,11 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['field_level_2_photocredit']['field'] = 'field_level_2_photocredit';
   $handler->display->display_options['fields']['field_level_2_photocredit']['label'] = '';
   $handler->display->display_options['fields']['field_level_2_photocredit']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['text'] = 'Photo credit: [field_level_2_photocredit]';
   $handler->display->display_options['fields']['field_level_2_photocredit']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_level_2_photocredit']['empty_zero'] = TRUE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';

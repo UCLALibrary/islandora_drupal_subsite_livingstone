@@ -533,7 +533,7 @@ img.grayscale {
   box-shadow: 0 0 0px 0 #eee;
 }
 #breadcrumb:before {
-  background: none repeat scroll 0 0 #999;
+  background: none repeat scroll 0 0 #F7E3C0;
   content: "Livingstone Online";
   display: inline-block;
   font-size: 14px;
@@ -617,7 +617,7 @@ img.grayscale {
    text-indent: -9999px; 
 }
 .nodequeuepager li.first .title{
-  background: url("images/bg_direction_nav-new.png") no-repeat 0 0 #EDEAEA; 
+  background: url("images/bg_direction_nav-new.png") no-repeat 0 0 #F2F2F2; 
   border-radius: 0px 6px 6px 0px ;
   border: 1px solid #eee;
 
@@ -629,7 +629,7 @@ img.grayscale {
   z-index: 110;
 }
 .older_post .previous {
-  background: url("images/bg_direction_nav-new.png") no-repeat 0 0 #EDEAEA; 
+  background: url("images/bg_direction_nav-new.png") no-repeat 0 0 #F2F2F2; 
   border-radius: 0px 6px 6px 0px ;  
   border: 1px solid #eee;
   cursor: pointer;
@@ -768,15 +768,52 @@ img.grayscale {
   padding-top: 30px;
   text-align: center;
 }
+.node-type-section-page .sharethis-wrapper {
+  text-align: center;
+}
+span.footlogo {
+  background: url("images/lo-sm-30.jpg") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+span.footpdf {
+  background: url("images/32x32-pdf.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+.addthis_sharing_toolbox {
+  background: none repeat scroll 0 0 blue;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+.footershare .content{
+  text-align: center;
+}
+.footsharetext {
+  color: #999;
+  font-size: 20px;
+}
+.node-type-section-page .sharethis-wrapper:before {
+  background: url("images/lo-sm-30.jpg") no-repeat scroll 0px 0px transparent;
+  color: #999;
+  content: " Share:";
+  font-size: 20px;
+  height: 70px;
+  margin-right: 10px;
+  padding: 7px 0 10px 40px;
+}
 .node-type-section-page .field.field-name-field-social-media-links .field-item:before {
   background: url("images/lo-sm-30.jpg") no-repeat scroll 0 0 transparent;
   color: #999;
   content: " Share:";
-  float: left;
   font-size: 18px;
   height: 50px;
   margin-right: 10px;
   padding: 5px 0 0 70px;
+  display: none;
 }
 .node-type-section-page .addthis_toolbox {
   padding-top: 5px;
@@ -784,6 +821,7 @@ img.grayscale {
 .node-type-section-page  .field.field-name-field-social-media-links .field-item {
   margin: 0 auto;
   width: 415px;
+  display: none;
 }
 .prevnode.foot, .older_post.foot .previous {
   background: url("images/footarrows-sm.png") no-repeat scroll 0 0 transparent;
