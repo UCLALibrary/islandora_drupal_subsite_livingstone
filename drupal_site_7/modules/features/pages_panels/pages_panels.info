@@ -1,0 +1,11 @@
+name = Pages Panels
+description = Pages & panels 
+core = 7.x
+package = livingstone
+version = 7.x-1.00
+project = pages_panels
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_pages][] = l2_spectral_imaging
