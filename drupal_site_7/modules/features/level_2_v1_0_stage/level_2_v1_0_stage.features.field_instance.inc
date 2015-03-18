@@ -68,7 +68,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 10,
+      'weight' => 8,
     ),
   );
 
@@ -133,7 +133,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -180,7 +180,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -196,7 +196,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -223,10 +223,10 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 5,
       ),
-      'type' => 'text_textfield',
-      'weight' => 5,
+      'type' => 'text_textarea',
+      'weight' => 6,
     ),
   );
 
@@ -272,7 +272,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -319,7 +319,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -366,7 +366,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -427,7 +427,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -516,7 +516,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'rows' => 1,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 7,
     ),
   );
 
@@ -570,7 +570,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'module' => 'addthis',
       'settings' => array(),
       'type' => 'addthis_button_widget',
-      'weight' => 11,
+      'weight' => 9,
     ),
   );
 

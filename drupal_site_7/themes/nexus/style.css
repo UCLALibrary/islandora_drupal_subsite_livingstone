@@ -287,14 +287,12 @@ a:focus {
 
 /* Head */
 
-#masthead{
-    
- position:absolute;
+#masthead{  
+  position:absolute;
   z-index: 120;
- width:100%;
- max-width: 100%;
+  width:100%;
+  max-width: 100%;
   top:15px;
-  
   height:60px;
  
 }
@@ -316,7 +314,7 @@ a:focus {
   float: left;
   padding: 0px;
   margin-left: 0px;
-  margin-top: 15px;
+  margin-top: 2px;
 }
 h1#site-title{
   text-transform: uppercase;
@@ -348,9 +346,10 @@ h1#site-title a:link, h1#site-title a:visited{
 
 #main-menu {
   padding:0px 0px;
- margin:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
   border-bottom: none;
   float: right;
+  width: 600px;
 }
   
 #main-menu ul {
@@ -366,7 +365,7 @@ h1#site-title a:link, h1#site-title a:visited{
   float: left;
   list-style: none;
   margin: 0;
-  padding-left: 20px;  
+  padding: 0.2em 0.5em 0 0;  
   font-weight:400;
 }
 #main-menu li:nth-last-child(1){
@@ -544,46 +543,47 @@ line-height: 100%;
     position:relative;
     left:5%;
 }
-li.frmore a{
+.topmenu li.leaf {
+    display: inline;
+    margin: 10px 0 10px 10px;
+    padding: 0px 12px 1px;
+    vertical-align: middle;
+    width: 130px;
+}
+.topmenu li a {
     color: #000;
+    font-family: "Oxygen",sans-serif;
+    font-size: 13.4px;
     font-weight: 900;
-    font-size: 14px;
+    text-align: center;
 }
-li.frmore{
-  display: inline;  
-  width: 127px;
-  padding: 0px 1px 3px 1px;
-  margin: 10px 7px 10px 0px;
-  float:left;
-}
-li.frmore:nth-child(1){
-   background-color:#99cc99; 
-}
-
-li.frmore:nth-child(2){
-   background-color:#ffcc33; 
-}
-
-li.frmore:nth-child(3){
-   background-color:#a48bc2; 
-}
-
-li.frmore:nth-child(4){
-   background-color:#99ccff; 
-}
-
-li.frmore:nth-child(5){
-   background-color:#cc9999; 
-}
-
-li.frmore:nth-child(6){
-   background-color:#cccc99; 
-}
-li.frmore:hover {
+.topmenu li:hover {
   /*opacity: .3;*/
   background: #ccc;
 }
+.topmenu li:nth-child(1){
+   background-color:#99cc99; 
+}
 
+.topmenu li:nth-child(2){
+   background-color:#ffcc33; 
+}
+
+.topmenu li:nth-child(3){
+   background-color:#a48bc2; 
+}
+
+.topmenu li:nth-child(4){
+   background-color:#99ccff; 
+}
+
+.topmenu li:nth-child(5){
+   background-color:#cc9999; 
+}
+
+.topmenu li:nth-child(6){
+   background-color:#cccc99; 
+}
 
 #preface-area {
   background: none repeat scroll 0 0 #ED564B;
@@ -1106,10 +1106,15 @@ ol.search-results { padding-left: 0; }
 .fa.fa-envelope {
   color: #506777;
   font-size: 24px;
+  position: relative;
+  top: -1px;
 }
 .fa.fa-home,
 .fa.fa-wordpress {
   color: #3e5b97;
+}
+.fa.fa-wordpress {
+  margin-right: 10px;
 }
 .fa.fa-twitter {
   color: #00abf2;

@@ -223,7 +223,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['field_level_2_photocredit']['label'] = '';
   $handler->display->display_options['fields']['field_level_2_photocredit']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['text'] = 'Photo credit: [field_level_2_photocredit]';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['text'] = '[field_level_2_photocredit]';
   $handler->display->display_options['fields']['field_level_2_photocredit']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_level_2_photocredit']['hide_empty'] = TRUE;
   /* Field: Global: Custom text */
@@ -232,7 +232,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
- <a href="[title]" class="[field_level_2_photocredit]">
+ <a href="/[name]/[title]" class="">
      [field_section_page_image] 
      <div class="hover">
          <div class="info">
@@ -253,6 +253,13 @@ function level_2_images_view_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -287,6 +294,10 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[title]';
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path_case'] = 'lower';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
@@ -317,7 +328,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['field_level_2_photocredit']['label'] = '';
   $handler->display->display_options['fields']['field_level_2_photocredit']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['text'] = 'Photo credit: [field_level_2_photocredit]';
+  $handler->display->display_options['fields']['field_level_2_photocredit']['alter']['text'] = '[field_level_2_photocredit]';
   $handler->display->display_options['fields']['field_level_2_photocredit']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_level_2_photocredit']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_level_2_photocredit']['empty_zero'] = TRUE;
@@ -327,7 +338,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
- <a class="[field_level_2_photocredit]" href="node/[nid]">
+ <a href="[path]" class="[field_level_2_photocredit]">
      [field_section_page_image] 
      <div class="hover">
          <div class="info">
@@ -338,6 +349,9 @@ function level_2_images_view_views_default_views() {
     </div>
  </a>
 </div>';
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = '[view_node]';
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['path_case'] = 'lower';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['block_description'] = 'section block';
 

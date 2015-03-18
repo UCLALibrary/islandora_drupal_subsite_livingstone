@@ -1,7 +1,7 @@
 
 #search-block-form input[type=text] {
 border: 1px solid #d0d0d0;
-background-color: #F0ECEC;
+background: url('images/search-button.png') no-repeat 1px 1px #F0ECEC;
 height:25px;
 }
 #search-block-form input[type=text] {
@@ -15,7 +15,7 @@ border-radius: 7px;
 #search-block-form .search {
 margin-top: 8px;
 padding: 6px 15px 6px 30px;
-background: url('../images/search-button.png') no-repeat 1px 1px;
+background: url('images/search-button.png') no-repeat 1px 1px;
 }
 .tftextinput4 {
 margin-top: 8px;
