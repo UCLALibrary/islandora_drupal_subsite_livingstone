@@ -44,6 +44,7 @@ height:25px;
 .page-his-own-words h1.page-title,
 .page-spectral-imaging h1.page-title,
 .page-behind-the-scenes h1.page-title,
+.page-behind-the-scenes- h1.page-title,
 .page-life-and-times h1.page-title {
     display: none;
 }
@@ -71,6 +72,7 @@ height:25px;
     border: 6px solid #a48bc2; 
     overflow: hidden;
 }
+.page-behind-the-scenes- .views-row .views-field.views-field-nothing,
 .page-behind-the-scenes .views-row .views-field.views-field-nothing {
     border: 6px solid #99ccff; 
     overflow: hidden;   
