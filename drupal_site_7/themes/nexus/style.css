@@ -493,17 +493,16 @@ img.grayscale {
 }
   
 .flex-caption{
-  
-  width: 900px;
-position: absolute;
-top: 35%;
-left: 50%;
-margin-left: -450px;
-text-align: center;
-z-index: 120;
+  width: 990px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -450px;
+  text-align: center;
+  z-index: 120;
   color: #000;
   font-weight: 900;
-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
 } 
 .flex-external{
@@ -514,7 +513,6 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   margin-left: -10px;
   text-align: center;
   z-index: 120;
-  
 } 
   
 .flex-caption h2 {
