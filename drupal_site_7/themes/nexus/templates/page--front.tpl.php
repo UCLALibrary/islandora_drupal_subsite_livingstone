@@ -65,13 +65,16 @@
  */
 ?>
 
-<div id="page" class="page-row page-row-expanded">
+<div id="page" class="page-row page-row-expanded wrapper">
     <?php if ($page['header']) : ?> 
         <header id="masthead">
             <?php print render($page['header']); ?>
         </header>
     <?php endif; ?>
-    <ul class="flex-direction-nav"><li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li><li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstoneonline' ?>">Next</a></li></ul>
+    <ul class="flex-direction-nav">
+    <li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li>
+    <li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstone-online' ?>">Level 2</a></li>
+    </ul>
         <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
     <div id="slider">
         <div class="flexslider">
@@ -95,6 +98,14 @@
         </div>  
     </div>
         <?php endif; ?>
-    <?php print render($page['footer_first']); ?>        
+    <div class="push"></div>      
 </div>
-    <?php print render($page['footer']); ?>
+<div class="footer"> 
+ <div class="footerimages">
+<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/ucla.png'; ?>">  
+<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/neh.png'; ?>">  
+<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NLS.png'; ?>">  
+<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NTS.png'; ?>">  
+<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/UNL.png'; ?>">  
+  </div>
+</div>    

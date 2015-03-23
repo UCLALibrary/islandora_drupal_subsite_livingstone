@@ -63,6 +63,7 @@ html[xmlns] .slides {display: block;}
     cursor: pointer; 
     text-indent: -9999px; 
     border-radius: 0 6px 6px 0;
+    display: none;
 }
 .flex-direction-nav a.flex-next {
    /* border:solid 1px #fff ;*/

@@ -7,18 +7,34 @@ www.devsaran.com
 
 /* Reset
 ================================================== */
-
+/* sticky footer on home page */
+html, body {
+height: 100%;
+}
+#page {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -2em;
+}
+.footer, .push {
+height: 2em;
+}
+.footerimages {
+  text-align: center;
+}
+/* styles.css */
 body {
-display: table;
-width: 100%;
+/* display: table;
+width: 100%; */
 }
  
 .page-row, .region-footer {
-display: table-row;
-height: 1px;
+/*display: table-row;
+height: 1px; */
 }
  
-.page-row-expanded { height: 100%; } 
+/* .page-row-expanded { height: 100%; }  */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -704,16 +720,16 @@ img.unl{
 
 /* Sticky footer ------------------------- */
 #page {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -20%; 
+ /* min-height: 100%;
+   equal to footer height 
+  margin-bottom: -20%; */
 }
 #page:after {
   content: "";
   display: block;
 }
 .region.region-footer, .page-wrap:after {
-  height: 20%; 
+ /* height: 20%; */
 }
 .region.region-footer {
   background: #000;
@@ -722,8 +738,8 @@ img.unl{
 
 /*  content ----------------------------  */
 .region.region-footer-first {
-  margin-left: 100px;
-  margin-top: -50px;
+/*  margin-left: 100px;
+  margin-top: -50px; */
 }
 .region.region-footer-first a {
   color: #fff;
@@ -1062,8 +1078,7 @@ ol.search-results { padding-left: 0; }
 }
 /*** homepage  ***/
 .footerlogos {
-  padding: 10px 20px 0px;
-  max-width: 130px;
+  padding: 5px 20px 10px;
   width:15%;
 }
 
@@ -1392,6 +1407,7 @@ height:25px;
 #search-block-form{
     display:inline;
 }
+
 
 /*
 @media screen and (max-width: 768px) {
