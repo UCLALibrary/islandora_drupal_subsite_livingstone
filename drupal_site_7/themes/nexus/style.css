@@ -23,6 +23,10 @@ height: 2em;
 .footerimages {
   text-align: center;
 }
+img.footerlogos {
+  max-width: 140px;
+  margin: 0 2%;
+}
 /* styles.css */
 body {
 /* display: table;
