@@ -49,7 +49,7 @@ body {
   nowhitespace: afterproperty;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  font: 19px/1.6 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font: 17px/1.6 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   background-color: #ffffff;     
 }
 
@@ -77,8 +77,8 @@ img {
 /* Commons
 ================================================== */
 .row {
-    margin-right: 0px;
-    margin-left: 0;
+    margin-right: 12px;
+    margin-left: 12px;
 }
 /*clear floats*/
 .remove-margin {
@@ -695,7 +695,7 @@ img.grayscale {
     margin: 0 auto;
 }
 .node-type-section-page .panel-pane.pane-node-content .content {
-  margin: 1% 15%;
+  margin: 1% 20%;
 }
 .node-type-section-page  p.insetimage {
   margin: 2% 5% !important;
@@ -740,7 +740,7 @@ img.grayscale {
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-tag-line p {
-  font-size: 17px;
+  font-size: 15px;
   font-style: italic;
   line-height: 1.5;
   margin: 0 0 30px 0;
@@ -762,7 +762,7 @@ img.grayscale {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 15%;
+  margin: 0 20%;
 }
 .node-type-section-page .field.field-name-body {
   margin-bottom: 50px;
@@ -878,7 +878,7 @@ span.footpdf {
 .slidertitle a {
   color: #000;
   display: table-cell;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1em;
   vertical-align: middle;
 }
@@ -1120,7 +1120,7 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 .header_title_region h2{
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 41.5px;
   font-weight: 900;
   color: #000;
   letter-spacing:0px;
@@ -1132,7 +1132,7 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .header_title_region p{
-  font-size: 20px;
+  font-size: 19px;
    font-weight: 900;
    letter-spacing:0px;
    line-height:120%;
@@ -1153,7 +1153,7 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 .topmenu li a {
     color: #000;
     font-family: "Oxygen",sans-serif;
-    font-size: 13.4px;
+    font-size: 12.4px;
     font-weight: 900;
     text-align: center;
 }
