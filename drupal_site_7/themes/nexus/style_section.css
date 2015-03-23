@@ -1834,7 +1834,7 @@ ul.inline, ul.links.inline {
 }
 .node-type-section-page .field.field-name-body li::before {
   counter-increment: section;            /* Increments only this instance of the section counter */
-  content: counters(section,".") " ";    /* Adds the value of all instances  of the section counter separated by a ".". */
+  content: counters(section,".") ". ";    /* Adds the value of all instances  of the section counter separated by a ".". */
                                          /* if you need to support < IE8 then make sure there is no space after  the ',' 
 
 /*-------------------------------------------*
