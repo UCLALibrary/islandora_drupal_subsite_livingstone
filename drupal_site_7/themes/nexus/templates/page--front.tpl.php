@@ -89,13 +89,9 @@
                 <p>THE WORDS OF EXPLORER DAVID LIVINGSTONE</p>-->
                 <?php print render($page['title']); ?>
                 <?php print render($page['section']); ?>
-                <!--<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
-                <a class="frmore" href="node/69">Our Technology</a>
-                <a class="frmore" href="node/70">Behind the Scenes</a>
-                <a class="frmore" href="node/67">Life &amp; Times</a>
-                <a class="frmore" href="node/68">Resources</a>-->
             </div>
         </div>  
+                 <?php print render($page['footer_first']); ?>
     </div>
         <?php endif; ?>
     <div class="push"></div>      

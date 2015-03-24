@@ -139,7 +139,7 @@ pre {
 }
 
 ul, ol {
-  margin: 0 0 1em 1.5em;
+  margin: 0 0 1em .75em;
 }
 ul {
   list-style: disc;
@@ -380,7 +380,6 @@ float: right;
     top:20px;
 }
 #main-menu ul {
- 
   width: auto;
 float: left;
 list-style: none;
@@ -448,7 +447,6 @@ margin: 0px;
   width: 160px;
   margin: 0px 0px 0px 0px;
   padding: 5px 5px;
- 
 }
 
 #main-menu li ul a { 
@@ -539,7 +537,7 @@ img.grayscale {
   box-shadow: 0 0 0px 0 #eee;
 }
 #breadcrumb:before {
-  background: none repeat scroll 0 0 #F7E3C0;
+  background: none repeat scroll 0 0 #dacbb5;
   content: "Livingstone Online";
   display: inline-block;
   font-size: 14px;
@@ -737,6 +735,7 @@ img.grayscale {
 .node-type-section-page  .field.field-name-field-section-page-date {
   font-size: 19px;
   margin-bottom: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-tag-line p {
@@ -750,16 +749,17 @@ img.grayscale {
   content: "Overview:  ";
   float: left;
   font-style: italic; 
-  font-size: 17px; 
+  font-size: 15px; 
   font-weight: bold;
   line-height: 1.5;
   margin-right: 10px;
 }
 .node-type-section-page .pane-node-content h2.pane-title {
   border-bottom: 1px solid #ddd;
+  color: #000;
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;  
   font-weight: bold;
-  font-size: 40px;
+  font-size: 37px;
   text-align: center;
   text-transform: uppercase;
   margin: 0 20%;
@@ -872,6 +872,7 @@ span.footpdf {
   display: table;
   float: left;
   height: 70px;
+  margin-left: 6px;
   margin-top: -5px;
   width: 90px;
 }
@@ -886,7 +887,7 @@ span.footpdf {
   float: left;
   margin-top: -2px;
   text-align: center;
-  width: 90px;
+  width: 85px;
 }
 .sliderimg img {
   width: auto;
@@ -1144,11 +1145,15 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   top: 6px;
 }
 .topmenu li.leaf {
-    display: inline;
-    margin: 10px 0 10px 5px;
-    padding: 0px 12px 1px;
-    vertical-align: middle;
-    width: 130px;
+  display: inline-block;
+  line-height: 20px;
+  margin: 10px 0 10px 5px;
+  max-width: 120px;
+  min-width: 120px;
+  padding: 0 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
 }
 .topmenu li a {
     color: #000;
@@ -1157,7 +1162,8 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-weight: 900;
     text-align: center;
 }
-.topmenu li:hover {
+
+.topmenu li.leaf:hover {
   /*opacity: .3;*/
   background: #ccc;
 }
@@ -1215,6 +1221,7 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
  .region.region-footer {
   clear: both;
+  font-size: 15px;
 }
 .footer-block{
   color: #aaa;
@@ -1832,7 +1839,7 @@ ul.inline, ul.links.inline {
   counter-reset: section;                /* Creates a new instance of the section counter with each ol element */
   list-style-type: none;
 }
-.node-type-section-page .field.field-name-body li::before {
+.node-type-section-page .field.field-name-body ol li::before {
   counter-increment: section;            /* Increments only this instance of the section counter */
   content: counters(section,".") ". ";    /* Adds the value of all instances  of the section counter separated by a ".". */
                                          /* if you need to support < IE8 then make sure there is no space after  the ',' 

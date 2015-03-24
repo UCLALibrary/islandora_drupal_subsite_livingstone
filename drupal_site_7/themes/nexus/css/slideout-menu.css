@@ -43,6 +43,12 @@
   position: relative;
   top: 17px;
 }
+.slideout-menu-toggle a {
+  color: #000;
+}
+.slideout-menu-toggle i {
+  color: #000;
+}
 .slideout-menu .slideout-menu-toggle:hover {
 	color: #000;
 }
