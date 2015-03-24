@@ -99,7 +99,7 @@
 <div class="footer"> 
  <div class="footerimages">
 <img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/ucla.png'; ?>">  
-<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/neh.png'; ?>">  
+<img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/neh2.png'; ?>">  
 <img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NLS.png'; ?>">  
 <img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NTS.png'; ?>">  
 <img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/UNL.png'; ?>">  
