@@ -155,23 +155,23 @@ function nexus_menu_link__menu_external_links(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";*/
   if($element['#title'] == 'Home'){
      //$element['#title'] = '<img title="home" class="img_menu"   src="'.base_path().drupal_get_path('theme', 'nexus').'/images/home.png"/>'; 
-     $element['#title'] = '<i class="fa fa-home"></i>';
+     $element['#title'] = '/><i class="fa fa-home"></i>';
   }
     if($element['#title'] == 'Mail'){
      //$element['#title'] = '<img title="mail" class="img_menu_mail" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/mail.jpg"/>'; 
-     $element['#title'] = '<i class="fa fa-envelope"></i>';      
+     $element['#title'] = '/><i class="fa fa-envelope"></i>';      
   }
     if($element['#title'] == 'Twitter'){
      //$element['#title'] = '<img title="twitter" class="img_menu"  src="'.base_path().drupal_get_path('theme', 'nexus').'/images/twitter.png"/>';
-      $element['#title'] = '<i class="fa fa-twitter"></i>';  
+      $element['#title'] = 'target="_blank"/><i class="fa fa-twitter"></i>';  
   }
     if($element['#title'] == 'WordPress'){
      //$element['#title'] = '<img title="wordpress" class="img_menu" src="'.base_path().drupal_get_path('theme', 'nexus').'/images/wordpress.png"/>'; 
-     $element['#title'] = '<i class="fa fa-wordpress"></i>';        
+     $element['#title'] = 'target="_blank"/><i class="fa fa-wordpress"></i>';        
   }
   
   //$output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '><li class="leaf"><a href="'.$element['#href'].'"/>' . $element['#title'] . "</a></li>\n";
+  return '<li' . drupal_attributes($element['#attributes']) . '><li class="leaf"><a href="'.$element['#href'].'"' . $element['#title'] . "</a></li>\n";
 }
 
 function nexus_form_element($variables) {
