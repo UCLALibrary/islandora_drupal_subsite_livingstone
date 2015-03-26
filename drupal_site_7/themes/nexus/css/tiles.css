@@ -1,3 +1,12 @@
+#block-menu-menu-topmenu ul, #block-menu-menu-topmenu ol {
+  margin: 0;
+}
+
+#block-menu-menu-topmenu ul.menu {
+  border: medium none;
+  list-style: outside none none;
+  text-align: center;
+}
 
 /** External menu & Search bar **/
 
@@ -47,7 +56,7 @@
 
 #search-block-form--2 input[type=text],
 #search-block-form input[type=text] {
-background: url('images/search-button.png') no-repeat 1px 1px #F0ECEC;  
+background: url('../images/search-button.png') no-repeat 1px 1px #F0ECEC;  
 border: 1px solid #d0d0d0;
 height:25px;
 }
@@ -63,7 +72,7 @@ border-radius: 7px;
 #search-block-form .search {
 margin-top: 8px;
 padding: 6px 15px 6px 30px;
-background: url('images/search-button.png') no-repeat 1px 1px;
+background: url('../images/search-button.png') no-repeat 1px 1px;
 }
 
 #block-search-form { padding-bottom: 7px; }
@@ -72,7 +81,53 @@ background: url('images/search-button.png') no-repeat 1px 1px;
 
 #search-form .form-item-keys label { display: block; }
 
+/* colored menu links */
+.topmenu li.leaf {
+  display: inline-block;
+  line-height: 20px;
+  margin: 10px 0 10px 5px;
+  max-width: 120px;
+  min-width: 120px;
+  padding: 0 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
+}
+.topmenu li a {
+    color: #000;
+    font-family: "Oxygen",sans-serif;
+    font-size: 12.4px;
+    font-weight: 900;
+    text-align: center;
+}
 
+.topmenu li.leaf:hover {
+  /*opacity: .3;*/
+  background: #ccc;
+}
+.topmenu li:nth-child(1){
+   background-color:#99cc99; 
+}
+
+.topmenu li:nth-child(2){
+   background-color:#ffcc33; 
+}
+
+.topmenu li:nth-child(3){
+   background-color:#a48bc2; 
+}
+
+.topmenu li:nth-child(4){
+   background-color:#99ccff; 
+}
+
+.topmenu li:nth-child(5){
+   background-color:#cc9999; 
+}
+
+.topmenu li:nth-child(6){
+   background-color:#cccc99; 
+}
 
 
 .tftextinput4 {
@@ -95,6 +150,8 @@ height:25px;
     display: block;
 }
 .page-livingstone-online h1.page-title,
+.page-about-this-site h1.page-title,
+.page-about-site h1.page-title,
 .page-in-his-own-words- h1.page-title,
 .page-his-own-words h1.page-title,
 .page-spectral-imaging h1.page-title,
@@ -116,6 +173,8 @@ height:25px;
     height: auto;
     width: 100%;
 }
+.page-about-site .views-row .views-field.views-field-nothing,
+.page-about-this-site .views-row .views-field.views-field-nothing,
 .page-livingstone-online .views-row .views-field.views-field-nothing {
     border: 6px solid #99cc99; 
     overflow: hidden;

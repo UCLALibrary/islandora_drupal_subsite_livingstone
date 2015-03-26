@@ -72,7 +72,7 @@
         </header>
     <?php endif; ?>
     <ul class="flex-direction-nav">
-    <li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li>
+    <li><a title="resources" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li>
     <li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstone-online' ?>">Level 2</a></li>
     </ul>
         <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>

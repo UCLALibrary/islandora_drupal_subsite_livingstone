@@ -73,9 +73,17 @@ img {
   max-width: 100%;
 }
 
-
+.col-sm-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+}
 /* Commons
 ================================================== */
+.node-type-section-page .row {
+  margin-left: 0;
+  margin-right: 0;
+}
 .row {
     margin-right: 12px;
     margin-left: 12px;
@@ -275,13 +283,17 @@ a:focus {
 
 
 /* Head */
-
+.node-type-section-page #masthead{
+  position: relative;
+  max-width: 1260px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 #masthead{
   position: relative;
   max-width: 1260px;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 #parent{
   position: relative;
@@ -419,6 +431,10 @@ img.grayscale {
   clear:both;
 }
 /* level 3 pages */
+.field.field-name-field-social-media-links {
+  display: block;
+  height: 0;
+}
 .panel-display.panel-1col .panel-pane.pane-node-content {
   border-right: 0px solid #eee;
   border-left: 0px solid #eee;
@@ -464,26 +480,28 @@ img.grayscale {
     border-color: #ffcc33;
 }
 .behind-scenes .breadcrumb-0 {
-  background-color: #99ccff;
+  background-color: #cc9999;
 }
+.about-this-site .breadcrumb-0,
+.about-site .breadcrumb-0,
 .livingstone-online .breadcrumb-0 {
   background-color: #99cc99;    
 }
 .life-and-times .breadcrumb-0 {
-  background-color: #cc9999;
-}
-.spectral-imaging .breadcrumb-0 {
   background-color: #a48bc2;
 }
+.spectral-imaging .breadcrumb-0 {
+  background-color: #99ccff;
+}
 .his-own-words .breadcrumb-0 {
-  background-color: #FFCC33;
+  background-color: #ffcc33;
 }
 .resources .breadcrumb-0 {
   background-color: #cccc99;
 }
 .nodequeuepager,
 .prevnextnode_mid {
-  max-width: 1230px;
+  max-width: 1260px;
   position: fixed;
   top: 50%;
   width: 100%;
@@ -617,11 +635,11 @@ img.grayscale {
   margin: 1.5% 0 1.5% 3.5%;
 }
 .node-type-section-page  .field.field-name-field-section-page-byline {
-  font-size: 21px;
+  font-size: 19.5px;
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-date {
-  font-size: 19px;
+  font-size: 17.5px;
   margin-bottom: 40px;
   margin-top: 20px;
   text-align: center;
@@ -695,6 +713,8 @@ span.footpdf {
   font-size: 20px;
   top: -10px;
   position: relative;
+    padding-left: 15px;
+  padding-right: 5px;
 }
 .node-type-section-page .sharethis-wrapper:before {
   background: url("images/lo-sm-30.jpg") no-repeat scroll 0px 0px transparent;
@@ -851,6 +871,7 @@ span.footpdf {
   background: #99ccff;
   text-align: center;
 }
+.about-site.view-image-banner-scroll .jcarousel-skin-tango,
 .livingstone-online.view-image-banner-scroll .jcarousel-skin-tango {
   background: #99cc99;
   text-align: center;
@@ -877,7 +898,7 @@ span.footpdf {
   padding: 5px 0;
 }
 
-
+.about_site,
 .livingstone_online{
     border-color: #99cc99;    
 }
@@ -1032,52 +1053,6 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   position: relative;
   margin-top: -2px;
 }
-.topmenu li.leaf {
-  display: inline-block;
-  line-height: 20px;
-  margin: 10px 0 10px 5px;
-  max-width: 120px;
-  min-width: 120px;
-  padding: 0 0 1px;
-  text-align: center;
-  vertical-align: middle;
-  width: 120px;
-}
-.topmenu li a {
-    color: #000;
-    font-family: "Oxygen",sans-serif;
-    font-size: 12.4px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.topmenu li.leaf:hover {
-  /*opacity: .3;*/
-  background: #ccc;
-}
-.topmenu li:nth-child(1){
-   background-color:#99cc99; 
-}
-
-.topmenu li:nth-child(2){
-   background-color:#ffcc33; 
-}
-
-.topmenu li:nth-child(3){
-   background-color:#a48bc2; 
-}
-
-.topmenu li:nth-child(4){
-   background-color:#99ccff; 
-}
-
-.topmenu li:nth-child(5){
-   background-color:#cc9999; 
-}
-
-.topmenu li:nth-child(6){
-   background-color:#cccc99; 
-}
 
 #preface-area {
   background: none repeat scroll 0 0 #ED564B;
@@ -1085,7 +1060,6 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   border-top: 5px solid #F96B61;
   padding: 40px 0 20px;
 }
-
 .preface-block{
   color: #fff;
   text-align: center;
