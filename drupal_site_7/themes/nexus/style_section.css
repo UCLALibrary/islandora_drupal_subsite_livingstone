@@ -281,9 +281,9 @@ a:focus {
   outline: 0;
 }
 
-
 /* Head */
-.node-type-section-page #masthead{
+
+.node-type-section-page #masthead{  /*level 3 pages */
   position: relative;
   max-width: 1260px;
   padding-left: 0px;
