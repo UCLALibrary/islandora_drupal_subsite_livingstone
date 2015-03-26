@@ -1,9 +1,9 @@
-#block-menu-menu-topmenu ul, #block-menu-menu-topmenu ol {
+#block-menu-menu-topmenu ul, 
+#block-menu-menu-topmenu ol {
   margin: 0;
 }
-
 #block-menu-menu-topmenu ul.menu {
-  border: medium none;
+  border: none;
   list-style: outside none none;
   text-align: center;
 }
@@ -30,7 +30,6 @@
   list-style-type: none;
   padding: 0.2em 0.5em 0 !important;
 }
-
 
 /* Menu */
 
@@ -153,6 +152,7 @@ height:25px;
 .page-about-this-site h1.page-title,
 .page-about-site h1.page-title,
 .page-in-his-own-words- h1.page-title,
+.page-in-his-own-words h1.page-title,
 .page-his-own-words h1.page-title,
 .page-spectral-imaging h1.page-title,
 .page-behind-the-scenes h1.page-title,
