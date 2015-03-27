@@ -100,7 +100,7 @@
  <div class="footerimages">
 <a href="http://www.library.ucla.edu/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/ucla_sm.png'; ?>"> </a>
 <a href="http://www.nts.org.uk/property/davidlivingstonecentre/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NTS.png'; ?>"> </a>   
-<a href="http://www.neh.gov/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/neh2.png'; ?>"> </a>  
+<a href="http://www.neh.gov/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/neh.png'; ?>"> </a>  
 <a href="http://www.nls.uk" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NLS.png'; ?>"> </a>  
 <a href="http://www.unl.edu" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/UNL_sm.png'; ?>"> </a>  
   </div>
