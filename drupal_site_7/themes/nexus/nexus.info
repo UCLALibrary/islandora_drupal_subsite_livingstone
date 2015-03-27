@@ -7,7 +7,6 @@ stylesheets[all][] = css/flexslider.css
 stylesheets[all][] = css/slideout-menu.css
 stylesheets[all][] = css/tiles.css
 scripts[] = js/bootstrap.min.js
-scripts[] = js/superfish.js
 scripts[] = js/mobilemenu.js
 scripts[] = js/custom.js
 scripts[] = js/jquery.mmenu.min.js
