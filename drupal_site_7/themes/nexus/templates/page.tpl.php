@@ -64,6 +64,8 @@
  * @see template_process()
  */
 ?>
+<?php if($node->type =='section_page'): ?>
+
   <div id="fixedbar">
     <div class="fixedbar_left">
     <div class="fixedleft_1"><a href="#" class="slideout-menu-toggle"><i class="fa fa-bars"></i> </a></div>
@@ -74,15 +76,16 @@
      
     <?php print render($page['fixedbar']); ?>  
     <div class="slideout-menu">
-  <h3>Sections <a href="#" class="slideout-menu-toggle">&times;</a></h3>
-  <ul>
-  <?php print render($page['section']); ?>
-  <?php print render($page['header']); ?>
-  </ul>
-</div>
+      <h3>Sections <a href="#" class="slideout-menu-toggle">&times;</a></h3>
+      <ul>
+      <?php print render($page['section']); ?>
+      <?php print render($page['header']); ?>
+      </ul>
+    </div>
 <!--/.slideout-menu-->
   </div>
 
+ <?php endif; ?> 
 
 
 
