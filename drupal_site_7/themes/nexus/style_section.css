@@ -1581,12 +1581,12 @@ ol.search-results { padding-left: 0; }
 
 .browse-item-list ul li a{
     float: left;
-    width:8em;
+   color:black;
     text-decoration: none;
     margin:10px;
     padding: 50px;
     border: 5px solid #ffcc33;
-    height:100px;
+    
 }
 
 .browse-item-list .italics{
