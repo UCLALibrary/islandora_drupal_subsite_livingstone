@@ -1,44 +1,283 @@
+#block-menu-menu-topmenu ul, 
+#block-menu-menu-topmenu ol {
+  margin: 0;
+}
+#block-menu-menu-topmenu ul.menu { /* all pages except for front  */
+  border: none;
+  list-style: outside none none;
+  margin-top: 15px;
+  text-align: center;
+}
 
-.views-row {
+/** External menu & Search bar **/
+
+.region.region-header {
+  float: right;
+}
+.block.externalmenublock {
   float: left;
-  margin: 10px 10px;
-  width: 375px;
+  padding-top: 6px;
+}
+.front #search-block-form {
+    margin-right: 10px;
+}
+#search-block-form {
+  float: right;
+  margin-left: 10px;
+}
+.block ul#externalmenu li.leaf {
+  display: inline-block;
+  list-style-image: none;
+  list-style-type: none;
+  padding: 0.2em 0.5em 0 !important;
 }
 
-.page-livingstone-online .view-display-id-attachment_1 .views-row,
-.page-livingstone-online .views-row img{
-    border: 3px solid #99cc99; 
+/* Menu */
+
+.fa.fa-envelope {
+  color: #506777;
+  font-size: 24px;
+  position: relative;
+  top: -1px;
 }
-.page-his-own-words .view-display-id-attachment_1 .views-row,
-.page-his-own-words .views-row img{
-    border: 3px solid #ffcc33; 
+.fa.fa-home,
+.fa.fa-wordpress {
+  color: #3e5b97;
+  font-size: 24px;
 }
-.page-our-technology .view-display-id-attachment_1 .views-row,
-.page-our-technology .views-row img{
-    border: 3px solid #a48bc2; 
+.fa.fa-wordpress {
+  margin-right: 10px;
+  font-size: 24px;
 }
-.page-behind-the-scenes .view-display-id-attachment_1 .views-row,
-.page-behind-the-scenes .views-row img{
-    border: 3px solid #99ccff; 
-}
-.page-life-and-times .view-display-id-attachment_1 .views-row,
-.page-life-and-times .views-row img{
-    border: 3px solid #cc9999; 
-}
-.page-resources .view-display-id-attachment_1 .views-row,
-.page-resources .views-row img{
-    border: 3px solid #cccc99; 
+.fa.fa-twitter {
+  color: #00abf2;
+  font-size: 24px;
 }
 
-.view-display-id-attachment_1 .views-row {
-	background: #eee;
-	border: 1px solid #ccc;
-	display: table;
-	height: 350px;
-	padding: 20px;
+#search-block-form--2 input[type=text],
+#search-block-form input[type=text] {
+background: url('../images/search-button.png') no-repeat 1px 1px #F0ECEC;  
+border: 1px solid #d0d0d0;
+height:25px;
 }
-.view-display-id-attachment_1 .views-field-nothing  {
-	display: table-cell;
-	text-align: center;	
-	vertical-align: middle;	
+#search-block-form input[type=text] {
+/*color: #bcbcbc;*/
+}
+#search-block-form .rounded {
+border-radius: 7px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+}
+#search-block-form--2 .search,
+#search-block-form .search {
+margin-top: 8px;
+padding: 3px 15px 3px 30px;
+background: url('../images/search-button.png') no-repeat 1px 1px;
+}
+
+#block-search-form { padding-bottom: 7px; }
+
+#block-search-form .content { margin-top: 0; }
+
+#search-form .form-item-keys label { display: block; }
+
+/* colored menu links */
+.topmenu li.leaf {
+  display: inline-block;
+  line-height: 20px;
+  margin: 10px 0 10px 5px;
+  max-width: 120px;
+  min-width: 120px;
+  padding: 0 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
+}
+.topmenu li a {
+    color: #000;
+    font-family: "Oxygen",sans-serif;
+    font-size: 12.4px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.topmenu li.leaf:hover {
+  /*opacity: .3;*/
+  background: #ccc;
+}
+.topmenu li:nth-child(1){
+   background-color:#99cc99; 
+}
+
+.topmenu li:nth-child(2){
+   background-color:#ffcc33; 
+}
+
+.topmenu li:nth-child(3){
+   background-color:#a48bc2; 
+}
+
+.topmenu li:nth-child(4){
+   background-color:#99ccff; 
+}
+
+.topmenu li:nth-child(5){
+   background-color:#cc9999; 
+}
+
+.topmenu li:nth-child(6){
+   background-color:#cccc99; 
+}
+
+
+.tftextinput4 {
+margin-top: 8px;
+padding: 0;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-size: 14px;
+color: #666;
+border: 1px solid #0076a3;
+border-right: 0px;
+border-top-left-radius: 5px 5px;
+border-bottom-left-radius: 5px 5px;
+height:25px;
+}
+
+.sectionPageImage{
+    outline: none;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+.page-livingstone-online h1.page-title,
+.page-about-this-site h1.page-title,
+.page-about-site h1.page-title,
+.page-in-his-own-words- h1.page-title,
+.page-in-his-own-words h1.page-title,
+.page-his-own-words h1.page-title,
+.page-spectral-imaging h1.page-title,
+.page-behind-the-scenes h1.page-title,
+.page-behind-the-scenes- h1.page-title,
+.page-life-and-times h1.page-title,
+.page-resources h1.page-title {
+    display: none;
+}
+.leveltwo .view-content {
+  text-align: center;
+}
+.leveltwo .view-id-l .views-row {
+    display: inline-block;
+    margin: 1%;
+    max-width: 90%;   
+}
+.leveltwo .view-id-l .views-row img {
+    height: auto;
+    width: 100%;
+}
+.page-about-site .views-row .views-field.views-field-nothing,
+.page-about-this-site .views-row .views-field.views-field-nothing,
+.page-livingstone-online .views-row .views-field.views-field-nothing {
+    border: 6px solid #99cc99; 
+    overflow: hidden;
+}
+.page-in-his-own-words- .views-row .views-field.views-field-nothing,
+.page-his-own-words .views-row .views-field.views-field-nothing{
+    border: 6px solid #ffcc33; 
+    overflow: hidden;
+}
+.page-spectral-imaging .views-row .views-field.views-field-nothing {
+    border: 6px solid #99ccff; 
+    overflow: hidden;
+}
+.page-behind-the-scenes- .views-row .views-field.views-field-nothing,
+.page-behind-the-scenes .views-row .views-field.views-field-nothing {
+    border: 6px solid #cc9999; 
+    overflow: hidden;   
+}
+.page-life-and-times .views-row .views-field.views-field-nothing {
+    border: 6px solid #a48bc2;  
+    overflow: hidden;   
+}
+.page-resources .views-row .views-field.views-field-nothing {
+    border: 6px solid #cccc99;
+    overflow: hidden;
+}
+
+
+.project.Yes, .project.No { 
+    position: relative; 
+    margin-bottom: 0;
+}
+.project p { 
+    color: #fff; 
+    font-style: italic; 
+    font-weight: 300; 
+    font-size: 17px; 
+    padding: 0 20px 0;
+    text-transform: none; 
+}
+  
+.project .lev2-photocredit {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 15%;
+  padding: 0 20px;
+}
+.project.Yes img { 
+    display: block; 
+
+}
+.project.No img { 
+    display: block; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; 
+    transition: opacity 0.35s, transform 0.35s; 
+    -webkit-transform: scale(1); 
+    transform: scale(1); 
+}
+.project.No:hover img {
+    opacity: 0.5; 
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3); 
+}
+.project h3 { color: #fff; font-size: 24px; }
+.project.No .hover { 
+    background-color: rgba(63, 73, 83, 0.70); 
+    height: 100%; left: 0; 
+    opacity: 0; 
+    position: absolute; 
+    top:0; 
+    text-align: center; 
+    width: 100%; 
+}
+.project .hover .info { 
+    position: absolute; 
+    padding: 0 5% 0 4%;
+    text-align: center; 
+    top: 25%; 
+    width: 100%; 
+}
+.project.No .hover:hover { 
+    opacity: 1; 
+}
+.project.No .field.field-name-field-section-page-tag-line .field-item.even {
+    padding: 0px;
+}
+@media screen and (max-width: 768px) {
+
+    .leveltwo .view-id-l .views-row {
+        display: inline-block;
+        margin: 1%;
+        width: 45%;   
+    }
+
+}
+@media screen and (min-width: 769px) {
+
+    .leveltwo .view-id-l .views-row {
+        display: inline-block;
+        margin: 1%;
+        width: 31%;   
+    }
+
 }

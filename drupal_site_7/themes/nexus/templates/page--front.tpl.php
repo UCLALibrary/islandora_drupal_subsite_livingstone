@@ -65,13 +65,16 @@
  */
 ?>
 
-<div id="page" class="page-row page-row-expanded">
+<div id="page" class="page-row page-row-expanded wrapper">
     <?php if ($page['header']) : ?> 
         <header id="masthead">
             <?php print render($page['header']); ?>
         </header>
     <?php endif; ?>
-    <ul class="flex-direction-nav"><li><a title="home" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li><li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstoneonline' ?>">Next</a></li></ul>
+    <ul class="flex-direction-nav">
+    <li><a title="resources" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li>
+    <li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'livingstone-online' ?>">Level 2</a></li>
+    </ul>
         <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
     <div id="slider">
         <div class="flexslider">
@@ -86,14 +89,19 @@
                 <p>THE WORDS OF EXPLORER DAVID LIVINGSTONE</p>-->
                 <?php print render($page['title']); ?>
                 <?php print render($page['section']); ?>
-                <!--<a class="frmore" href="node/66">Livingstone/Online</a><a class="frmore" href="node/72">In His Own Words</a>
-                <a class="frmore" href="node/69">Our Technology</a>
-                <a class="frmore" href="node/70">Behind the Scenes</a>
-                <a class="frmore" href="node/67">Life &amp; Times</a>
-                <a class="frmore" href="node/68">Resources</a>-->
             </div>
         </div>  
+                 <?php print render($page['footer_first']); ?>
     </div>
         <?php endif; ?>
+    <div class="push"></div>      
 </div>
-    <?php print render($page['footer']); ?>
+<div class="footer"> 
+ <div class="footerimages">
+<a href="http://www.library.ucla.edu/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/ucla_sm.png'; ?>"> </a>
+<a href="http://www.nts.org.uk/property/davidlivingstonecentre/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NTS.png'; ?>"> </a>   
+<a href="http://www.neh.gov/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/neh.png'; ?>"> </a>  
+<a href="http://www.nls.uk" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/NLS.png'; ?>"> </a>  
+<a href="http://www.unl.edu" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/UNL_sm.png'; ?>"> </a>  
+  </div>
+</div>    

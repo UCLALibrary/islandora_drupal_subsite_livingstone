@@ -16,7 +16,7 @@ CKEDITOR.addStylesSet( 'drupal',
 	// These styles are already available in the "Format" combo, so they are
 	// not needed here by default. You may enable them to avoid placing the
 	// "Format" combo in the toolbar, maintaining the same features.
-	{ name : 'Inset Image', element : 'p', attributes : { 'class' : 'insetimage' } },
+	{ name : 'Inset Image', element : 'span', attributes : { 'class' : 'insetimage' } },
 	{ name : 'Inset Image Table', element : 'table', attributes : { 'class' : 'insetimagetable' } },
 	{
 		name: 'Compact table',

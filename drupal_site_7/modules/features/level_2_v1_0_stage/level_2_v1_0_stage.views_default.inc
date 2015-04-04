@@ -51,7 +51,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Section Page Main Image */
+  /* Field: Content: Level 2 Image */
   $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
@@ -132,6 +132,30 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'section_page' => 'section_page',
+  );
+  /* Filter criterion: Content: Level 2 Intro node (field_level_2_intro_node) */
+  $handler->display->display_options['filters']['field_level_2_intro_node_value']['id'] = 'field_level_2_intro_node_value';
+  $handler->display->display_options['filters']['field_level_2_intro_node_value']['table'] = 'field_data_field_level_2_intro_node';
+  $handler->display->display_options['filters']['field_level_2_intro_node_value']['field'] = 'field_level_2_intro_node_value';
+  $handler->display->display_options['filters']['field_level_2_intro_node_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_level_2_intro_node_value']['value'] = array(
+    1 => '1',
+  );
   $handler->display->display_options['pane_category']['name'] = 'section pages';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;

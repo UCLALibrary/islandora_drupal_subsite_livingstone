@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pages Panels feature.
+ */
+
+include_once 'pages_panels.features.inc';

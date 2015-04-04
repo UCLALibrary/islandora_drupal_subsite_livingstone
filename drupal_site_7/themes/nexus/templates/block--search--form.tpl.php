@@ -50,9 +50,7 @@
   -->
 
   <!--<div class="content"<?php print $content_attributes; ?>> -->
-  <li>
     <?php print $content ?>
-  </li>
  <!-- </div>-->
   
 <!-- </div> --><!-- /.block -->

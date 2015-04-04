@@ -1265,7 +1265,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'level2page',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1353,7 +1353,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'level2page',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1509,7 +1509,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'level2page',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1685,7 +1685,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'level2page',
     'css_id' => '',
     'css' => '',
     'contexts' => array(
@@ -1706,7 +1706,50 @@ function level_2_v1_0_stage_default_page_manager_pages() {
   );
   $display = new panels_display();
   $display->layout = 'flexible';
-  $display->layout_settings = array();
+  $display->layout_settings = array(
+    'items' => array(
+      'canvas' => array(
+        'type' => 'row',
+        'contains' => 'column',
+        'children' => array(
+          0 => 'main',
+        ),
+        'parent' => NULL,
+      ),
+      'main' => array(
+        'type' => 'column',
+        'width' => 100,
+        'width_type' => '%',
+        'children' => array(
+          0 => 'main-row',
+          1 => 1,
+        ),
+        'parent' => 'canvas',
+      ),
+      'main-row' => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'center',
+        ),
+        'parent' => 'main',
+      ),
+      'center' => array(
+        'type' => 'region',
+        'title' => 'Center',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => 'main-row',
+      ),
+      1 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(),
+        'parent' => 'main',
+        'class' => '',
+      ),
+    ),
+  );
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
@@ -1805,6 +1848,31 @@ function level_2_v1_0_stage_default_page_manager_pages() {
     $pane->uuid = '6df8bea0-ebb1-495d-b916-e88a4150e01b';
     $display->content['new-6df8bea0-ebb1-495d-b916-e88a4150e01b'] = $pane;
     $display->panels['center'][2] = 'new-6df8bea0-ebb1-495d-b916-e88a4150e01b';
+    $pane = new stdClass();
+    $pane->pid = 'new-c170c7e1-214f-4d80-9f51-ca4c8349b12b';
+    $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'block-16';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => 'footerblock',
+      'css_class' => '',
+    );
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = 'c170c7e1-214f-4d80-9f51-ca4c8349b12b';
+    $display->content['new-c170c7e1-214f-4d80-9f51-ca4c8349b12b'] = $pane;
+    $display->panels['center'][3] = 'new-c170c7e1-214f-4d80-9f51-ca4c8349b12b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-c8b8bf8e-c934-4973-8691-1055ec73e6f4';
   $handler->conf['display'] = $display;
@@ -1839,7 +1907,7 @@ function level_2_v1_0_stage_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'level2page',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
