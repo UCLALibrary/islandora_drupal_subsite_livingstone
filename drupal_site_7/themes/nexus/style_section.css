@@ -1586,6 +1586,8 @@ ol.search-results { padding-left: 0; }
     margin:10px;
     padding: 50px;
     border: 5px solid #ffcc33;
+    width: 400px;
+  text-align: center;
     
 }
 
