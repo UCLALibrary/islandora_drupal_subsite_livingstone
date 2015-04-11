@@ -34,6 +34,8 @@ CKEDITOR.addStylesSet( 'drupal',
 			'border-collapse': 'collapse'
 		}
 	},
+	{ name : 'Paragraph+10px', element : 'p', attributes : { 'class' : 'space1'}},
+	{ name : 'Paragraph+20px', element : 'p', attributes : { 'class' : 'space2'}},	
 	//{ name : 'Align Image to Left', element : 'img', attributes : { 'class' : 'floatleft' } },
 	//{ name : 'Align Image to Right', element : 'img', attributes : { 'class' : 'floatright' } },
 	//{ name : 'Clear Float', element : 'p', attributes : { 'class' : 'clear' } },

@@ -16,15 +16,22 @@ min-height: 100%;
 height: auto !important;
 height: 100%;
 }
-.footer, .push {
+.footer {
 height: 2em;
+}
+.push {
+height: -2em;
+}
+.footimg {
+  display: inline-block;
+    margin: 0 1%;
+  width: 17%;
 }
 .footerimages {
   text-align: center;
 }
 img.footerlogos {
-  margin: 0 2%;
-  max-width: 200px;
+  max-width: 210px;
 }
 /* styles.css */
 body {
@@ -906,8 +913,7 @@ ol.search-results { padding-left: 0; }
 }
 /*** homepage  ***/
 .footerlogos {
-  padding: 5px 25px 10px;
-  width:15%;
+  padding: 5px 10px 10px;
 }
 
 /*-------------------------------------------*
