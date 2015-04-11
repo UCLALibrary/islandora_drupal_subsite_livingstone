@@ -232,12 +232,17 @@ h6 { font-size: 14px; }
 p {
   margin: 0 0 20px;
 }
-
+p.space-2 {
+  margin: 0px 0 5px !important;
+}
+p.space-1 {
+  margin: 0px 0 10px !important;
+}
 p.space1 {
-  margin: 10px 0 30px;
+  margin: 10px 0 30px !important;
 }
 p.space2 {
-  margin: 20px 0 40px;
+  margin: 20px 0 40px !important;
 }
 
 p img {
