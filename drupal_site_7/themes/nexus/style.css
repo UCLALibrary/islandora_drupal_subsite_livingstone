@@ -96,11 +96,11 @@ body {
 
 /* Links */
 a {
-  color: #f4473a;
+  color: #000;
 
 }
 a:visited {
-  color: #f4473a;
+  color: #000;
 }
 a:hover,
 a:focus,
