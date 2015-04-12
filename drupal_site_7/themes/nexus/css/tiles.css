@@ -142,6 +142,7 @@ background: url('../images/search-button.png') no-repeat 1px 1px;
 .block.footershare .st_email_large .stLarge {background-image: url("../images/social/email_28.png") !important;}
 .block.footershare .st_facebook_large .stLarge {background-image: url("../images/social/facebook_28.png") !important;}
 .block.footershare .st_print_large .stLarge {background-image: url("../images/social/print_28.png") !important;}
+.block.footershare .st_pdf_large .stLarge.pdf {background-image: url("../images/social/28x28-pdf.png") !important;}
 
 .tftextinput4 {
 margin-top: 8px;
