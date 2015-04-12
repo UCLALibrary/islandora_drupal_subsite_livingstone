@@ -24,14 +24,14 @@ height: -2em;
 }
 .footimg {
   display: inline-block;
-    margin: 0 1%;
-  width: 17%;
+ /*   margin: 0 1%;
+  width: 17%; */
 }
 .footerimages {
   text-align: center;
 }
 img.footerlogos {
-  max-width: 210px;
+ margin: 0px 10px
 }
 /* styles.css */
 body {
@@ -913,7 +913,7 @@ ol.search-results { padding-left: 0; }
 }
 /*** homepage  ***/
 .footerlogos {
-  padding: 5px 10px 10px;
+  padding: 0;
 }
 
 /*-------------------------------------------*
