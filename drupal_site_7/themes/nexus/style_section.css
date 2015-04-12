@@ -508,14 +508,14 @@ img.grayscale {
 .livingstone-online .breadcrumb-1 {
   background-color: #99cc99;    
 }
-.life-and-times .breadcrumb-1 {
+.spectral-imaging .breadcrumb-1 {
   background-color: #a48bc2;
 }
-.spectral-imaging .breadcrumb-1 {
+.life-and-times .breadcrumb-1 {
   background-color: #99ccff;
 }
 .his-own-words .breadcrumb-1 {
-  background-color: #ffcc33;
+  background-color: #F7C983;
 }
 .resources .breadcrumb-1 {
   background-color: #cccc99;
@@ -878,32 +878,33 @@ span.footpdf {
   position: absolute;
   top: 13px;
 }
-
-.life-and-times.view-image-banner-scroll .jcarousel-skin-tango {
+.about-site.view-image-banner-scroll .jcarousel-skin-tango,
+.livingstone-online.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #99cc99;
+  text-align: center;
+}
+.his-own-words.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #F7C983;
+  text-align: center;
+}
+.spectral-imaging.view-image-banner-scroll .jcarousel-skin-tango {
   background: #a48bc2;
+  text-align: center;
+}
+.life-and-times.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #99ccff;
   text-align: center;
 }
 .behind-scenes.view-image-banner-scroll .jcarousel-skin-tango {
   background: #cc9999;
   text-align: center;
 }
-.his-own-words.view-image-banner-scroll .jcarousel-skin-tango {
-  background: #ffcc33;
-  text-align: center;
-}
 .resources.view-image-banner-scroll .jcarousel-skin-tango {
   background: #cccc99;
   text-align: center;
 }
-.spectral-imaging.view-image-banner-scroll .jcarousel-skin-tango {
-  background: #99ccff;
-  text-align: center;
-}
-.about-site.view-image-banner-scroll .jcarousel-skin-tango,
-.livingstone-online.view-image-banner-scroll .jcarousel-skin-tango {
-  background: #99cc99;
-  text-align: center;
-}
+
+
 
 
 .view-image-banner-scroll .jcarousel-skin-tango .jcarousel-container-horizontal {
@@ -1247,7 +1248,7 @@ img.fixedheaderlogo {
   margin: 0;
   position: relative;
   text-align: right;
-  top: -15px;
+  top: -20px;
   width: 20%;
 }
 #fixedbar {

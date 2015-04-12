@@ -110,7 +110,7 @@ background: url('../images/search-button.png') no-repeat 1px 1px;
 }
 
 .topmenu li:nth-child(2){
-   background-color:#ffcc33; 
+   background-color:#F7C983; 
 }
 
 .topmenu li:nth-child(3){
@@ -182,11 +182,11 @@ height:25px;
 }
 .page-in-his-own-words- .views-row .views-field.views-field-nothing,
 .page-his-own-words .views-row .views-field.views-field-nothing{
-    border: 6px solid #ffcc33; 
+    border: 6px solid #F7C983; 
     overflow: hidden;
 }
 .page-spectral-imaging .views-row .views-field.views-field-nothing {
-    border: 6px solid #99ccff; 
+    border: 6px solid #a48bc2;; 
     overflow: hidden;
 }
 .page-behind-the-scenes- .views-row .views-field.views-field-nothing,
@@ -195,7 +195,7 @@ height:25px;
     overflow: hidden;   
 }
 .page-life-and-times .views-row .views-field.views-field-nothing {
-    border: 6px solid #a48bc2;  
+    border: 6px solid #99ccff;
     overflow: hidden;   
 }
 .page-resources .views-row .views-field.views-field-nothing {
