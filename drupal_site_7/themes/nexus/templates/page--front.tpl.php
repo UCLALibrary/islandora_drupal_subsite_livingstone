@@ -99,9 +99,9 @@
 <div class="footer"> 
  <div class="footerimages">
 <div class="footimg"><a href="http://www.library.ucla.edu/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/ucla.png'; ?>"> </a></div>
-<div class="footimg"><a href="http://www.nts.org.uk/property/davidlivingstonecentre/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/nts.png'; ?>"> </a>   </div>
-<div class="footimg"><a href="http://www.neh.gov/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/humanities.png'; ?>"> </a>  </div>
-<div class="footimg"><a href="http://www.nls.uk" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/nls.png'; ?>"> </a>  </div>
-<div class="footimg"><a href="http://www.unl.edu" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/nebraska.png'; ?>"> </a>  </div>
+<div class="footimg"><a href="http://www.nts.org.uk/property/davidlivingstonecentre/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/nts.png'; ?>"> </a></div>
+<div class="footimg"><a href="http://www.neh.gov/" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/humanities.png'; ?>"> </a></div>
+<div class="footimg"><a href="http://www.nls.uk" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/nls.png'; ?>"> </a></div>
+<div class="footimg"><a href="http://www.unl.edu" target="_blank"><img class="footerlogos" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/logos/nebraska.png'; ?>"> </a></div>
   </div>
 </div>    
