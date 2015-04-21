@@ -14,10 +14,6 @@
 .region.region-header {
   float: right;
 }
-.block.externalmenublock {
-  float: left;
-  padding-top: 6px;
-}
 .front #search-block-form {
     margin-right: 10px;
 }
