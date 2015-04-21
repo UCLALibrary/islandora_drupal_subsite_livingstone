@@ -21,10 +21,7 @@
 .front #search-block-form {
     margin-right: 10px;
 }
-#search-block-form {
-  float: right;
-  margin-left: 10px;
-}
+
 .block ul#externalmenu li.leaf {
   display: inline-block;
   list-style-image: none;
