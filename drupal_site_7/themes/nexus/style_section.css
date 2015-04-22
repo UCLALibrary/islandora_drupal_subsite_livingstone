@@ -979,6 +979,9 @@ span.footpdf {
   cursor:pointer;
   margin-left:0px;
 }
+.header_title_region p {
+  margin-bottom: 10px;
+}
 .left_column_width{
     width:30%;
 }
