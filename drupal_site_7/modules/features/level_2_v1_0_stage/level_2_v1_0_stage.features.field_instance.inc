@@ -68,7 +68,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 1,
     ),
   );
 
@@ -431,6 +431,70 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_section_page_main_image'
+  $field_instances['node-section_page-field_section_page_main_image'] = array(
+    'bundle' => 'section_page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_original',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_section_page_main_image',
+    'label' => 'Section Main Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-field_section_page_sections'
   $field_instances['node-section_page-field_section_page_sections'] = array(
     'bundle' => 'section_page',
@@ -469,7 +533,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -585,6 +649,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Level 2 Teaser');
   t('Main Text');
   t('Overview');
+  t('Section Main Image');
   t('Sections');
   t('social media links');
 

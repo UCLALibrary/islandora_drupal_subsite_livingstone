@@ -21,12 +21,14 @@ function level_2_v1_0_stage_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Level 2 Fields',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
-      0 => 'field_section_page_image',
-      1 => 'field_level_2_teaser',
-      2 => 'field_level_2_intro_node',
-      3 => 'field_level_2_photocredit',
+      0 => 'field_section_page_sections',
+      1 => 'field_section_page_image',
+      2 => 'field_section_page_main_image',
+      3 => 'field_level_2_intro_node',
+      4 => 'field_level_2_photocredit',
+      5 => 'field_level_2_teaser',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -52,14 +54,13 @@ function level_2_v1_0_stage_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Level 3 Fields',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
-      0 => 'body',
-      1 => 'field_section_page_tag_line',
-      2 => 'field_section_page_byline',
-      3 => 'field_section_page_date',
-      4 => 'field_social_media_links',
-      5 => 'field_carousel_image',
+      0 => 'field_section_page_tag_line',
+      1 => 'field_section_page_byline',
+      2 => 'field_section_page_date',
+      3 => 'field_social_media_links',
+      4 => 'field_carousel_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
