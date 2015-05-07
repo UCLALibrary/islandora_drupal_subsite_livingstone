@@ -223,7 +223,9 @@ height:25px;
     padding: 0 20px 0;
     text-transform: none; 
 }
-  
+.project a, .project a:hover {
+  color: #fff;
+}  
 .project .lev2-photocredit {
   color: #fff;
   font-size: 15px;
@@ -257,6 +259,22 @@ height:25px;
     text-align: center; 
     width: 100%; 
 }
+.project.No .hover.Yes { 
+    background-color: rgba(63, 73, 83, 0.70); 
+    height: 100%; left: 0; 
+    opacity: 1; 
+    position: absolute; 
+    top:0; 
+    text-align: center; 
+    width: 100%; 
+}
+.project.No:hover img {
+    opacity: 0.5; 
+}
+.project.No .hover.Yes:hover { 
+     background-color: rgba(63, 73, 83, 0.70); 
+    opacity: 1; 
+}
 .project .hover .info { 
     position: absolute; 
     padding: 0 5% 0 4%;
@@ -269,6 +287,9 @@ height:25px;
 }
 .project.No .field.field-name-field-section-page-tag-line .field-item.even {
     padding: 0px;
+}
+a .info > em {
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
 
@@ -286,5 +307,4 @@ height:25px;
         margin: 1%;
         width: 31%;   
     }
-
 }

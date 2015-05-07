@@ -253,6 +253,22 @@ function level_2_images_view_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Turn off hover */
+  $handler->display->display_options['fields']['field_turn_off_hover']['id'] = 'field_turn_off_hover';
+  $handler->display->display_options['fields']['field_turn_off_hover']['table'] = 'field_data_field_turn_off_hover';
+  $handler->display->display_options['fields']['field_turn_off_hover']['field'] = 'field_turn_off_hover';
+  $handler->display->display_options['fields']['field_turn_off_hover']['label'] = '';
+  $handler->display->display_options['fields']['field_turn_off_hover']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_turn_off_hover']['element_label_colon'] = FALSE;
+  /* Field: Content: Pre-title */
+  $handler->display->display_options['fields']['field_pre_title']['id'] = 'field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['table'] = 'field_data_field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['field'] = 'field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['label'] = '';
+  $handler->display->display_options['fields']['field_pre_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_pre_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pre_title']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_pre_title']['empty_zero'] = TRUE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -260,6 +276,16 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Outbound link */
+  $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['field'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['label'] = '';
+  $handler->display->display_options['fields']['field_outbound_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['text'] = ' <a href="[field_outbound_link]" target="_blank" class="">';
+  $handler->display->display_options['fields']['field_outbound_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_outbound_link']['empty'] = ' <a href="[path]">';
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -337,11 +363,12 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
- <a href="[path]" class="[field_level_2_photocredit]">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node] ">
+[field_outbound_link]
      [field_section_page_image] 
-     <div class="hover">
+     <div class="hover [field_turn_off_hover]">
          <div class="info">
+         <em>[field_pre_title]</em>
          <h3">[title]</h3>
          <p>[field_level_2_teaser]</p>
          <div class="lev2-photocredit">[field_level_2_photocredit]</div>

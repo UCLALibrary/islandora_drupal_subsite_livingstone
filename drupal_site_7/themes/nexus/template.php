@@ -238,4 +238,3 @@ function taxonomy_select_nodes_from_nid($tid, $nid, $direction = 'next', $limit 
     $query->orderBy('t.nid', $direction == 'next' ? 'ASC' : 'DESC');
     return $query->execute()->fetchCol();
 }
-

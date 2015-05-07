@@ -176,7 +176,8 @@ function level_2_v1_0_stage_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
-        'js_conf' => 'config.fontSize_sizes = \'12/12px;14/14px;16/16px;\';',
+        'js_conf' => 'config.fontSize_sizes = \'12/12px;14/14px;16/16px;\';
+config.height = 450;',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',

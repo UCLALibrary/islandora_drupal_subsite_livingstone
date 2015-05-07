@@ -13,6 +13,35 @@ function level_2_v1_0_stage_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_level2outbound|node|section_page|form';
+  $field_group->group_name = 'group_level2outbound';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'section_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Level 2 Outbound fields',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_outbound_link',
+      1 => 'field_pre_title',
+      2 => 'field_turn_off_hover',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-level2outbound field-group-fieldset',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_level2outbound|node|section_page|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_level2|node|section_page|form';
   $field_group->group_name = 'group_level2';
   $field_group->entity_type = 'node';
