@@ -140,7 +140,6 @@ function level_2_images_view_views_default_views() {
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'empty';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -158,6 +157,7 @@ function level_2_images_view_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
@@ -247,12 +247,49 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path_case'] = 'lower';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'site_section' => 'site_section',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'access denied';
   $handler->display->display_options['path'] = 'leveltwo';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Turn off hover */
+  $handler->display->display_options['fields']['field_turn_off_hover']['id'] = 'field_turn_off_hover';
+  $handler->display->display_options['fields']['field_turn_off_hover']['table'] = 'field_data_field_turn_off_hover';
+  $handler->display->display_options['fields']['field_turn_off_hover']['field'] = 'field_turn_off_hover';
+  $handler->display->display_options['fields']['field_turn_off_hover']['label'] = '';
+  $handler->display->display_options['fields']['field_turn_off_hover']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_turn_off_hover']['element_label_colon'] = FALSE;
+  /* Field: Content: Pre-title */
+  $handler->display->display_options['fields']['field_pre_title']['id'] = 'field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['table'] = 'field_data_field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['field'] = 'field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['label'] = '';
+  $handler->display->display_options['fields']['field_pre_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_pre_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pre_title']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_pre_title']['empty_zero'] = TRUE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -260,6 +297,16 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Outbound link */
+  $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['field'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['label'] = '';
+  $handler->display->display_options['fields']['field_outbound_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['text'] = ' <a href="[field_outbound_link]" target="_blank" class="">';
+  $handler->display->display_options['fields']['field_outbound_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_outbound_link']['empty'] = ' <a href="[path]">';
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -337,11 +384,12 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node]">
- <a href="[path]" class="[field_level_2_photocredit]">
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="project [field_level_2_intro_node] ">
+[field_outbound_link]
      [field_section_page_image] 
-     <div class="hover">
+     <div class="hover [field_turn_off_hover]">
          <div class="info">
+         <em>[field_pre_title]</em>
          <h3">[title]</h3>
          <p>[field_level_2_teaser]</p>
          <div class="lev2-photocredit">[field_level_2_photocredit]</div>
@@ -357,6 +405,7 @@ function level_2_images_view_views_default_views() {
 
   /* Display: Block 2 */
   $handler = $view->new_display('block', 'Block 2', 'block_2');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -414,6 +463,7 @@ function level_2_images_view_views_default_views() {
 
   /* Display: Attachment */
   $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -489,6 +539,7 @@ function level_2_images_view_views_default_views() {
 
   /* Display: Context */
   $handler = $view->new_display('ctools_context', 'Context', 'ctools_context_1');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'ctools_context';
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -543,6 +594,7 @@ function level_2_images_view_views_default_views() {
 
   /* Display: Context 2 */
   $handler = $view->new_display('ctools_context', 'Context 2', 'ctools_context_2');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'ctools_context';
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';

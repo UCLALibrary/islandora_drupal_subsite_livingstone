@@ -16,15 +16,22 @@ min-height: 100%;
 height: auto !important;
 height: 100%;
 }
-.footer, .push {
+.footer {
 height: 2em;
+}
+.push {
+height: -2em;
+}
+.footimg {
+  display: inline-block;
+ /*   margin: 0 1%;
+  width: 17%; */
 }
 .footerimages {
   text-align: center;
 }
 img.footerlogos {
-  margin: 0 2%;
-  max-width: 200px;
+ margin: 0px 10px
 }
 /* styles.css */
 body {
@@ -89,11 +96,11 @@ body {
 
 /* Links */
 a {
-  color: #f4473a;
+  color: #000;
 
 }
 a:visited {
-  color: #f4473a;
+  color: #000;
 }
 a:hover,
 a:focus,
@@ -906,8 +913,7 @@ ol.search-results { padding-left: 0; }
 }
 /*** homepage  ***/
 .footerlogos {
-  padding: 5px 25px 10px;
-  width:15%;
+  padding: 0;
 }
 
 /*-------------------------------------------*

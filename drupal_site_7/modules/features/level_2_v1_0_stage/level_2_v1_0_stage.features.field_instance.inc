@@ -68,7 +68,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 1,
     ),
   );
 
@@ -276,6 +276,98 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_outbound_link'
+  $field_instances['node-section_page-field_outbound_link'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Include the FULL link path, i.e., instead of google.com, enter http://www.google.com.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_outbound_link',
+    'label' => 'Outbound link',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-section_page-field_pre_title'
+  $field_instances['node-section_page-field_pre_title'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 15,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pre_title',
+    'label' => 'Pre-title',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-field_section_page_byline'
   $field_instances['node-section_page-field_section_page_byline'] = array(
     'bundle' => 'section_page',
@@ -431,6 +523,70 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_section_page_main_image'
+  $field_instances['node-section_page-field_section_page_main_image'] = array(
+    'bundle' => 'section_page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_original',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_section_page_main_image',
+    'label' => 'Section Main Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-field_section_page_sections'
   $field_instances['node-section_page-field_section_page_sections'] = array(
     'bundle' => 'section_page',
@@ -469,7 +625,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -574,18 +730,72 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_turn_off_hover'
+  $field_instances['node-section_page-field_turn_off_hover'] = array(
+    'bundle' => 'section_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 16,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_turn_off_hover',
+    'label' => 'Turn off hover',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_buttons',
+      'weight' => 12,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Byline');
   t('Carousel image');
   t('Date');
+  t('Include the FULL link path, i.e., instead of google.com, enter http://www.google.com.');
   t('Level 2 Image');
   t('Level 2 Intro node');
   t('Level 2 Photo credit');
   t('Level 2 Teaser');
   t('Main Text');
+  t('Outbound link');
   t('Overview');
+  t('Pre-title');
+  t('Section Main Image');
   t('Sections');
+  t('Turn off hover');
   t('social media links');
 
   return $field_instances;

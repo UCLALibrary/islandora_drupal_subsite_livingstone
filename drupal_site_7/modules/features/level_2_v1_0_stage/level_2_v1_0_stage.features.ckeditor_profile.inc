@@ -131,7 +131,7 @@ function level_2_v1_0_stage_ckeditor_profile_defaults() {
     [\'Source\'],
     [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
     [\'Undo\',\'Redo\',\'Find\',\'-\'],
-    [\'Image\',\'Media\',\'Table\',\'HorizontalRule\',\'Styles\',\'Format\'],
+    [\'Image\',\'Media\',\'Table\',\'HorizontalRule\',\'Styles\',\'Format\',\'FontSize\'],
     \'/\',
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\',\'-\',\'RemoveFormat\'],
     [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
@@ -176,7 +176,8 @@ function level_2_v1_0_stage_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.fontSize_sizes = \'12/12px;14/14px;16/16px;\';
+config.height = 450;',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',

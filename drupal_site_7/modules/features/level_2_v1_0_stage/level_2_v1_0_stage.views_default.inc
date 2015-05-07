@@ -74,6 +74,10 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_sections']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_sections']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_section_page_sections']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Outbound link */
+  $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['field'] = 'field_outbound_link';
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
@@ -122,6 +126,67 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Outbound link */
+  $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['field'] = 'field_outbound_link';
+  $handler->display->display_options['fields']['field_outbound_link']['label'] = '';
+  $handler->display->display_options['fields']['field_outbound_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_outbound_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_outbound_link']['empty'] = '[path]';
+  $handler->display->display_options['fields']['field_outbound_link']['type'] = 'text_plain';
+  /* Field: Content: Pre-title */
+  $handler->display->display_options['fields']['field_pre_title']['id'] = 'field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['table'] = 'field_data_field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['field'] = 'field_pre_title';
+  $handler->display->display_options['fields']['field_pre_title']['label'] = '';
+  $handler->display->display_options['fields']['field_pre_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_pre_title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pre_title']['alter']['text'] = '<em>[field_pre_title]</em><br>';
+  $handler->display->display_options['fields']['field_pre_title']['element_type'] = 'em';
+  $handler->display->display_options['fields']['field_pre_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pre_title']['hide_empty'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Level 2 Image */
+  $handler->display->display_options['fields']['field_section_page_image']['id'] = 'field_section_page_image';
+  $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
+  $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
+  $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_section_page_image']['alter']['text'] = '<div class="slidercontent">
+<div class="slidertitle"><a href="[field_outbound_link]">[field_pre_title][title]</a></div><div class="sliderimg"><a href="[field_outbound_link]">[field_section_page_image]</a></div>
+</div>';
+  $handler->display->display_options['fields']['field_section_page_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
+    'image_style' => '65x65_square',
+    'image_link' => '',
+  );
+  /* Field: Content: Sections */
+  $handler->display->display_options['fields']['field_section_page_sections']['id'] = 'field_section_page_sections';
+  $handler->display->display_options['fields']['field_section_page_sections']['table'] = 'field_data_field_section_page_sections';
+  $handler->display->display_options['fields']['field_section_page_sections']['field'] = 'field_section_page_sections';
+  $handler->display->display_options['fields']['field_section_page_sections']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_sections']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_section_page_sections']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_section_page_sections']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Sections (field_section_page_sections) */
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['id'] = 'field_section_page_sections_tid';

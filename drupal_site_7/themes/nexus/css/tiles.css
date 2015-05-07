@@ -14,17 +14,10 @@
 .region.region-header {
   float: right;
 }
-.block.externalmenublock {
-  float: left;
-  padding-top: 6px;
-}
 .front #search-block-form {
     margin-right: 10px;
 }
-#search-block-form {
-  float: right;
-  margin-left: 10px;
-}
+
 .block ul#externalmenu li.leaf {
   display: inline-block;
   list-style-image: none;
@@ -60,9 +53,11 @@ background: url('../images/search-button.png') no-repeat 1px 1px #F0ECEC;
 border: 1px solid #d0d0d0;
 height:25px;
 }
+#search-block-form--2 input[type=text],
 #search-block-form input[type=text] {
 /*color: #bcbcbc;*/
 }
+#search-block-form--2 .rounded,
 #search-block-form .rounded {
 border-radius: 7px;
 -moz-border-radius: 7px;
@@ -110,7 +105,7 @@ background: url('../images/search-button.png') no-repeat 1px 1px;
 }
 
 .topmenu li:nth-child(2){
-   background-color:#ffcc33; 
+   background-color:#F7C983; 
 }
 
 .topmenu li:nth-child(3){
@@ -129,6 +124,18 @@ background: url('../images/search-button.png') no-repeat 1px 1px;
    background-color:#cccc99; 
 }
 
+/* social links */
+.block.footershare .stLarge {
+  background-repeat: no-repeat;
+}
+.block.footershare .st_twitter_large .stLarge {background-image: url("../images/social/twitter_28.png") !important;}
+.block.footershare .st_linkedin_large .stLarge {background-image: url("../images/social/linkedin_28.png") !important;}
+.block.footershare .st_googleplus_large .stLarge {background-image: url("../images/social/googleplus_28.png") !important;}
+.block.footershare .st_pinterest_large .stLarge {background-image: url("../images/social/pinterest_28.png") !important;}
+.block.footershare .st_email_large .stLarge {background-image: url("../images/social/email_28.png") !important;}
+.block.footershare .st_facebook_large .stLarge {background-image: url("../images/social/facebook_28.png") !important;}
+.block.footershare .st_print_large .stLarge {background-image: url("../images/social/print_28.png") !important;}
+.block.footershare .st_pdf_large .stLarge.pdf {background-image: url("../images/social/28x28-pdf.png") !important;}
 
 .tftextinput4 {
 margin-top: 8px;
@@ -182,11 +189,11 @@ height:25px;
 }
 .page-in-his-own-words- .views-row .views-field.views-field-nothing,
 .page-his-own-words .views-row .views-field.views-field-nothing{
-    border: 6px solid #ffcc33; 
+    border: 6px solid #F7C983; 
     overflow: hidden;
 }
 .page-spectral-imaging .views-row .views-field.views-field-nothing {
-    border: 6px solid #99ccff; 
+    border: 6px solid #a48bc2;; 
     overflow: hidden;
 }
 .page-behind-the-scenes- .views-row .views-field.views-field-nothing,
@@ -195,7 +202,7 @@ height:25px;
     overflow: hidden;   
 }
 .page-life-and-times .views-row .views-field.views-field-nothing {
-    border: 6px solid #a48bc2;  
+    border: 6px solid #99ccff;
     overflow: hidden;   
 }
 .page-resources .views-row .views-field.views-field-nothing {
@@ -216,7 +223,9 @@ height:25px;
     padding: 0 20px 0;
     text-transform: none; 
 }
-  
+.project a, .project a:hover {
+  color: #fff;
+}  
 .project .lev2-photocredit {
   color: #fff;
   font-size: 15px;
@@ -232,13 +241,13 @@ height:25px;
 .project.No img { 
     display: block; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; 
     transition: opacity 0.35s, transform 0.35s; 
-    -webkit-transform: scale(1); 
-    transform: scale(1); 
+  /*  -webkit-transform: scale(1); 
+    transform: scale(1);  */
 }
 .project.No:hover img {
     opacity: 0.5; 
-    -webkit-transform: scale(1.3); 
-    transform: scale(1.3); 
+ /*   -webkit-transform: scale(1.3); 
+    transform: scale(1.3); */
 }
 .project h3 { color: #fff; font-size: 24px; }
 .project.No .hover { 
@@ -249,6 +258,22 @@ height:25px;
     top:0; 
     text-align: center; 
     width: 100%; 
+}
+.project.No .hover.Yes { 
+    background-color: rgba(63, 73, 83, 0.70); 
+    height: 100%; left: 0; 
+    opacity: 1; 
+    position: absolute; 
+    top:0; 
+    text-align: center; 
+    width: 100%; 
+}
+.project.No:hover img {
+    opacity: 0.5; 
+}
+.project.No .hover.Yes:hover { 
+     background-color: rgba(63, 73, 83, 0.70); 
+    opacity: 1; 
 }
 .project .hover .info { 
     position: absolute; 
@@ -262,6 +287,9 @@ height:25px;
 }
 .project.No .field.field-name-field-section-page-tag-line .field-item.even {
     padding: 0px;
+}
+a .info > em {
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
 
@@ -279,5 +307,4 @@ height:25px;
         margin: 1%;
         width: 31%;   
     }
-
 }

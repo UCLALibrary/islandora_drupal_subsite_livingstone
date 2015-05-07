@@ -216,6 +216,7 @@ td{
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
   clear: both;
+  margin-bottom: 20px;
 }
 
 h1 { font-size: 32px; }
@@ -227,10 +228,23 @@ h6 { font-size: 14px; }
 
 .node-type-section-page h1.page-title {
   display: none;
+  margin-bottom: 0;
 }
 
 p {
   margin: 0 0 20px;
+}
+p.space-2 {
+  margin: 0px 0 5px !important;
+}
+p.space-1 {
+  margin: 0px 0 10px !important;
+}
+p.space1 {
+  margin: 10px 0 30px !important;
+}
+p.space2 {
+  margin: 20px 0 40px !important;
 }
 
 p img {
@@ -301,12 +315,7 @@ a:focus {
 .site-branding{
   margin-bottom: 20px;  
 }
-#site-logo {
-  float: left;
-  padding: 0px;
-  margin-left: 0px;
-  margin-top: 2px;
-}
+
 h1#site-title{
   text-transform: uppercase;
   font-weight: 800;
@@ -333,9 +342,6 @@ h1#site-title a:link, h1#site-title a:visited{
   font-size: 20px;
   display:none;
 }
-.region-section{
-    float:right;
-}
 .img_menu{
     height:25px;
 }
@@ -359,15 +365,6 @@ h1#site-title a:link, h1#site-title a:visited{
     float:right;
 }
 
-#main-menu {
-  padding: 0px 0px;
-
-border-bottom: none;
-float: right;
-}
-.mainmenu{
-    float:right;
-}
 .first_menu{
     width:900px;
     float:left;
@@ -411,6 +408,9 @@ img.grayscale {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
+.node-type-section-page #page {
+	padding: 0 15px;
+}	
 #page{
     max-width:1260px;
     margin-left: auto;
@@ -440,6 +440,7 @@ img.grayscale {
   border-left: 0px solid #eee;
   box-shadow: 0 0 0px 0 #eee;
 }
+/*
 #breadcrumb:before {
   background: none repeat scroll 0 0 #dacbb5;
   content: "Livingstone Online";
@@ -450,61 +451,81 @@ img.grayscale {
   padding: 3px 10px;
   width: 127px;
 }
-.breadcrumb-0 {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 900;
-  margin-right: 10px;
-  padding: 3px 5px;
-  width: 127px;
-}
-.breadcrumb-0 a{
-  color:#000;
-  text-decoration: none;
-  width: 127px;
-}
-.breadcrumb-1 {
-  background: none repeat scroll 0 0 #eee;
+*/
+.breadcrumb-0,
+.breadcrumb-1,
+.breadcrumb-2 {
   display: inline-block;
   font-size: 14px;
   font-weight: 900;
   margin-right: 0px;
-  padding: 3px 5px;
+  padding: 0px 7px;
+}
+
+.breadcrumb-0 a,
+.breadcrumb-1 a,
+.breadcrumb-2 a {
+  color: #000;
+  text-decoration: none;
+}
+.breadcrumb-0 {
+  background: none repeat scroll 0 0 #dacbb5;	
+  margin-right: 10px;
+}
+.breadcrumb-1 {	
+  margin-right: 10px;
+}
+.breadcrumb-2 {
+  background: none repeat scroll 0 0 #eee;
   min-width: 127px;
 }
+/*
 .breadcrumb-2:before {
   content: " /";
   margin: 0 3px;
 }
+*/
 .yellow_class{
     border-color: #ffcc33;
 }
-.behind-scenes .breadcrumb-0 {
+.behind-scenes .breadcrumb-1 {
   background-color: #cc9999;
 }
-.about-this-site .breadcrumb-0,
-.about-site .breadcrumb-0,
-.livingstone-online .breadcrumb-0 {
+.about-this-site .breadcrumb-1,
+.about-site .breadcrumb-1,
+.livingstone-online .breadcrumb-1 {
   background-color: #99cc99;    
 }
-.life-and-times .breadcrumb-0 {
+.spectral-imaging .breadcrumb-1 {
   background-color: #a48bc2;
 }
-.spectral-imaging .breadcrumb-0 {
+.life-and-times .breadcrumb-1 {
   background-color: #99ccff;
 }
-.his-own-words .breadcrumb-0 {
-  background-color: #ffcc33;
+.his-own-words .breadcrumb-1 {
+  background-color: #F7C983;
 }
-.resources .breadcrumb-0 {
+.resources .breadcrumb-1 {
   background-color: #cccc99;
 }
+.node-type-section-page .flex-direction-nav.basic {
+	display: none;
+}
+body.not-front .flex-direction-nav {
+  max-width: 1260px;
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  z-index: 50;
+}
+
 .nodequeuepager,
 .prevnextnode_mid {
   max-width: 1260px;
   position: fixed;
   top: 50%;
   width: 100%;
+  z-index: 50;
 }
 .nodequeuepager .item-list ul {
   margin: 0;
@@ -600,6 +621,8 @@ img.grayscale {
 }
 .node-type-section-page .panel-pane.pane-node-content .content {
   margin: 1% 20%;
+  position: relative;
+  z-index: 60;
 }
 .node-type-section-page  p.insetimage {
   margin: 2% 5% !important;
@@ -634,6 +657,10 @@ img.grayscale {
 .node-type-section-page .pane-node-content .field-item ul {
   margin: 1.5% 0 1.5% 3.5%;
 }
+.node-type-section-page .pane-node-content .field-item ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .node-type-section-page  .field.field-name-field-section-page-byline {
   font-size: 19.5px;
   text-align: center;
@@ -648,7 +675,7 @@ img.grayscale {
   font-size: 15px;
   font-style: italic;
   line-height: 1.5;
-  margin: 40px 0 30px 0;
+  margin: 20px 0 30px 0;
 }
   
 .node-type-section-page .field.field-name-field-section-page-tag-line .field-item:before {
@@ -669,6 +696,7 @@ img.grayscale {
   text-align: center;
   text-transform: uppercase;
   margin: 0 20%;
+  margin-bottom: 0;  
 }
 .node-type-section-page .field.field-name-body {
   margin-bottom: 50px;
@@ -850,32 +878,33 @@ span.footpdf {
   position: absolute;
   top: 13px;
 }
-
-.life-and-times.view-image-banner-scroll .jcarousel-skin-tango {
+.about-site.view-image-banner-scroll .jcarousel-skin-tango,
+.livingstone-online.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #99cc99;
+  text-align: center;
+}
+.his-own-words.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #F7C983;
+  text-align: center;
+}
+.spectral-imaging.view-image-banner-scroll .jcarousel-skin-tango {
   background: #a48bc2;
+  text-align: center;
+}
+.life-and-times.view-image-banner-scroll .jcarousel-skin-tango {
+  background: #99ccff;
   text-align: center;
 }
 .behind-scenes.view-image-banner-scroll .jcarousel-skin-tango {
   background: #cc9999;
   text-align: center;
 }
-.his-own-words.view-image-banner-scroll .jcarousel-skin-tango {
-  background: #ffcc33;
-  text-align: center;
-}
 .resources.view-image-banner-scroll .jcarousel-skin-tango {
   background: #cccc99;
   text-align: center;
 }
-.spectral-imaging.view-image-banner-scroll .jcarousel-skin-tango {
-  background: #99ccff;
-  text-align: center;
-}
-.about-site.view-image-banner-scroll .jcarousel-skin-tango,
-.livingstone-online.view-image-banner-scroll .jcarousel-skin-tango {
-  background: #99cc99;
-  text-align: center;
-}
+
+
 
 
 .view-image-banner-scroll .jcarousel-skin-tango .jcarousel-container-horizontal {
@@ -949,7 +978,9 @@ span.footpdf {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   cursor:pointer;
   margin-left:0px;
-  margin-right:10px;
+}
+.header_title_region p {
+  margin-bottom: 10px;
 }
 .left_column_width{
     width:30%;
@@ -1010,10 +1041,12 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   letter-spacing: -1px;
   line-height: 120%;
   text-transform: uppercase;
+  margin-bottom: 0;  
 }
 
 .flex-caption h2 a:link, .flex-caption h2 a:visited{
   color: #fff;
+  margin-bottom: 0;  
 }
 
 .flex-caption p{
@@ -1024,9 +1057,11 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 .block .header_title_region h2{
     margin-top: 10px;
+    margin-bottom: 0;
 }
 .header_title_region h2{
     margin-top: 20px;
+    margin-bottom: 0;    
 }
 .header_title_region h2{
   text-transform: uppercase;
@@ -1035,6 +1070,7 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   color: #000;
   letter-spacing:0px;
   line-height:120%;
+    margin-bottom: 0;  
 }
 
 .header_title_region h2 a:link, .header_title_region h2 a:visited{
@@ -1211,7 +1247,7 @@ img.fixedheaderlogo {
   margin: 0;
   position: relative;
   text-align: center;
-  top: -15px;
+  top: -20px;
   width: 58%;
 }
 .fixedbar_right {
@@ -1219,14 +1255,14 @@ img.fixedheaderlogo {
   margin: 0;
   position: relative;
   text-align: right;
-  top: -15px;
+  top: -20px;
   width: 20%;
 }
 #fixedbar {
   background: none repeat scroll 0 0 white;
   border-bottom: 2px solid #eee;
   display: none;
-  height: 80px;
+  height: 70px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -1881,31 +1917,5 @@ height:25px;
 }
 
 
-@media screen and (max-width: 768px) {
-  html{
-    font-size: 60%;
-  }
 
-  h1#site-title{
-    text-align: center;
-  }
-
-  #site-logo {
-    padding-top: 0;
-  }
-  
-  select.mnav{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #main-menu{
-    display:none;
-  }
-    
-  .flex-caption{
-    display: none;
-  }
-
-}
 

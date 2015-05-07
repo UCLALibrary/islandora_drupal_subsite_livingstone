@@ -4,6 +4,9 @@ body.cke_editable {
   background-color: #ffffff;
   font: 14px/1.6 "Oxygen",sans-serif;
 }
+body.page-node-edit .cke_source {
+  white-space: pre-wrap !important; 
+}
 .rteindent1 {
     margin-left: 40px;
 }
@@ -51,3 +54,4 @@ border-left: 4px solid #ccc;
 .floatright {float:right;}
 .floatleft {float:left;}
 .normalstyle { font-style: normal;}
+

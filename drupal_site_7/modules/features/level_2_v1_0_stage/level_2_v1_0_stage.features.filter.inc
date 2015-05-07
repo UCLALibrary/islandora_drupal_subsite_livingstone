@@ -16,7 +16,7 @@ function level_2_v1_0_stage_filter_default_formats() {
     'name' => 'Filtered HTML',
     'cache' => 0,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -9,
     'filters' => array(
       'filter_url' => array(
         'weight' => 0,
@@ -63,7 +63,7 @@ function level_2_v1_0_stage_filter_default_formats() {
     'name' => 'Full HTML',
     'cache' => 0,
     'status' => 1,
-    'weight' => 1,
+    'weight' => -10,
     'filters' => array(
       'filter_url' => array(
         'weight' => -48,
@@ -101,7 +101,7 @@ function level_2_v1_0_stage_filter_default_formats() {
     'name' => 'Full HTML, no para or linebreaks',
     'cache' => 0,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -8,
     'filters' => array(
       'filter_url' => array(
         'weight' => 0,
@@ -129,7 +129,7 @@ function level_2_v1_0_stage_filter_default_formats() {
     'name' => 'PHP code',
     'cache' => 0,
     'status' => 1,
-    'weight' => 11,
+    'weight' => -6,
     'filters' => array(
       'node_embed' => array(
         'weight' => 0,
@@ -150,7 +150,7 @@ function level_2_v1_0_stage_filter_default_formats() {
     'name' => 'Plain text',
     'cache' => 0,
     'status' => 1,
-    'weight' => 10,
+    'weight' => -7,
     'filters' => array(
       'filter_html_escape' => array(
         'weight' => 0,

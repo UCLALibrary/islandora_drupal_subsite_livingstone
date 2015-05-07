@@ -84,6 +84,7 @@ li.frmore{
   float: none;
   list-style: outside none none;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 .fixedleft_1, .fixedleft_2 {
 	float: left;

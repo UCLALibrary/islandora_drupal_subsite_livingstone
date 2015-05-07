@@ -64,7 +64,9 @@
  * @see template_process()
  */
 ?>
-<?php if($node->type =='section_page'): ?>
+<?php 
+global $node;
+if($node->type =='section_page'): ?>
 
   <div id="fixedbar">
     <div class="fixedbar_left">
@@ -106,7 +108,12 @@
     </div>
   </header>
 
-  
+<!--
+    <ul class="flex-direction-nav basic">
+    <li><a title="resources" class="flex-prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li>
+    <li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'about-this-site' ?>">Level 2</a></li>
+    </ul>   
+-->
     <!--<div class="flex-direction-nav"><a class="flex-prev" href="<?php print base_path() ?>">Previous</a><a class="flex-next" href="<?php print base_path() ?>">Next</a></div>-->
     <div class="content_main">
                <?php if ($page['sidebar_first']): ?>
