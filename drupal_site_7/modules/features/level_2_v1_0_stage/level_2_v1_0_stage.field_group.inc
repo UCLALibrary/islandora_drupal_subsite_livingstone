@@ -29,12 +29,13 @@ function level_2_v1_0_stage_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Level 2 Outbound fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-level2outbound field-group-fieldset',
         'required_fields' => 1,
+        'classes' => 'group-level2outbound field-group-fieldset',
+        'description' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_level2outbound|node|section_page|form'] = $field_group;
@@ -67,7 +68,7 @@ function level_2_v1_0_stage_field_group_info() {
         'classes' => 'group-level2 field-group-fieldset',
         'description' => '',
       ),
-      'formatter' => 'collapsed',
+      'formatter' => 'open',
     ),
   );
   $export['group_level2|node|section_page|form'] = $field_group;
@@ -99,7 +100,7 @@ function level_2_v1_0_stage_field_group_info() {
         'classes' => 'group-level3 field-group-fieldset',
         'description' => '',
       ),
-      'formatter' => 'collapsed',
+      'formatter' => 'open',
     ),
   );
   $export['group_level3|node|section_page|form'] = $field_group;
