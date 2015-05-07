@@ -64,7 +64,9 @@
  * @see template_process()
  */
 ?>
-<?php if($node->type =='section_page'): ?>
+<?php 
+global $node;
+if($node->type =='section_page'): ?>
 
   <div id="fixedbar">
     <div class="fixedbar_left">

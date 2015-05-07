@@ -42,6 +42,10 @@ function nexus_preprocess_page(&$vars) {
   $search_box = drupal_render(drupal_get_form('search_block_form'));
   $vars['search_box'] = $search_box;
 
+  if ($node = menu_get_object()) {
+    $variables['node'] = $node;
+  }
+
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
