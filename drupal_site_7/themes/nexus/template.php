@@ -252,17 +252,56 @@ function nexus_item_list($variables) {
   // Only output the list container and title, if there are any list items.
   // Check to see whether the block title exists before adding a header.
   // Empty headers are not semantic and present accessibility challenges.
-  $output = '<div class="item-list">';
-  if (isset($title) && $title !== '') {
-    $output .= '<h3>' . $title . '</h3>';
+   $checkSortClass = $attributes['class'];
+    if($checkSortClass == 'islandora-solr-sort'){
+         $output = '<div class="islandora-solr-sort">';
+         $output .= '<table>';
+        $output .= '<th> <a href="#">Access</a></th>';
+          if (!empty($items)) {
+   
+    $num_items = count($items);
+    $i = 0;
+    foreach ($items as $item) {
+      $attributes = array();
+      $children = array();
+      $data = '';
+      $i++;
+      if (is_array($item)) {
+        foreach ($item as $key => $value) {
+          if ($key == 'data') {
+            $data = $value;
+          }
+          elseif ($key == 'children') {
+            $children = $value;
+          }
+          else {
+            $attributes [$key] = $value;
+          }
+        }
+      }
+      else {
+        $data = $item;
+      }
+      if (count($children) > 0) {
+        // Render nested list.
+        $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
+      }
+     
+      $output .= '<th>' . $data . '</th>';
+    }
+   
   }
+        $output .= '</table>';
+         $output .= '</div>';
+    }else{
+        $output = '<div class="item-list">';
+        if (isset($title) && $title !== '') {
+            $output .= '<h3>' . $title . '</h3>';
+        }
 
   if (!empty($items)) {
     $output .= "<$type" . drupal_attributes($attributes) . '>';
-    $checkSortClass = $attributes['class'];
-    if($checkSortClass == 'islandora-solr-sort'){
-        $output .= '<li class="access"> Access' . "</li>\n";
-    }
+    $checkSortClass = $attributes['class'];  
     $num_items = count($items);
     $i = 0;
     foreach ($items as $item) {
@@ -301,5 +340,7 @@ function nexus_item_list($variables) {
     $output .= "</$type>";
   }
   $output .= '</div>';
+    }
+  
   return $output;
 }
