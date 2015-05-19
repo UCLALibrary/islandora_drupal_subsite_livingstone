@@ -24,6 +24,12 @@
   list-style-type: none;
   padding: 0.2em 0.5em 0 !important;
 }
+.slideout-menu.open .block ul#externalmenu li.leaf {
+  display: block;
+  list-style-image: none;
+  list-style-type: none;
+  padding: 0.2em 0.5em 0 !important;
+}
 
 /* Menu */
 
