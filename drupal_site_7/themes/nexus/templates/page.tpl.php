@@ -65,7 +65,6 @@
  */
 ?>
 <?php 
-global $node;
 if($node->type =='section_page'): ?>
 
   <div id="fixedbar">
