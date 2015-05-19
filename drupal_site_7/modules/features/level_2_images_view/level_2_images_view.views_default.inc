@@ -358,7 +358,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
-    'image_style' => '375x350',
+    'image_style' => '4-3_390-293',
     'image_link' => '',
   );
   /* Field: Content: Level 2 Teaser */

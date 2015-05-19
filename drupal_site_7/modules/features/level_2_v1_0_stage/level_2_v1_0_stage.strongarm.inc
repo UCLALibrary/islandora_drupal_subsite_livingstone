@@ -96,7 +96,7 @@ function level_2_v1_0_stage_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
       ),
       'display' => array(
