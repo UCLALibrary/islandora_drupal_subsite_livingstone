@@ -10,6 +10,90 @@
 function level_2_v1_0_stage_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-file_uploads-field_private_files'
+  $field_instances['node-file_uploads-field_private_files'] = array(
+    'bundle' => 'file_uploads',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_private_files',
+    'label' => 'Private Files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'privatefiles',
+      'file_extensions' => 'txt pdf doc xls docx xlsx groovy rb zip xml pptx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'multiupload_filefield_widget',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_mfw',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-file_uploads-field_public_files'
+  $field_instances['node-file_uploads-field_public_files'] = array(
+    'bundle' => 'file_uploads',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_files',
+    'label' => 'Public Files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'publicfiles',
+      'file_extensions' => 'txt pdf doc xls docx xlsx groovy rb zip xml pptx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'multiupload_filefield_widget',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_mfw',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-body'
   $field_instances['node-section_page-body'] = array(
     'bundle' => 'section_page',
@@ -736,6 +820,8 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Outbound link');
   t('Overview');
   t('Pre-title');
+  t('Private Files');
+  t('Public Files');
   t('Sections');
   t('Turn off hover');
   t('social media links');
