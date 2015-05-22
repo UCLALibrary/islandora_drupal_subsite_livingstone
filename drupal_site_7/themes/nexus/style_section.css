@@ -49,7 +49,7 @@ body {
   nowhitespace: afterproperty;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  font: 17px/1.6 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font: 16px/1.6 'Source Sans Pro', sans-serif;
   background-color: #ffffff;     
 }
 
@@ -222,7 +222,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 { font-size: 32px; }
 h2 { font-size: 26px; }
 h3 { font-size: 20px; }
-h4 { font-size: 18px; }
+h4 { font-size: 19px; font-family: 'Crimson Text', serif;}
 h5 { font-size: 16px; }
 h6 { font-size: 14px; }
 
@@ -672,29 +672,27 @@ body.not-front .flex-direction-nav {
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-tag-line p {
+  font-family: 'Crimson Text', serif;
   font-size: 15px;
-  font-style: italic;
   line-height: 1.5;
   margin: 20px 0 30px 0;
 }
   
 .node-type-section-page .field.field-name-field-section-page-tag-line .field-item:before {
   content: "Overview:  ";
+  font-family: 'Crimson Text', serif;
   float: left;
-  font-style: italic; 
   font-size: 15px; 
-  font-weight: bold;
   line-height: 1.5;
   margin-right: 10px;
 }
 .node-type-section-page .pane-node-content h2.pane-title {
   border-bottom: 1px solid #ddd;
   color: #000;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;  
-  font-weight: bold;
+  font-family: 'Crimson Text', serif;
+  font-size: 36.5px;
   font-size: 37px;
   text-align: center;
-  text-transform: uppercase;
   margin: 0 20%;
   margin-bottom: 0;  
 }
@@ -1065,8 +1063,9 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 .header_title_region h2{
   text-transform: uppercase;
-  font-size: 41.5px;
-  font-weight: 900;
+  font-family: 'Patua One', serif;
+  font-size: 37px;
+  font-weight: 400;
   color: #000;
   letter-spacing:0px;
   line-height:120%;
@@ -1078,8 +1077,10 @@ font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .header_title_region p{
+  font-family:  'Crimson Text', serif;
+  font-size: 23px;  
   font-size: 19px;
-   font-weight: 900;
+   font-weight: 00;
    letter-spacing:0px;
    line-height:120%;
 }
