@@ -962,7 +962,6 @@ span.footpdf {
 .flex-caption{
   color: #000;
   font-weight: 900;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   cursor:pointer;
   margin-top:0px;
  } 
@@ -973,7 +972,6 @@ span.footpdf {
   text-align: center;
   color: #000;
   font-weight: 900;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   cursor:pointer;
   margin-left:0px;
 }
@@ -1004,10 +1002,6 @@ span.footpdf {
 .section_block{
     margin:13%;
     text-align: center;
-  color: #000;
- 
-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-
 }
 .section_block h2{
    
@@ -1448,7 +1442,7 @@ left:-5px;
 padding:0;
 width: 30px;
 height: 25px;
-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 14px;
 font-weight: bold;
 outline: none;
@@ -1845,7 +1839,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 #forum .submitted {
   font-size: 12px;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background: transparent;
   padding: 0;
 }
@@ -1895,7 +1889,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 .tftextinput4 {
 margin-top: 8px;
 padding: 0;
-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 14px;
 color: #666;
 border: 1px solid #0076a3;
