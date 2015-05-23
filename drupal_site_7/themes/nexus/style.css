@@ -423,10 +423,10 @@ line-height: 120%;
 
 .flex-caption p {
   font-family:  'Crimson Text', serif;
-  font-size: 26.5px;
+  font-size: 28.5px;
   font-weight: 500;
   letter-spacing: 1px;
-  line-height: 100%;
+  line-height: 80%;
 }
 
 .region.region-footer-first {
@@ -439,6 +439,7 @@ line-height: 120%;
   color: #fff !important;
   display: block !important;
   text-align: left;
+  font-size: 18px;
 }
 
 #preface-area {
