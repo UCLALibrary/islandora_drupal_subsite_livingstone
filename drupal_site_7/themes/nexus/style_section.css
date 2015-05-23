@@ -662,11 +662,11 @@ body.not-front .flex-direction-nav {
   margin-top: 0;
 }
 .node-type-section-page  .field.field-name-field-section-page-byline {
-  font-size: 19.5px;
+  font-size: 14px;
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-date {
-  font-size: 17.5px;
+  font-size: 13px;
   margin-bottom: 10px;
   margin-top: 20px;
   text-align: center;
@@ -674,6 +674,7 @@ body.not-front .flex-direction-nav {
 .node-type-section-page  .field.field-name-field-section-page-tag-line p {
   font-family: 'Crimson Text', serif;
   font-size: 15px;
+  font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 30px 0;
 }
@@ -683,6 +684,7 @@ body.not-front .flex-direction-nav {
   font-family: 'Crimson Text', serif;
   float: left;
   font-size: 15px; 
+  font-weight: bold;
   line-height: 1.5;
   margin-right: 10px;
 }
@@ -691,7 +693,7 @@ body.not-front .flex-direction-nav {
   color: #000;
   font-family: 'Crimson Text', serif;
   font-size: 36.5px;
-  font-size: 37px;
+  font-size: 36.5px;
   text-align: center;
   margin: 0 20%;
   margin-bottom: 0;  
@@ -813,7 +815,7 @@ span.footpdf {
 .slidertitle a {
   color: #000;
   display: table-cell;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1em;
   vertical-align: middle;
 }
@@ -1048,7 +1050,7 @@ span.footpdf {
   line-height: 120%;
 }
 .block .header_title_region h2{
-    margin-top: 10px;
+    margin-top: 17px;
     margin-bottom: 0;
 }
 .header_title_region h2{
@@ -1071,11 +1073,10 @@ span.footpdf {
 
 .header_title_region p{
   font-family:  'Crimson Text', serif;
-  font-size: 23px;  
-  font-size: 19px;
-   font-weight: 600;
+  font-size: 22.5px;  
+   font-weight: 400;
    letter-spacing:0px;
-   line-height:120%;
+   line-height:100%;
 }
 
 #my-menu .region.region-section {
@@ -1910,6 +1911,9 @@ height:25px;
     float:left;
 }
 
-
+.footermessage {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14.5px; 
+}
 
 
