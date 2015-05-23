@@ -1053,7 +1053,7 @@ span.footpdf {
   line-height: 120%;
 }
 .block .header_title_region h2{
-    margin-top: 17px;
+    margin-top: 12px;
     margin-bottom: 0;
 }
 .header_title_region h2{
@@ -1914,8 +1914,7 @@ height:25px;
     float:left;
 }
 
-.footermessage {
-    font-family: 'Source Sans Pro', sans-serif;
+.footermessage p {
     font-size: 14.5px; 
 }
 
