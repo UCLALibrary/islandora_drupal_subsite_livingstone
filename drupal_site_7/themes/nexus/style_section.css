@@ -697,9 +697,9 @@ body.not-front .flex-direction-nav {
   font-family: 'Crimson Text', serif;
   font-size: 36.5px;
   font-weight: 600;
-  line-height: 97%;
+  line-height: 105%;
   text-align: center;
-  margin: 10px 20%;
+  margin: 20px 20%;
   margin-bottom: 0;  
 }
 .node-type-section-page .field.field-name-body {
