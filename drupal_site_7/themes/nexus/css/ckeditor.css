@@ -2,7 +2,7 @@
 
 body.cke_editable {
   background-color: #ffffff;
-  font: 14px/1.6 "Oxygen",sans-serif;
+  font: 16px/1.6 'Source Sans Pro', sans-serif;
 }
 body.page-node-edit .cke_source {
   white-space: pre-wrap !important; 

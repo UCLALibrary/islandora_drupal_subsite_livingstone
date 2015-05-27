@@ -1740,13 +1740,15 @@ ul.inline, ul.links.inline {
   list-style-type: none;
 }
 .node-type-section-page .field.field-name-body ol li::before {
-  counter-increment: section;            /* Increments only this instance of the section counter */
-  content: counters(section,".") ". ";    /* Adds the value of all instances  of the section counter separated by a ".". */
-                                         /* if you need to support < IE8 then make sure there is no space after  the ',' 
+  counter-increment: section;               /* Increments only this instance of the section counter */
+  content: counters(section,".") ". ";  }   /* Adds the value of all instances  of the section counter separated by a ".". */
+                                            /* if you need to support < IE8 then make sure there is no space after  the ',' 
 
 /*-------------------------------------------*
 /* Tabs and Tags
 /*-------------------------------------------*/
+
+
 .field-name-field-tags {
   margin: 0 0 10px 0;
 }
