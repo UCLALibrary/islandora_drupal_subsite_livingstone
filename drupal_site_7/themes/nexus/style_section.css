@@ -656,6 +656,8 @@ body.not-front .flex-direction-nav {
 }
 .node-type-section-page .field-name-field-section-page-tag-line {
   border-top: 1px solid #ddd;
+  font-family: "Crimson Text",serif;
+  font-weight: bold;
   
 }
 .node-type-section-page .pane-node-content .field-item ul {
@@ -676,21 +678,17 @@ body.not-front .flex-direction-nav {
   text-align: center;
 }
 .node-type-section-page  .field.field-name-field-section-page-tag-line p {
-  font-family: 'Crimson Text', serif;
   font-size: 15px;
-  font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 30px 0;
 }
   
 .node-type-section-page .field.field-name-field-section-page-tag-line .field-item:before {
-  content: "Overview:  ";
-  font-family: 'Crimson Text', serif;
+  content: "Overview: ";
   float: left;
   font-size: 15px; 
-  font-weight: bold;
   line-height: 1.5;
-  margin-right: 10px;
+  margin-right: 4px;
 }
 .node-type-section-page .pane-node-content h2.pane-title {
   color: #000;
