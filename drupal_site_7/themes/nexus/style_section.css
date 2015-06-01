@@ -521,7 +521,10 @@ body.not-front .flex-direction-nav {
   width: 100%;.header_title_region h2
   z-index: 50;
 }
-
+.node-type-page .nodequeuepager,
+.node-type-page .prevnextnode_mid {
+  margin-left: 15px;
+}
 .nodequeuepager,
 .prevnextnode_mid {
   max-width: 1260px;
