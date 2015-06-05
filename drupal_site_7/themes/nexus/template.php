@@ -78,6 +78,12 @@ function nexus_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
+  
+   $templates = $vars['template_files'];
+    if (in_array('page--islandora--search', $templates)) {
+        drupal_add_js(path_to_theme() . '/js/orderFacets.js');
+        $vars['scripts'] = drupal_get_js();
+    }
 }
 
 /**
