@@ -24,7 +24,7 @@
     <?php foreach($rows as $key => $row):?>
       <tr>
       <?php foreach($row as $key => $value):?>
-        <td>
+        <td class="<?php print $key; ?>">
           <?php print $value; ?>
         </td>
       <?php endforeach; ?>

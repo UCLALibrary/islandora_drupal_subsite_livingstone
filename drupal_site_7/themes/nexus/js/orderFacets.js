@@ -37,8 +37,16 @@ $lisGenre = $("ul.mods_genre_s li");
   
   
   
-  mods_genre_s
+ 
 
 });
 
+$('#fullRecordForm :checkbox').change(function () {
+    if ($(this).is(':checked')) {
+        console.log($(this).val() + ' is now checked');
+        
+    } else {
+        console.log($(this).val() + ' is now unchecked');
+    }
+});
 
