@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Repository content type & view feature.
+ */
+
+include_once 'repository_content_type_view.features.inc';

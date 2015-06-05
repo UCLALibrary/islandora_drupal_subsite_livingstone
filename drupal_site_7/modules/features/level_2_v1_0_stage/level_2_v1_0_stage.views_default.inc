@@ -169,6 +169,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_image']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_image']['alter']['text'] = '<div class="slidercontent">
 <div class="slidertitle"><a href="[field_outbound_link]">[field_pre_title][title]</a></div><div class="sliderimg"><a href="[field_outbound_link]">[field_section_page_image]</a></div>
@@ -178,6 +179,22 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
     'image_style' => '65x65_square',
     'image_link' => '',
+  );
+  /* Field: Content: Carousel image */
+  $handler->display->display_options['fields']['field_carousel_image']['id'] = 'field_carousel_image';
+  $handler->display->display_options['fields']['field_carousel_image']['table'] = 'field_data_field_carousel_image';
+  $handler->display->display_options['fields']['field_carousel_image']['field'] = 'field_carousel_image';
+  $handler->display->display_options['fields']['field_carousel_image']['label'] = '';
+  $handler->display->display_options['fields']['field_carousel_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_carousel_image']['alter']['text'] = '<div class="slidercontent">
+<div class="slidertitle"><a href="[field_outbound_link]">[field_pre_title][title]</a></div><div class="sliderimg"><a href="[field_outbound_link]">[field_carousel_image]</a></div>
+</div>';
+  $handler->display->display_options['fields']['field_carousel_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_carousel_image']['empty'] = '[field_section_page_image]';
+  $handler->display->display_options['fields']['field_carousel_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_carousel_image']['settings'] = array(
+    'image_style' => '65x65_square',
+    'image_link' => 'content',
   );
   /* Field: Content: Sections */
   $handler->display->display_options['fields']['field_section_page_sections']['id'] = 'field_section_page_sections';
@@ -243,6 +260,179 @@ function level_2_v1_0_stage_views_default_views() {
     ),
   );
   $export['image_banner_scroll'] = $view;
+
+  $view = new view();
+  $view->name = 'private_files';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Private Files';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Private Files';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    5 => '5',
+    4 => '4',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_private_files' => 'field_private_files',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_private_files' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Private Files */
+  $handler->display->display_options['fields']['field_private_files']['id'] = 'field_private_files';
+  $handler->display->display_options['fields']['field_private_files']['table'] = 'field_data_field_private_files';
+  $handler->display->display_options['fields']['field_private_files']['field'] = 'field_private_files';
+  $handler->display->display_options['fields']['field_private_files']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_private_files']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_private_files']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_private_files']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_private_files']['settings'] = array(
+    'file_view_mode' => 'media_link',
+  );
+  $handler->display->display_options['fields']['field_private_files']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_private_files']['delta_offset'] = '0';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'file_uploads' => 'file_uploads',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'private-files';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['private_files'] = $view;
+
+  $view = new view();
+  $view->name = 'public_files';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Public Files';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Public Files';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    5 => '5',
+    4 => '4',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_public_files' => 'field_public_files',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_public_files' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Content: Public Files */
+  $handler->display->display_options['fields']['field_public_files']['id'] = 'field_public_files';
+  $handler->display->display_options['fields']['field_public_files']['table'] = 'field_data_field_public_files';
+  $handler->display->display_options['fields']['field_public_files']['field'] = 'field_public_files';
+  $handler->display->display_options['fields']['field_public_files']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_public_files']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_public_files']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_public_files']['settings'] = array(
+    'file_view_mode' => 'media_link',
+  );
+  $handler->display->display_options['fields']['field_public_files']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_public_files']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_public_files']['multi_type'] = 'ul';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'file_uploads' => 'file_uploads',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'public-files';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['public_files'] = $view;
 
   return $export;
 }

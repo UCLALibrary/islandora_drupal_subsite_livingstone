@@ -88,7 +88,7 @@ body {
   nowhitespace: afterproperty;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  font: 19px/1.6 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font: 16px/1.6 'Source Sans Pro', sans-serif;
   background-color: #000000;
  
       
@@ -396,7 +396,6 @@ img.grayscale {
   z-index: 120;
   color: #000;
   font-weight: 900;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
 } 
 .flex-external{
@@ -411,11 +410,11 @@ img.grayscale {
   
 .flex-caption h2 {
 text-transform: uppercase;
-font-size: 50px;
-font-weight: 900;
+font-family: 'Patua One', serif;
+font-size: 48px;
 color: #000;
 letter-spacing: 0px;
-line-height: 100%;
+line-height: 120%;
 }
 
 .flex-caption h2 a:link, .flex-caption h2 a:visited{
@@ -423,10 +422,11 @@ line-height: 100%;
 }
 
 .flex-caption p {
-font-size: 21px;
-font-weight: 900;
-letter-spacing: 1px;
-line-height: 100%;
+  font-family:  'Crimson Text', serif;
+  font-size: 28.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 80%;
 }
 
 .region.region-footer-first {
@@ -439,6 +439,7 @@ line-height: 100%;
   color: #fff !important;
   display: block !important;
   text-align: left;
+  font-size: 18px;
 }
 
 #preface-area {
@@ -787,7 +788,7 @@ left:-5px;
 padding:0;
 width: 30px;
 height: 25px;
-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 14px;
 font-weight: bold;
 outline: none;
@@ -1162,7 +1163,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 #forum .submitted {
   font-size: 12px;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background: transparent;
   padding: 0;
 }
@@ -1211,7 +1212,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 .tftextinput4 {
 margin-top: 8px;
 padding: 0;
-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 14px;
 color: #666;
 border: 1px solid #0076a3;

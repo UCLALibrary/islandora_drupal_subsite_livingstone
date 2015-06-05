@@ -131,7 +131,7 @@ function level_2_v1_0_stage_ckeditor_profile_defaults() {
     [\'Source\'],
     [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
     [\'Undo\',\'Redo\',\'Find\',\'-\'],
-    [\'Image\',\'Media\',\'Table\',\'HorizontalRule\',\'Styles\',\'Format\',\'FontSize\'],
+    [\'Image\',\'Media\',\'Table\',\'HorizontalRule\',\'Styles\',\'Format\',\'FontSize\',\'Font\'],
     \'/\',
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\',\'-\',\'RemoveFormat\'],
     [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
@@ -177,7 +177,12 @@ function level_2_v1_0_stage_ckeditor_profile_defaults() {
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
         'js_conf' => 'config.fontSize_sizes = \'12/12px;14/14px;16/16px;\';
-config.height = 450;',
+config.height = 450;
+config.font_names = \'Source Sans Pro;Patua One;Crimson Text\';
+config.contentsCss = [
+    CKEDITOR.getUrl(\'contents.css\'),
+    \'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Crimson+Text:400,600,700,400italic,600italic|Patua+One\'
+];',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',

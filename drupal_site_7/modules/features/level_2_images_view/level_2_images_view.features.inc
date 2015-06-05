@@ -42,6 +42,22 @@ function level_2_images_view_image_default_styles() {
     ),
   );
 
+  // Exported image style: 4-3_390-293.
+  $styles['4-3_390-293'] = array(
+    'label' => '4-3_390-293',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 390,
+          'height' => 293,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: 400x300.
   $styles['400x300'] = array(
     'label' => '400x300',

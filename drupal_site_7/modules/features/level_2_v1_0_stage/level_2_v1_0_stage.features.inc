@@ -74,6 +74,14 @@ function level_2_v1_0_stage_image_default_styles() {
  */
 function level_2_v1_0_stage_node_info() {
   $items = array(
+    'file_uploads' => array(
+      'name' => t('File uploads'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'section_page' => array(
       'name' => t('Section Page'),
       'base' => 'node_content',
