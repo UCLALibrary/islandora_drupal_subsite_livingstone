@@ -36,17 +36,40 @@ $lisGenre = $("li.mods_genre_s");
     $("li.mods_genre_s").parent("ul").html(genreOrderedLis);         
   
   
-  
+    $("th.Place\ Created").hide();
+        $("th.Addressee").hide();
+        $("th.Extent\ \(Pages)").hide();
+        $("th.Genre").hide();
+        $("th.Copy\ of\ Item ").hide();
+        $("th.Other\ Versions").hide();
+        $("th.Extent\ \(Size\)").hide();
+        $("th.C\&C\ Catalogue\ Number").hide();
  
 
 });
 
-$('#fullRecordForm :checkbox').change(function () {
+jQuery('#fullRecordForm :checkbox').change(function () {
     if ($(this).is(':checked')) {
         console.log($(this).val() + ' is now checked');
+        $("th.Place\ Created").show();
+        $("th.Addressee").show();
+        $("th.Extent\ \(Pages)").show();
+        $("th.Genre").show();
+        $("th.Copy\ of\ Item ").show();
+        $("th.Other\ Versions").show();
+        $("th.Extent\ \(Size\)").show();
+        $("th.C\&C\ Catalogue\ Number").show();
         
     } else {
         console.log($(this).val() + ' is now unchecked');
+         $("th.Place\ Created").hide();
+        $("th.Addressee").hide();
+        $("th.Extent\ \(Pages)").hide();
+        $("th.Genre").hide();
+        $("th.Copy\ of\ Item ").hide();
+        $("th.Other\ Versions").hide();
+        $("th.Extent\ \(Size\)").hide();
+        $("th.C\&C\ Catalogue\ Number").hide();
     }
 });
 

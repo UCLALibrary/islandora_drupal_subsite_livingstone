@@ -293,8 +293,8 @@ function nexus_item_list($variables) {
         // Render nested list.
         $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
       }
-     $attributesLinkArray = explode(" ", $data); 
-     $attributeTitleArray = explode("=", $attributesLinkArray[1]);
+     
+     $attributeTitleArray = explode("=", $attributesLinkArray[2]);
       $output .= '<th class='.$attributeTitleArray[1].' >' . $data . '</th>';
     }
    
