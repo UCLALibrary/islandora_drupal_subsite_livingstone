@@ -81,7 +81,7 @@ function nexus_preprocess_page(&$vars) {
   
    $templates = $variables['theme_hook_suggestions'];
     if (in_array('page__islandora__search', $templates)) {
-        drupal_add_js(drupal_get_path('them', 'nexus') . '/js/orderFacets.js');
+        drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
         $vars['scripts'] = drupal_get_js();
     }
 }
