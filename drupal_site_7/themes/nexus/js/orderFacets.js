@@ -5,35 +5,35 @@
  */
 
 jQuery(document).ready( function($) {
-$lisDate = $("ul.mods_originInfo_type_normalized_dateOther_t li"); 
-    var dateOrderedLis = $lisDate.sort(function (a, b) {
+$lisDate = $("li.mods_originInfo_type_normalized_dateOther_t"); 
+    var dateOrderedLis = $lisDate.sort(function (a, b) { 
         return $(a).find("a").text() > $(b).find("a").text();
     });
-    $("ul.mods_originInfo_type_normalized_dateOther_t").html(dateOrderedLis);
+    $("li.mods_originInfo_type_normalized_dateOther_t").parent("ul").html(dateOrderedLis);
     
-$lisCreator = $("ul.mods_name_personal_creator_namePart_s li"); 
+$lisCreator = $("li.mods_name_personal_creator_namePart_s"); 
     var creatorOrderedLis = $lisCreator.sort(function (a, b) {
         return $(a).find("a").text() > $(b).find("a").text();
     });
-    $("ul.mods_name_personal_creator_namePart_s").html(creatorOrderedLis);
+    $("li.mods_name_personal_creator_namePart_s").parent("ul").html(creatorOrderedLis);
     
-$lisAddressee = $("ul.mods_name_personal_addressee_namePart_s li"); 
+$lisAddressee = $("li.mods_name_personal_addressee_namePart_s"); 
     var addressesOrderedLis = $lisAddressee.sort(function (a, b) {
         return $(a).find("a").text() > $(b).find("a").text();
     });
-    $("ul.mods_name_personal_addressee_namePart_s").html(addressesOrderedLis); 
+    $("li.mods_name_personal_addressee_namePart_s").parent("ul").html(addressesOrderedLis); 
     
-$lisRepo = $("ul.mods_relatedItem_original_name_corporate_namePart_s li"); 
+$lisRepo = $("li.mods_relatedItem_original_name_corporate_namePart_s"); 
     var repoOrderedLis = $lisRepo.sort(function (a, b) {
         return $(a).find("a").text() > $(b).find("a").text();
     });
-    $("ul.mods_relatedItem_original_name_corporate_namePart_s").html(repoOrderedLis);    
+    $("li.mods_relatedItem_original_name_corporate_namePart_s").parent("ul").html(repoOrderedLis);    
     
-$lisGenre = $("ul.mods_genre_s li"); 
+$lisGenre = $("li.mods_genre_s"); 
     var genreOrderedLis = $lisGenre.sort(function (a, b) {
         return $(a).find("a").text() > $(b).find("a").text();
     });
-    $("ul.mods_genre_s").html(genreOrderedLis);         
+    $("li.mods_genre_s").parent("ul").html(genreOrderedLis);         
   
   
   

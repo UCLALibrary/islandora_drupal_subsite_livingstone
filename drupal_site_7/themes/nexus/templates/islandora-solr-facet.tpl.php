@@ -8,9 +8,9 @@
  */
 ?>
 
-<ul class="<?php print $classes; ?>  <?php print $pid; ?>">
+<ul class="<?php print $classes; ?>">
   <?php foreach($buckets as $key => $bucket): ?>
-    <li>
+    <li class="<?php print $pid; ?>">
       <?php print $bucket['link']; ?>
       <span class="count">(<?php print $bucket['count']; ?>)</span>
       <span class="plusminus">
