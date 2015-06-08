@@ -140,6 +140,7 @@ if (drupal_is_front_page()) {
   drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/slide.js');
   drupal_add_css(drupal_get_path('theme', 'nexus') . '/style.css', array('group' => CSS_THEME));
 }else{
+     drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
     drupal_add_css(drupal_get_path('theme', 'nexus') . '/style_section.css', array('group' => CSS_THEME)); 
 }
 function nexus_menu_link__main_menu(array $variables) {
