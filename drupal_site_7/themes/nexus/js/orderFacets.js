@@ -55,11 +55,9 @@ $lisGenre = $("li.mods_genre_s");
         $("th.mods_identifier_local_NLS_copy_identifier_s").hide();
         $("th.otherVersions_s").hide();
         $("th.mods_identifier_local_Canonical_Catalog_Number_s").hide();
- 
-
-});
-
-jQuery('#fullRecord').change(function($) {
+        
+        
+        $('#fullRecord').change(function() {
     if ($(this).is(':checked')) {
         console.log($(this).val() + ' is now checked');
        
@@ -104,4 +102,9 @@ jQuery('#fullRecord').change(function($) {
         $("th.mods_identifier_local_Canonical_Catalog_Number_s").hide();
     }
 });
+ 
+
+});
+
+
 
