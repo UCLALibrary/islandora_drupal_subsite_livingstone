@@ -78,8 +78,8 @@ function nexus_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
-  var_dump($variables);
-   $templates = $variables['theme_hook_suggestions'];
+  var_dump($vars);
+   $templates = $vars['theme_hook_suggestions'];
    var_dump($templates);
     if (in_array('page__islandora__search', $templates)) {
         drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
@@ -141,7 +141,7 @@ if (drupal_is_front_page()) {
   drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/slide.js');
   drupal_add_css(drupal_get_path('theme', 'nexus') . '/style.css', array('group' => CSS_THEME));
 }else{
-     drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
+    // drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
     drupal_add_css(drupal_get_path('theme', 'nexus') . '/style_section.css', array('group' => CSS_THEME)); 
 }
 function nexus_menu_link__main_menu(array $variables) {
@@ -331,7 +331,7 @@ function nexus_item_list($variables) {
              $output .= '<th class="mods_identifier_local_Canonical_Catalog_Number_s" >' . $data . '</th>';
        }
        
-       var_dump($data);
+       
      
     }
    

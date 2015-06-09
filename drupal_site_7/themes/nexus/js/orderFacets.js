@@ -59,7 +59,7 @@ $lisGenre = $("li.mods_genre_s");
 
 });
 
-jQuery('#fullRecordForm :checkbox').change(function () {
+jQuery('#fullRecord').change(function($) {
     if ($(this).is(':checked')) {
         console.log($(this).val() + ' is now checked');
        
