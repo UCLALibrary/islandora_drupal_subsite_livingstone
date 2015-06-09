@@ -103,7 +103,10 @@ $lisGenre = $("li.mods_genre_s");
     }
 });
  
-
+$('td.\\# a').text(
+    function(i,text){
+        return text.replace( /\[\d+\]/g, 'view');
+    });
 });
 
 

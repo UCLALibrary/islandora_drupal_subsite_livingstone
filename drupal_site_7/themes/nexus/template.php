@@ -388,3 +388,31 @@ function nexus_item_list($variables) {
   
   return $output;
 }
+
+/**
+ * Returns HTML for an islandora_solr_facet_wrapper.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - title: A string to use as the header/title.
+ *   - content: A string containing the content being wrapped.
+ *
+ * @ingroup themeable
+ */
+function nexus_islandora_solr_facet_wrapper($variables) {
+  $output = '<div class="islandora-solr-facet-wrapper '.$variables['title'].'">';
+  $output .= '<h3>' . $variables['title'] . '</h3>';
+  if(strpos($variables['content'], '<a class="soft-limit processed" href="#">Show less</a>') !== false){
+      $output .= '<a class="soft-limit processed" href="#">Show less</a>';
+      $output .= substr($variables['content'],strpos($variables['content'], '<a class="soft-limit processed" href="#">Show less</a>'));
+  }else if(strpos($variables['content'], '<a class="soft-limit processed" href="#">Show more</a>') !== false){
+      $output .= '<a class="soft-limit processed" href="#">Show more</a>';
+      $output .= substr($variables['content'],strpos($variables['content'], '<a class="soft-limit processed" href="#">Show more</a>'));
+  }else{
+      $output .= $variables['content'];
+  }
+  
+  
+  $output .= '</div>';
+  return $output;
+}
