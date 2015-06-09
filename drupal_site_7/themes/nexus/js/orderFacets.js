@@ -38,14 +38,23 @@ $lisGenre = $("li.mods_genre_s");
   
     
        
-        $("addressee_s").hide();
-        $("mods_originInfo_place_placeTerm_s").hide();
-        $("mods_physicalDescription_extent_pages_s").hide();
-        $("mods_physicalDescription_extent_mm_s").hide();
-        $("genre_s").hide();
-        $("mods_identifier_local_NLS_copy_identifier_s").hide();
-        $("otherVersions_s").hide();
-        $("mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        $("td.addressee_s").hide();
+        $("td.mods_originInfo_place_placeTerm_s").hide();
+        $("td.mods_physicalDescription_extent_pages_s").hide();
+        $("td.mods_physicalDescription_extent_mm_s").hide();
+        $("td.genre_s").hide();
+        $("td.mods_identifier_local_NLS_copy_identifier_s").hide();
+        $("td.otherVersions_s").hide();
+        $("td.mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        
+        $("th.addressee_s").hide();
+        $("th.mods_originInfo_place_placeTerm_s").hide();
+        $("th.mods_physicalDescription_extent_pages_s").hide();
+        $("th.mods_physicalDescription_extent_mm_s").hide();
+        $("th.genre_s").hide();
+        $("th.mods_identifier_local_NLS_copy_identifier_s").hide();
+        $("th.otherVersions_s").hide();
+        $("th.mods_identifier_local_Canonical_Catalog_Number_s").hide();
  
 
 });
@@ -55,26 +64,44 @@ jQuery('#fullRecordForm :checkbox').change(function () {
         console.log($(this).val() + ' is now checked');
        
         
-        $("addressee_s").show();
-        $("mods_originInfo_place_placeTerm_s").show();
-        $("mods_physicalDescription_extent_pages_s").show();
-        $("mods_physicalDescription_extent_mm_s").show();
-        $("genre_s").show();
-        $("mods_identifier_local_NLS_copy_identifier_s").show();
-        $("otherVersions_s").show();
-        $("mods_identifier_local_Canonical_Catalog_Number_s").show();
+        $("td.addressee_s").show();
+        $("td.mods_originInfo_place_placeTerm_s").show();
+        $("td.mods_physicalDescription_extent_pages_s").show();
+        $("td.mods_physicalDescription_extent_mm_s").show();
+        $("td.genre_s").show();
+        $("td.mods_identifier_local_NLS_copy_identifier_s").show();
+        $("td.otherVersions_s").show();
+        $("td.mods_identifier_local_Canonical_Catalog_Number_s").show();
+        
+        $("th.addressee_s").show();
+        $("th.mods_originInfo_place_placeTerm_s").show();
+        $("th.mods_physicalDescription_extent_pages_s").show();
+        $("th.mods_physicalDescription_extent_mm_s").show();
+        $("th.genre_s").show();
+        $("th.mods_identifier_local_NLS_copy_identifier_s").show();
+        $("th.otherVersions_s").show();
+        $("th.mods_identifier_local_Canonical_Catalog_Number_s").show();
         
     } else {
         console.log($(this).val() + ' is now unchecked');
         
-        $("addressee_s").hide();
-        $("mods_originInfo_place_placeTerm_s").hide();
-        $("mods_physicalDescription_extent_pages_s").hide();
-        $("mods_physicalDescription_extent_mm_s").hide();
-        $("genre_s").hide();
-        $("mods_identifier_local_NLS_copy_identifier_s").hide();
-        $("otherVersions_s").hide();
-        $("mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        $("td.addressee_s").hide();
+        $("td.mods_originInfo_place_placeTerm_s").hide();
+        $("td.mods_physicalDescription_extent_pages_s").hide();
+        $("td.mods_physicalDescription_extent_mm_s").hide();
+        $("td.genre_s").hide();
+        $("td.mods_identifier_local_NLS_copy_identifier_s").hide();
+        $("td.otherVersions_s").hide();
+        $("td.mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        
+        $("th.addressee_s").hide();
+        $("th.mods_originInfo_place_placeTerm_s").hide();
+        $("th.mods_physicalDescription_extent_pages_s").hide();
+        $("th.mods_physicalDescription_extent_mm_s").hide();
+        $("th.genre_s").hide();
+        $("th.mods_identifier_local_NLS_copy_identifier_s").hide();
+        $("th.otherVersions_s").hide();
+        $("th.mods_identifier_local_Canonical_Catalog_Number_s").hide();
     }
 });
 

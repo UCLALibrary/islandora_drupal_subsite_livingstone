@@ -78,8 +78,9 @@ function nexus_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
-  
+  var_dump($variables);
    $templates = $variables['theme_hook_suggestions'];
+   var_dump($templates);
     if (in_array('page__islandora__search', $templates)) {
         drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
         $vars['scripts'] = drupal_get_js();
@@ -311,7 +312,7 @@ function nexus_item_list($variables) {
        if (strpos($data,'title="Extent (pages)"') !== false) {
              $output .= '<th class="mods_physicalDescription_extent_pages_s" >' . $data . '</th>';
        }
-       if (strpos($data,'title="Size (mm)"') !== false) {
+       if (strpos($data,'title="Extent (size)"') !== false) {
              $output .= '<th class="mods_physicalDescription_extent_mm_s" >' . $data . '</th>';
        }
        if (strpos($data,'title="Genre"') !== false) {
@@ -320,16 +321,17 @@ function nexus_item_list($variables) {
        if (strpos($data,'title="Repository"') !== false) {
              $output .= '<th class="repository_s" >' . $data . '</th>';
        }
-        if (strpos($data,'title="Copy of item"') !== false) {
+        if (strpos($data,'title="Copy of Item"') !== false) {
              $output .= '<th class="mods_identifier_local_NLS_copy_identifier_s" >' . $data . '</th>';
        }
         if (strpos($data,'title="Other Versions"') !== false) {
              $output .= '<th class="otherVersions_s" >' . $data . '</th>';
        }
-        if (strpos($data,'title="C&C Cat No"') !== false) {
+        if (strpos($data,'title="C&C Catalogue Number"') !== false) {           
              $output .= '<th class="mods_identifier_local_Canonical_Catalog_Number_s" >' . $data . '</th>';
        }
        
+       var_dump($data);
      
     }
    
