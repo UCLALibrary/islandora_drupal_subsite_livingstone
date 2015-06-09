@@ -36,22 +36,16 @@ $lisGenre = $("li.mods_genre_s");
     $("li.mods_genre_s").parent("ul").html(genreOrderedLis);         
   
   
-    $("th.Place\ Created").hide();
-        $("th.Addressee").hide();
-        $("th.Extent\\ \\(Pages\\)").hide();
-        $("th.Genre").hide();
-        $("th.Copy\\ of\\ Item ").hide();
-        $("th.Other\\ Versions").hide();
-        $("th.Extent\\ \\(Size\\)").hide();
-        $("th.C\\&C\\ Catalogue\\ Number").hide();
-        $("td.addressee_s").hide();
-        $("td.mods_originInfo_place_placeTerm_s").hide();
-        $("td.mods_physicalDescription_extent_pages_s ").hide();
-        $("td.mods_physicalDescription_extent_mm_s ").hide();
-        $("td.genre_s").hide();
-        $("td.mods_identifier_local_NLS_copy_identifier_s ").hide();
-        $("td.otherVersions_s ").hide();
-        $("td.mods_identifier_local_Canonical_Catalog_Number_s ").hide();
+    
+       
+        $("addressee_s").hide();
+        $("mods_originInfo_place_placeTerm_s").hide();
+        $("mods_physicalDescription_extent_pages_s").hide();
+        $("mods_physicalDescription_extent_mm_s").hide();
+        $("genre_s").hide();
+        $("mods_identifier_local_NLS_copy_identifier_s").hide();
+        $("otherVersions_s").hide();
+        $("mods_identifier_local_Canonical_Catalog_Number_s").hide();
  
 
 });
@@ -59,51 +53,28 @@ $lisGenre = $("li.mods_genre_s");
 jQuery('#fullRecordForm :checkbox').change(function () {
     if ($(this).is(':checked')) {
         console.log($(this).val() + ' is now checked');
-       $("th.Place\ Created").show();
-        $("th.Addressee").show();
-        $("th.Extent\\ \\(Pages\\)").show();
-        $("th.Genre").show();
-        $("th.Copy\\ of\\ Item ").show();
-        $("th.Other\\ Versions").show();
-        $("th.Extent\\ \\(Size\\)").show();
-        $("th.C\\&C\\ Catalogue\\ Number").show();
+       
         
-        $("td.addressee_s").show();
-        $("td.mods_originInfo_place_placeTerm_s").show();
-        $("td.mods_physicalDescription_extent_pages_s ").show();
-        $("td.mods_physicalDescription_extent_mm_s ").show();
-        $("td.genre_s").show();
-        $("td.mods_identifier_local_NLS_copy_identifier_s ").show();
-        $("td.otherVersions_s ").show();
-        $("td.mods_identifier_local_Canonical_Catalog_Number_s ").show();
+        $("addressee_s").show();
+        $("mods_originInfo_place_placeTerm_s").show();
+        $("mods_physicalDescription_extent_pages_s").show();
+        $("mods_physicalDescription_extent_mm_s").show();
+        $("genre_s").show();
+        $("mods_identifier_local_NLS_copy_identifier_s").show();
+        $("otherVersions_s").show();
+        $("mods_identifier_local_Canonical_Catalog_Number_s").show();
         
     } else {
         console.log($(this).val() + ' is now unchecked');
-         $("th.Place\ Created").hide();
-        $("th.Addressee").hide();
-        $("th.Extent\\ \\(Pages\\)").hide();
-        $("th.Genre").hide();
-        $("th.Copy\\ of\\ Item ").hide();
-        $("th.Other\\ Versions").hide();
-        $("th.Extent\\ \\(Size\\)").hide();
-        $("th.C\\&C\\ Catalogue\\ Number").hide();
         
-        $("th.Place\ Created").hide();
-        $("th.Addressee").hide();
-        $("th.Extent\\ \\(Pages\\)").hide();
-        $("th.Genre").hide();
-        $("th.Copy\\ of\\ Item ").hide();
-        $("th.Other\\ Versions").hide();
-        $("th.Extent\\ \\(Size\\)").hide();
-        $("th.C\\&C\\ Catalogue\\ Number").hide();
-        $("td.addressee_s").hide();
-        $("td.mods_originInfo_place_placeTerm_s").hide();
-        $("td.mods_physicalDescription_extent_pages_s ").hide();
-        $("td.mods_physicalDescription_extent_mm_s ").hide();
-        $("td.genre_s").hide();
-        $("td.mods_identifier_local_NLS_copy_identifier_s ").hide();
-        $("td.otherVersions_s ").hide();
-        $("td.mods_identifier_local_Canonical_Catalog_Number_s ").hide();
+        $("addressee_s").hide();
+        $("mods_originInfo_place_placeTerm_s").hide();
+        $("mods_physicalDescription_extent_pages_s").hide();
+        $("mods_physicalDescription_extent_mm_s").hide();
+        $("genre_s").hide();
+        $("mods_identifier_local_NLS_copy_identifier_s").hide();
+        $("otherVersions_s").hide();
+        $("mods_identifier_local_Canonical_Catalog_Number_s").hide();
     }
 });
 

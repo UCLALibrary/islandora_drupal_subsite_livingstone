@@ -293,15 +293,44 @@ function nexus_item_list($variables) {
         // Render nested list.
         $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
       }
-     $attributesLinkArray = explode(" ", $data); 
-     foreach ($attributesLinkArray as $value) {
-         $attributeTitleArray =  explode("=", $value);
-         var_dump($attributeTitleArray);
-         
-         
-     }
-     $attributeTitleArray = explode("=", $attributesLinkArray[2]);
-      $output .= '<th class='.$attributeTitleArray[1].' >' . $data . '</th>';
+      if (strpos($data,'title="Title"') !== false) {
+             $output .= '<th class="mods_titleInfo_title_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Date"') !== false) {
+             $output .= '<th class="mods_originInfo_dateCreated_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Creator"') !== false) {
+             $output .= '<th class="creator_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Addressee"') !== false) {
+             $output .= '<th class="addressee_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Place Created"') !== false) {
+             $output .= '<th class="mods_originInfo_place_placeTerm_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Extent (pages)"') !== false) {
+             $output .= '<th class="mods_physicalDescription_extent_pages_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Size (mm)"') !== false) {
+             $output .= '<th class="mods_physicalDescription_extent_mm_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Genre"') !== false) {
+             $output .= '<th class="genre_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Repository"') !== false) {
+             $output .= '<th class="repository_s" >' . $data . '</th>';
+       }
+        if (strpos($data,'title="Copy of item"') !== false) {
+             $output .= '<th class="mods_identifier_local_NLS_copy_identifier_s" >' . $data . '</th>';
+       }
+        if (strpos($data,'title="Other Versions"') !== false) {
+             $output .= '<th class="otherVersions_s" >' . $data . '</th>';
+       }
+        if (strpos($data,'title="C&C Cat No"') !== false) {
+             $output .= '<th class="mods_identifier_local_Canonical_Catalog_Number_s" >' . $data . '</th>';
+       }
+       
+     
     }
    
   }
