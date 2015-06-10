@@ -304,7 +304,7 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['field_outbound_link']['label'] = '';
   $handler->display->display_options['fields']['field_outbound_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_outbound_link']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_outbound_link']['alter']['text'] = ' <a href="[field_outbound_link]" target="_blank" class="">';
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['text'] = ' <a href="[field_outbound_link]">';
   $handler->display->display_options['fields']['field_outbound_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_outbound_link']['empty'] = ' <a href="[path]">';
   /* Field: Taxonomy term: Name */

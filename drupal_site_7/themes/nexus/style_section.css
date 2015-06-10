@@ -685,17 +685,17 @@ body.not-front .flex-direction-nav {
   margin-top: 20px;
   text-align: center;
 }
-.node-type-section-page  .field.field-name-field-section-page-tag-line p {
+.node-type-section-page .field.field-name-field-section-page-tag-line p {
   font-size: 15px;
-  line-height: 1.5;
 }
   
 .node-type-section-page .field.field-name-field-section-page-tag-line .field-item:before {
   content: "Overview: ";
   float: left;
+  font-family: "Crimson Text",serif;
   font-size: 15px; 
-  line-height: 1.5;
-  margin-right: 4px;
+  line-height: 1.9;
+  margin: 1px 4px 20px;
 }
 .node-type-section-page .pane-node-content h2.pane-title {
   color: #000;
