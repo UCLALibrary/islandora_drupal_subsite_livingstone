@@ -402,14 +402,13 @@ function nexus_item_list($variables) {
 function nexus_islandora_solr_facet_wrapper($variables) {
   $output = '<div class="islandora-solr-facet-wrapper '.$variables['title'].'">';
   $output .= '<h3>' . $variables['title'] . '</h3>';
-  var_dump(strpos($variables['content'], 'Show Less'));
-  var_dump(strpos($variables['content'], '<a'));
+ 
   if(strpos($variables['content'], 'Show Less') !== false){
       $output .= '<a href="#" class="soft-limit processed">Show less</a>';
-      $output .= substr($variables['content'],strpos($variables['content'], '<a'));
+      $output .= substr($variables['content'],0,strpos($variables['content'], '</ul><a')-5);
   }else if(strpos($variables['content'], 'Show more') !== false){
       $output .= '<a href="#" class="soft-limit processed">Show more</a>';
-      $output .= substr($variables['content'],strpos($variables['content'], '<a'));
+      $output .= substr($variables['content'],0,strpos($variables['content'], '</ul><a')-5);
   }else{
       $output .= $variables['content'];
   }
@@ -420,7 +419,7 @@ function nexus_islandora_solr_facet_wrapper($variables) {
 }
 
 function nexus_link($variables) {
-    if(strpos($variables['path'], ' islandora/object/livingstone:')!== false){
+    if(strpos($variables['path'], 'islandora/object/livingstone:')!== false){
         $variables ['text'] = 'view';
     }
   return '<a href="' . check_plain(url($variables ['path'], $variables ['options'])) . '"' . drupal_attributes($variables ['options']['attributes']) . '>' . ($variables ['options']['html'] ? $variables ['text'] : check_plain($variables ['text'])) . '</a>';
