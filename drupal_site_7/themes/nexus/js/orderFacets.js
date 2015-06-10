@@ -103,10 +103,10 @@ $lisGenre = $("li.mods_genre_s");
     }
 });
  
-$('td.\\# a').text(
+/*$('.islandora-solr-content tr td:first-child a').text(
     function(i,text){
-        return text.replace( /\[\d+\]/g, 'view');
-    });
+        return text.replace( /\d+/g, 'view');
+    });*/
 });
 
 
