@@ -34,14 +34,6 @@ function nexus_breadcrumb($breadcrumb) {
 
 function nexus_preprocess_html(&$vars) {
   $vars['attributes_array']['class'][] = $vars['classes_array'][] = 'page-' . drupal_html_class(drupal_get_title());
-
- $path = drupal_get_path_alias($_GET['q']);
-  $aliases = explode('/', $path);
- 
-  foreach($aliases as $alias) {
-    $vars['classes_array'][] = drupal_clean_css_identifier($alias);
-  } 
-  
 }
 /**
  * Override or insert variables into the page template.
@@ -86,6 +78,13 @@ function nexus_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
+ 
+   $templates = $vars['theme_hook_suggestions'];
+  
+    if (in_array('page__islandora__search', $templates)) {
+        drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/orderFacets.js');
+        $vars['scripts'] = drupal_get_js();
+    }
 }
 
 /**
@@ -141,7 +140,7 @@ if (drupal_is_front_page()) {
   drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/jquery.flexslider.js');
   drupal_add_js(drupal_get_path('theme', 'nexus') . '/js/slide.js');
   drupal_add_css(drupal_get_path('theme', 'nexus') . '/style.css', array('group' => CSS_THEME));
-}else{
+}else{    
     drupal_add_css(drupal_get_path('theme', 'nexus') . '/style_section.css', array('group' => CSS_THEME)); 
 }
 function nexus_menu_link__main_menu(array $variables) {
@@ -294,8 +293,45 @@ function nexus_item_list($variables) {
         // Render nested list.
         $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
       }
+      if (strpos($data,'title="Title"') !== false) {
+             $output .= '<th class="mods_titleInfo_title_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Date"') !== false) {
+             $output .= '<th class="mods_originInfo_dateCreated_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Creator"') !== false) {
+             $output .= '<th class="creator_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Addressee"') !== false) {
+             $output .= '<th class="addressee_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Place Created"') !== false) {
+             $output .= '<th class="mods_originInfo_place_placeTerm_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Extent (pages)"') !== false) {
+             $output .= '<th class="mods_physicalDescription_extent_pages_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Extent (size)"') !== false) {
+             $output .= '<th class="mods_physicalDescription_extent_mm_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Genre"') !== false) {
+             $output .= '<th class="genre_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Repository"') !== false) {
+             $output .= '<th class="repository_s" >' . $data . '</th>';
+       }
+        if (strpos($data,'title="Copy of Item"') !== false) {
+             $output .= '<th class="mods_identifier_local_NLS_copy_identifier_s" >' . $data . '</th>';
+       }
+        if (strpos($data,'title="Other Versions"') !== false) {
+             $output .= '<th class="otherVersions_s" >' . $data . '</th>';
+       }
+        if (strpos($data,'title="C&C Catalogue Number"') !== false) {           
+             $output .= '<th class="mods_identifier_local_Canonical_Catalog_Number_s" >' . $data . '</th>';
+       }
+       
+       
      
-      $output .= '<th>' . $data . '</th>';
     }
    
   }
@@ -350,5 +386,33 @@ function nexus_item_list($variables) {
   $output .= '</div>';
     }
   
+  return $output;
+}
+
+/**
+ * Returns HTML for an islandora_solr_facet_wrapper.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - title: A string to use as the header/title.
+ *   - content: A string containing the content being wrapped.
+ *
+ * @ingroup themeable
+ */
+function nexus_islandora_solr_facet_wrapper($variables) {
+  $output = '<div class="islandora-solr-facet-wrapper '.$variables['title'].'">';
+  $output .= '<h3>' . $variables['title'] . '</h3>';
+  if(strpos($variables['content'], '<a class="soft-limit processed" href="#">Show less</a>') !== false){
+      $output .= '<a class="soft-limit processed" href="#">Show less</a>';
+      $output .= substr($variables['content'],strpos($variables['content'], '<a class="soft-limit processed" href="#">Show less</a>'));
+  }else if(strpos($variables['content'], '<a class="soft-limit processed" href="#">Show more</a>') !== false){
+      $output .= '<a class="soft-limit processed" href="#">Show more</a>';
+      $output .= substr($variables['content'],strpos($variables['content'], '<a class="soft-limit processed" href="#">Show more</a>'));
+  }else{
+      $output .= $variables['content'];
+  }
+  
+  
+  $output .= '</div>';
   return $output;
 }
