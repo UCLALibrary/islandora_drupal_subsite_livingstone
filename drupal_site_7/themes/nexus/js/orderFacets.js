@@ -107,6 +107,15 @@ $lisGenre = $("li.mods_genre_s");
     function(i,text){
         return text.replace( /\d+/g, 'view');
     });*/
+    
+    // move show more or show less on top
+    $( "p" ).insertBefore( "#foo" );
+    dateShowLink = $( ".Date .soft-limit" ).detach();
+    creatorShowLink = $( ".Creator .soft-limit" ).detach();
+    genreShowLink = $( ".Genre .soft-limit" ).detach();
+    dateShowLink.insertBefore(".Date h3");
+    creatorShowLink.insertBefore(".Creator h3");
+    genreShowLink.insertBefore(".Genre h3");
 });
 
 
