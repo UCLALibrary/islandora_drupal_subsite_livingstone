@@ -230,14 +230,6 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'section_page' => 'section_page',
   );
-  /* Filter criterion: Content: Level 2 Intro node (field_level_2_intro_node) */
-  $handler->display->display_options['filters']['field_level_2_intro_node_value']['id'] = 'field_level_2_intro_node_value';
-  $handler->display->display_options['filters']['field_level_2_intro_node_value']['table'] = 'field_data_field_level_2_intro_node';
-  $handler->display->display_options['filters']['field_level_2_intro_node_value']['field'] = 'field_level_2_intro_node_value';
-  $handler->display->display_options['filters']['field_level_2_intro_node_value']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_level_2_intro_node_value']['value'] = array(
-    1 => '1',
-  );
   $handler->display->display_options['pane_category']['name'] = 'section pages';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
