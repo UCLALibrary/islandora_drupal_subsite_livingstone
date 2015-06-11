@@ -116,6 +116,19 @@ $('.islandora-solr-content tr td:first-child a').text(
     dateShowLink.insertBefore(".Date h3");
     creatorShowLink.insertBefore(".Creator h3");
     genreShowLink.insertBefore(".Genre h3");
+    
+    
+    $(".soft-limit").click(function(e) {
+          // toggle class .hidden
+          $(this).parent().children().last().toggleClass('hidden');
+          if ($(this).text() == Drupal.t('Show more')) {
+            $(this).text(Drupal.t('Show less'));
+          }
+          else {
+            $(this).text(Drupal.t('Show more'));
+          }
+          e.preventDefault();
+        });
 });
 
 
