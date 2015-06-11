@@ -368,6 +368,55 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_open_new_tab'
+  $field_instances['node-section_page-field_open_new_tab'] = array(
+    'bundle' => 'section_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 17,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_open_new_tab',
+    'label' => 'Open in new tab',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-field_outbound_link'
   $field_instances['node-section_page-field_outbound_link'] = array(
     'bundle' => 'section_page',
@@ -802,7 +851,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -817,6 +866,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Level 2 Photo credit');
   t('Level 2 Teaser');
   t('Main Text');
+  t('Open in new tab');
   t('Outbound link');
   t('Overview');
   t('Pre-title');

@@ -26,6 +26,7 @@ function level_2_v1_0_stage_field_group_info() {
       0 => 'field_outbound_link',
       1 => 'field_pre_title',
       2 => 'field_turn_off_hover',
+      3 => 'field_open_new_tab',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

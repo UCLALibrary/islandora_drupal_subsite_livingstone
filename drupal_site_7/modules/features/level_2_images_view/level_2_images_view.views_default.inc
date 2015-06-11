@@ -297,6 +297,18 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Open in new tab */
+  $handler->display->display_options['fields']['field_open_new_tab']['id'] = 'field_open_new_tab';
+  $handler->display->display_options['fields']['field_open_new_tab']['table'] = 'field_data_field_open_new_tab';
+  $handler->display->display_options['fields']['field_open_new_tab']['field'] = 'field_open_new_tab';
+  $handler->display->display_options['fields']['field_open_new_tab']['label'] = '';
+  $handler->display->display_options['fields']['field_open_new_tab']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_open_new_tab']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_open_new_tab']['alter']['text'] = '_blank';
+  $handler->display->display_options['fields']['field_open_new_tab']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_open_new_tab']['empty'] = '_self';
+  $handler->display->display_options['fields']['field_open_new_tab']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_open_new_tab']['empty_zero'] = TRUE;
   /* Field: Content: Outbound link */
   $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
   $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
@@ -304,7 +316,8 @@ function level_2_images_view_views_default_views() {
   $handler->display->display_options['fields']['field_outbound_link']['label'] = '';
   $handler->display->display_options['fields']['field_outbound_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_outbound_link']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_outbound_link']['alter']['text'] = ' <a href="[field_outbound_link]">';
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['text'] = ' <a href="[field_outbound_link]" target="[field_open_new_tab]">';
+  $handler->display->display_options['fields']['field_outbound_link']['alter']['target'] = ' [field_open_new_tab]';
   $handler->display->display_options['fields']['field_outbound_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_outbound_link']['empty'] = ' <a href="[path]">';
   /* Field: Taxonomy term: Name */
