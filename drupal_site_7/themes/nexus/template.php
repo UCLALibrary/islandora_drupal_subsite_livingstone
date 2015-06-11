@@ -407,9 +407,9 @@ function nexus_islandora_solr_facet_wrapper($variables) {
   return $output;
 }
 
-function nexus_link($variables) {
+/*function nexus_link($variables) {
     if(strpos($variables['path'], 'islandora/object/livingstone:')!== false){
         $variables ['text'] = 'view';
     }
   return '<a href="' . check_plain(url($variables ['path'], $variables ['options'])) . '"' . drupal_attributes($variables ['options']['attributes']) . '>' . ($variables ['options']['html'] ? $variables ['text'] : check_plain($variables ['text'])) . '</a>';
-}
+}*/
