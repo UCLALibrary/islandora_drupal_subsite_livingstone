@@ -21,7 +21,7 @@
   <?php foreach ($results as $result => $count): ?>
     <li>
       <?php $filter = $solr_field . ':"' . addslashes($result) . '"'; ?>
-        <?php print $result; ?>
+        
         <?php 
         $resultExplodeArray = explode('-', $result);        
         ?>
