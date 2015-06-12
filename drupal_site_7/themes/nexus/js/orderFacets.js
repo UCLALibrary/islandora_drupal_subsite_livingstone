@@ -39,13 +39,13 @@ $lisGenre = $("li.mods_genre_s");
     
        
         $("td.addressee_s").hide();
-        $("td.mods_originInfo_place_placeTerm_s").hide();
-        $("td.mods_physicalDescription_extent_pages_s").hide();
-        $("td.mods_physicalDescription_extent_mm_s").hide();
-        $("td.genre_s").hide();
-        $("td.mods_identifier_local_NLS_copy_identifier_s").hide();
-        $("td.otherVersions_s").hide();
-        $("td.mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        $("td.mods_originInfo_place_placeTerm_hlt").hide();
+        $("td.mods_physicalDescription_extent_pages_hlt").hide();
+        $("td.mods_physicalDescription_extent_mm_hlt").hide();
+        $("td.genre_hlt").hide();
+        $("td.mods_identifier_local_NLS_copy_identifier_hlt").hide();
+        $("td.otherVersions_hlt").hide();
+        $("td.mods_identifier_local_Canonical_Catalog_Number_hlt").hide();
         
         $("th.addressee_s").hide();
         $("th.mods_originInfo_place_placeTerm_s").hide();
@@ -62,14 +62,14 @@ $lisGenre = $("li.mods_genre_s");
         console.log($(this).val() + ' is now checked');
        
         
-        $("td.addressee_s").show();
-        $("td.mods_originInfo_place_placeTerm_s").show();
-        $("td.mods_physicalDescription_extent_pages_s").show();
-        $("td.mods_physicalDescription_extent_mm_s").show();
-        $("td.genre_s").show();
-        $("td.mods_identifier_local_NLS_copy_identifier_s").show();
-        $("td.otherVersions_s").show();
-        $("td.mods_identifier_local_Canonical_Catalog_Number_s").show();
+        $("td.addressee_hlt").show();
+        $("td.mods_originInfo_place_placeTerm_hlt").show();
+        $("td.mods_physicalDescription_extent_pages_hlt").show();
+        $("td.mods_physicalDescription_extent_mm_hlt").show();
+        $("td.genre_hlt").show();
+        $("td.mods_identifier_local_NLS_copy_identifier_hlt").show();
+        $("td.otherVersions_hlt").show();
+        $("td.mods_identifier_local_Canonical_Catalog_Number_hlt").show();
         
         $("th.addressee_s").show();
         $("th.mods_originInfo_place_placeTerm_s").show();
@@ -83,14 +83,14 @@ $lisGenre = $("li.mods_genre_s");
     } else {
         console.log($(this).val() + ' is now unchecked');
         
-        $("td.addressee_s").hide();
-        $("td.mods_originInfo_place_placeTerm_s").hide();
-        $("td.mods_physicalDescription_extent_pages_s").hide();
-        $("td.mods_physicalDescription_extent_mm_s").hide();
-        $("td.genre_s").hide();
-        $("td.mods_identifier_local_NLS_copy_identifier_s").hide();
-        $("td.otherVersions_s").hide();
-        $("td.mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        $("td.addressee_hlt").hide();
+        $("td.mods_originInfo_place_placeTerm_hlt").hide();
+        $("td.mods_physicalDescription_extent_pages_hlt").hide();
+        $("td.mods_physicalDescription_extent_mm_hlt").hide();
+        $("td.genre_hlt").hide();
+        $("td.mods_identifier_local_NLS_copy_identifier_hlt").hide();
+        $("td.otherVersions_hlt").hide();
+        $("td.mods_identifier_local_Canonical_Catalog_Number_hlt").hide();
         
         $("th.addressee_s").hide();
         $("th.mods_originInfo_place_placeTerm_s").hide();

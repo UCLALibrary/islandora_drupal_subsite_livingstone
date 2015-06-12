@@ -22,9 +22,18 @@
     <li>
       <?php $filter = $solr_field . ':"' . addslashes($result) . '"'; ?>
         <?php print $result; ?>
+        <?php 
+        $resultExplodeArray = explode('-', $result);        
+        ?>
         <br/>
-      <?php print l(truncate_utf8($result, 72, TRUE, TRUE), 'islandora/search/*:*', array('query' => array('f' => array($filter)))); ?>
-      <span class="bucket-size">(<?php print $count; ?>)</span>
+      <?php print l(truncate_utf8($resultExplodeArray[0], 72, TRUE, TRUE), 'islandora/search/*:*', array('query' => array('f' => array($filter)))); ?>
+      <span class="bucket-size">(<?php print $count; ?>)</span> 
+      <?php
+      
+      if(trim($resultExplodeArray[1]) != false){
+          print " - ".$resultExplodeArray[1];
+      }
+      ?>
     </li>
   <?php endforeach; ?>
 </ul>
