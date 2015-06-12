@@ -122,10 +122,10 @@ $('.islandora-solr-content tr td:first-child a').text(
           // toggle class .hidden
           $(this).parent().children().last().toggleClass('hidden');
           if ($(this).text() == Drupal.t('Show more')) {
-            $(this).text(Drupal.t('Show less'));
+            $(this).text('Show less');
           }
           else {
-            $(this).text(Drupal.t('Show more'));
+            $(this).text('Show more');
           }
           e.preventDefault();
         });
