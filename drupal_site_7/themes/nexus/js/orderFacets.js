@@ -121,12 +121,12 @@ $('.islandora-solr-content tr td:first-child a').text(
     $(".soft-limit").click(function(e) {
           // toggle class .hidden
           $(this).parent().children().last().toggleClass('hidden');
-          if ($(this).text() == 'Show more') {
+          /*if ($(this).text() == 'Show more') {
             $(this).text('Show less');
           }
           else {
             $(this).text('Show more');
-          }
+          }*/
           e.preventDefault();
         });
 });
