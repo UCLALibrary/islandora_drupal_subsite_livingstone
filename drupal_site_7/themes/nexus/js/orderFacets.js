@@ -38,7 +38,7 @@ $lisGenre = $("li.mods_genre_s");
   
     
        
-        $("td.addressee_s").hide();
+        $("td.addressee_hlt").hide();
         $("td.mods_originInfo_place_placeTerm_text_hlt").hide();
         $("td.mods_physicalDescription_extent_pages_hlt").hide();
         $("td.mods_physicalDescription_extent_mm_hlt").hide();
@@ -63,7 +63,7 @@ $lisGenre = $("li.mods_genre_s");
        
         
         $("td.addressee_hlt").show();
-        $("td.mods_originInfo_place_placeTerm__text_hlt").show();
+        $("td.mods_originInfo_place_placeTerm_text_hlt").show();
         $("td.mods_physicalDescription_extent_pages_hlt").show();
         $("td.mods_physicalDescription_extent_mm_hlt").show();
         $("td.genre_hlt").show();
