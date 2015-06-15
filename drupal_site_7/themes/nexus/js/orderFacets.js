@@ -72,7 +72,7 @@ $lisGenre = $("li.mods_genre_s");
         $("td.mods_identifier_local_Canonical_Catalog_Number_hlt").show();
         
         $("th.addressee_s").show();
-        $("th.mods_originInfo_place_placeTerm_s").show();
+        $("th.mods_originInfo_place_placeTerm_text_s").show();
         $("th.mods_physicalDescription_extent_pages_s").show();
         $("th.mods_physicalDescription_extent_mm_s").show();
         $("th.genre_s").show();
