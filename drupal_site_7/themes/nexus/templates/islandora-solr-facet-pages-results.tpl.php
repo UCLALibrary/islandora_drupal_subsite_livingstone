@@ -23,7 +23,7 @@
       <?php $filter = $solr_field . ':"' . addslashes($result) . '"'; ?>
         
         <?php 
-        $resultExplodeArray = explode('-', $result);        
+        $resultExplodeArray = explode(':', $result);        
         ?>
         <br/>
       <?php print l(truncate_utf8($resultExplodeArray[0], 72, TRUE, TRUE), 'islandora/search/*:*', array('query' => array('f' => array($filter)))); ?>
