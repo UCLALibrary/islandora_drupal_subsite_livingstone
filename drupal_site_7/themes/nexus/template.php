@@ -317,7 +317,7 @@ function nexus_item_list($variables) {
        if (strpos($data,'title="Genre"') !== false) {
              $output .= '<th class="genre_s" >' . $data . '</th>';
        }
-       if (strpos($data,'title="Repository"') !== false) {
+       if (strpos($data,'Repository') !== false) {
              $output .= '<th class="repository_s" >' . $data . '</th>';
        }
         if (strpos($data,'title="Copy of Item"') !== false) {
@@ -326,7 +326,7 @@ function nexus_item_list($variables) {
         if (strpos($data,'title="Other Versions"') !== false) {
              $output .= '<th class="otherVersions_s" >' . $data . '</th>';
        }
-        if (strpos($data,'title="Catalogue Number"') !== false) {           
+        if (strpos($data,'Catalogue Number') !== false) {           
              $output .= '<th class="mods_identifier_local_Canonical_Catalog_Number_s" >' . $data . '</th>';
        }
        
