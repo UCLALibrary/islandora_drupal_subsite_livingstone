@@ -79,14 +79,16 @@
     <div id="slider">
         <div class="flexslider">
             <ul class="slides">
-                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-1.png'; ?>"/></li>
-                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-2.png'; ?>"/></li>
-                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-3.png'; ?>"/></li>
-                <li><img class="slide-image" src="<?php print base_path() . drupal_get_path('theme', 'nexus') . '/images/Level-1-4.png'; ?>"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-1.png"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-2.png"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-3.png"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-4.png"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-5.png"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-6.png"/></li>
+                <li><img class="slide-image" src="http://digital.library.ucla.edu/livingstone/sites/digital.library.ucla.edu.livingstone/files/Level-1-7.png"/></li>                                                
             </ul>
-            <div class="flex-caption">           
-                  <!--  <h2>LIVINGSTONE ONLINE</h2>
-                <p>THE WORDS OF EXPLORER DAVID LIVINGSTONE</p>-->
+            <div class="flex-caption">  
+
                 <?php print render($page['title']); ?>
                 <?php print render($page['section']); ?>
             </div>
@@ -94,7 +96,7 @@
                  <?php print render($page['footer_first']); ?>
     </div>
         <?php endif; ?>
-    <div class="push"></div>      
+    <!-- <div class="push"></div>      -->
 </div>
 <div class="footer"> 
  <div class="footerimages">
