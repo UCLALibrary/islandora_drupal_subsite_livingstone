@@ -306,7 +306,7 @@ function nexus_item_list($variables) {
              $output .= '<th class="addressee_s" >' . $data . '</th>';
        }
        if (strpos($data,'title="Place Created"') !== false) {
-             $output .= '<th class="mods_originInfo_place_placeTerm_s" >' . $data . '</th>';
+             $output .= '<th class="mods_originInfo_place_placeTerm_text_s" >' . $data . '</th>';
        }
        if (strpos($data,'title="Extent (pages)"') !== false) {
              $output .= '<th class="mods_physicalDescription_extent_pages_s" >' . $data . '</th>';
@@ -317,7 +317,7 @@ function nexus_item_list($variables) {
        if (strpos($data,'title="Genre"') !== false) {
              $output .= '<th class="genre_s" >' . $data . '</th>';
        }
-       if (strpos($data,'title="Repository"') !== false) {
+       if (strpos($data,'Repository') !== false) {
              $output .= '<th class="repository_s" >' . $data . '</th>';
        }
         if (strpos($data,'title="Copy of Item"') !== false) {
@@ -326,7 +326,7 @@ function nexus_item_list($variables) {
         if (strpos($data,'title="Other Versions"') !== false) {
              $output .= '<th class="otherVersions_s" >' . $data . '</th>';
        }
-        if (strpos($data,'title="C&C Catalogue Number"') !== false) {           
+        if (strpos($data,'Catalogue Number') !== false) {           
              $output .= '<th class="mods_identifier_local_Canonical_Catalog_Number_s" >' . $data . '</th>';
        }
        
@@ -407,9 +407,9 @@ function nexus_islandora_solr_facet_wrapper($variables) {
   return $output;
 }
 
-function nexus_link($variables) {
+/*function nexus_link($variables) {
     if(strpos($variables['path'], 'islandora/object/livingstone:')!== false){
         $variables ['text'] = 'view';
     }
   return '<a href="' . check_plain(url($variables ['path'], $variables ['options'])) . '"' . drupal_attributes($variables ['options']['attributes']) . '>' . ($variables ['options']['html'] ? $variables ['text'] : check_plain($variables ['text'])) . '</a>';
-}
+}*/

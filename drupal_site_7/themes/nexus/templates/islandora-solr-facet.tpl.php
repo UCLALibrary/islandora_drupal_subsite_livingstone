@@ -8,7 +8,7 @@
  */
 ?>
 
-<ul class="<?php print $classes; ?>">
+<ul class="<?php print $classes; ?> <?php print $pid; ?>_ul">
   <?php foreach($buckets as $key => $bucket): ?>
     <li class="<?php print $pid; ?>">
       <?php print $bucket['link']; ?>
