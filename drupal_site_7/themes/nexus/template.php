@@ -263,7 +263,7 @@ function nexus_item_list($variables) {
     if($checkSortClass == 'islandora-solr-sort'){
          $output = '<div class="islandora-solr-sort">';
          $output .= '<table>';
-        $output .= '<th> <a href="#">Access</a></th>';
+        $output .= '<th class="access_s"> <a href="#">Access</a></th>';
           if (!empty($items)) {
    
     $num_items = count($items);

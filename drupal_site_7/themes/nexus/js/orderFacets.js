@@ -108,6 +108,8 @@ $('.islandora-solr-content tr td:first-child a').text(
         return text.replace( /\d+/g, 'view');
     });
     
+    $('.islandora-solr-content tr td:first-child').addClass('access_hlt');
+    
     // move show more or show less on top
     $( "p" ).insertBefore( "#foo" );
     dateShowLink = $( ".Date .soft-limit" ).detach();
@@ -121,6 +123,7 @@ $('.islandora-solr-content tr td:first-child a').text(
     $(".soft-limit").click(function(e) {
           // toggle class .hidden
           $(this).parent().children().last().toggleClass('hidden');
+          $(this).toggleClass('facet_clicked');
           /*if ($(this).text() == 'Show more') {
             $(this).text('Show less');
           }
