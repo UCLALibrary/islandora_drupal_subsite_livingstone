@@ -17,10 +17,10 @@ height: auto !important;
 height: 100%;
 }
 .footer {
-height: 2em;
+height: 200px;
 }
 .push {
-height: -2em;
+height: -200px;
 }
 .footimg {
   display: inline-block;

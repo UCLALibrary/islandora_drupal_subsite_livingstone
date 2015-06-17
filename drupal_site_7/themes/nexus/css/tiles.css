@@ -345,6 +345,9 @@ a .info > em {
 #primary .view-repository-list th a {
     color: #428bca;
 }
+#primary .views-field.views-field-field-repo-repository {
+  width: 400px;
+}
 #primary .view-repository-list tr.even, #primary .view-repository-list tr.odd {
   background-color: #fff;
   border-right: 1px solid #ccc;
