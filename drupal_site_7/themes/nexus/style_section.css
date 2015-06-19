@@ -1045,6 +1045,13 @@ span.footpdf {
    font-style: italic;
   line-height:70%;
 }
+
+
+.islandora-solr-highlight {
+    background-color: #990033;
+    color: white;
+}
+
 .flex-external{
   width: 800px;
   position: absolute;
