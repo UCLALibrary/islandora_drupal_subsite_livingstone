@@ -121,7 +121,7 @@ $('.islandora-solr-content tr td:first-child a').text(
     
     //move pagination above the sort block
     
-    pagingInfo = $( ".islandora-solr-content .item-list:first-child" ).detach();
+    pagingInfo = $( ".islandora-solr-content" ).children(".item-list").first().detach();
     pagingInfo.insertBefore(".islandora-solr-sort table");
     
     $(".soft-limit").click(function(e) {
