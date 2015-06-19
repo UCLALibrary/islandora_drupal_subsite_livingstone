@@ -21,7 +21,7 @@ function level_2_v1_0_stage_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Level 2 Outbound fields',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'field_outbound_link',
       1 => 'field_pre_title',
@@ -52,7 +52,7 @@ function level_2_v1_0_stage_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Level 2 Fields',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
       0 => 'field_section_page_sections',
       1 => 'field_section_page_image',
@@ -84,7 +84,7 @@ function level_2_v1_0_stage_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Level 3 Fields',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
       0 => 'field_section_page_tag_line',
       1 => 'field_section_page_byline',

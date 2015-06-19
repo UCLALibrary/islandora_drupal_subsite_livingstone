@@ -46,7 +46,7 @@ function repository_content_type_view_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -86,7 +86,7 @@ function repository_content_type_view_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -126,7 +126,47 @@ function repository_content_type_view_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-repository_info-field_repo_link'
+  $field_instances['node-repository_info-field_repo_link'] = array(
+    'bundle' => 'repository_info',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'add the link that the Repository will link to. Be sure to include the http:// in the address.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_repo_link',
+    'label' => 'Repo link',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -206,7 +246,7 @@ function repository_content_type_view_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -215,8 +255,10 @@ function repository_content_type_view_field_default_field_instances() {
   t('City');
   t('Country');
   t('LCNAF');
+  t('Repo link');
   t('Repository');
   t('State');
+  t('add the link that the Repository will link to. Be sure to include the http:// in the address.');
 
   return $field_instances;
 }
