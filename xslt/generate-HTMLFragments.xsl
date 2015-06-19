@@ -6,13 +6,15 @@
   xpath-default-namespace="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="jc tei xsl"
   version="2.0">
-
-<!-- run with equivalant of:
+  
+  
+  <!-- run with equivalant of:
  saxon -s:test.xml -xsl:generate-HTMLFragments.xsl
 or 
  saxon -s:test.xml -xsl:generate-HTMLFragments.xsl htmlWrapper=true
 -->
-
+  
+  
 
 
 <!-- Parameter determines if output is wrapped in a bit of HTML or not. -->
@@ -216,6 +218,7 @@ or
           </head>
           <body>
             <div id="{@facs}">
+              <button id="toggle" title="toggle" type="button" class="hidden">Toggle Edited</button>
             <xsl:apply-templates mode="transcription"/>
             </div>
           </body>
@@ -228,6 +231,7 @@ or
            </xsl:text>
         <xsl:comment>This HTML Fragment has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
           <div id="{@facs}">
+            <button id="toggle" title="toggle" type="button" class="hidden">Toggle Edited</button>
             <xsl:apply-templates mode="transcription"/>
           </div>
         </xsl:result-document>
