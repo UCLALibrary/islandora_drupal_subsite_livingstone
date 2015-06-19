@@ -111,7 +111,7 @@ $('.islandora-solr-content tr td:first-child a').text(
     $('.islandora-solr-content tr td:first-child').addClass('access_hlt');
     
     // move show more or show less on top
-    $( "p" ).insertBefore( "#foo" );
+    
     dateShowLink = $( ".Date .soft-limit" ).detach();
     creatorShowLink = $( ".Creator .soft-limit" ).detach();
     genreShowLink = $( ".Genre .soft-limit" ).detach();
@@ -119,6 +119,10 @@ $('.islandora-solr-content tr td:first-child a').text(
     creatorShowLink.insertBefore(".Creator h3");
     genreShowLink.insertBefore(".Genre h3");
     
+    //move pagination above the sort block
+    
+    pagingInfo = $( ".islandora-solr-content .item-list:first-child" ).detach();
+    pagingInfo.insertBefore(".islandora-solr-sort table");
     
     $(".soft-limit").click(function(e) {
           // toggle class .hidden
