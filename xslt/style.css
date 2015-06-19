@@ -1,11 +1,11 @@
-div.transcription{
+div.tei-transcription{
     margin-left:auto;
     margin-right:auto;
     width:80%;
     font-family:calibri, arial, helvetica, sans-serif;
 }
 
-.linenumber{
+.tei-linenumber{
     float:left;
     color:#AAA;
     margin-left: -3em;
@@ -13,34 +13,34 @@ div.transcription{
     width:3em;
 }
 
-.expan {display:none;}
-.abbr,
-.expan{
+.tei-expan {display:none;}
+.tei-abbr,
+.tei-expan{
     border-bottom:1px green dotted
 }
-.orig,
-.reg{
+.tei-orig,
+.tei-reg{
     border-bottom:1px blue dotted
 }
-.sic,
-.corr{
+.tei-sic,
+.tei-corr{
     border-bottom:1px red dotted
 }
 
-.pb-title{
+.tei-pb-title{
     font-weight:bold;
     text-align:center;
     display:block;
     margin-left:auto;
     margin-right:auto;
 }
-p.center{
+p.tei-center{
     margin-left:auto;
     margin-right:auto;
     width:50%;
     text-align:left;
 }
-p.right{
+p.tei-right{
     float:right;
     clear:both;
     width:40%;
@@ -49,8 +49,8 @@ p.right{
 p{
     margin-left:5%;
 }
-p.ab,
-p.noindent{
+p.tei-ab,
+p.tei-noindent{
     margin-left:-5%;
 }
 
@@ -63,39 +63,39 @@ td{
 
 
 
-.hidden{
+.tei-hidden{
     display:none;
 }
 
 
 /** @rend classes */
 
-.caps{
+.tei-caps{
     font-variant:small-caps;
 }
-.center{
+.tei-center{
     margin-left:auto;
     margin-right:auto;
     width:70%;
 }
-.doubleunderline{
+.tei-doubleunderline{
     border-bottom:3px double;
 }
-.quarterline{
+.tei-quarterline{
     border-bottom:1px solid;
     display:block;
     width:25% !important;
     margin-left:0px !important;
     text-align:left;
 }
-.doubleline{
+.tei-doubleline{
     border-bottom:3px double;
     display:block;
     width:50%;
     margin-left:auto;
     margin-right:auto;
 }
-.tripleline{
+.tei-tripleline{
     border-bottom:3px double;
     line-height:1.9em;
     display:block;
@@ -103,14 +103,14 @@ td{
     margin-left:auto;
     margin-right:auto;
 }
-.halfline{
+.tei-halfline{
     border-bottom:1px solid;
     display:block;
     width:50% !important;
     margin-left:0px !important;
     text-align:left;
 }
-.line{
+.tei-line{
     border-bottom:1px solid #d0d0d0;
     display:block;
     width:90%;
@@ -119,37 +119,37 @@ td{
 }
 
 
-.indent{
+.tei-indent{
     margin-left:+20%;
 }
-.italic{
+.tei-italic{
     font-style:italic;
 }
-.large{
+.tei-large{
     font-size:120%;
 }
-.left{
+.tei-left{
     float:left;
     margin-left:15%;
 }
 
-.noindent{
+.tei-noindent{
     margin-left:0%;
 }
-.other{
+.tei-other{
 }
 
-.right{
+.tei-right{
     float:right;
     margin-right:15%;
     width:50%;
     text-align:left;
 }
 
-.above,
-.below,
-.sub,
-.sup{
+.tei-above,
+.tei-below,
+.tei-sub,
+.tei-sup{
     /* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
     font-size:75%;
@@ -167,14 +167,14 @@ td{
     vertical-align:baseline;
 }
 
-.above,
-.sup{
+.tei-above,
+.tei-sup{
     /* Move the superscripted text up */
     top:-0.5em;
 }
 
-.below,
-.sub{
+.tei-below,
+.tei-sub{
     /* Move the subscripted text down, but only
      half as far down as the superscript moved up */
     bottom:-0.25em;
@@ -182,7 +182,7 @@ td{
 
 /**place= above, below, bottom, end, inline, inspace, marginleft, margineright, margintop, marginbottom, top **/
 
-.marginLeft{
+.tei-marginLeft{
     width:20%;
     float:left;
     margin-left:-25%;
@@ -190,7 +190,7 @@ td{
     clear:left;
     color:red;
 }
-.marginRight{
+.tei-marginRight{
     width:20%;
     float:right;
     margin-right:5%;
@@ -198,27 +198,27 @@ td{
     color:red;
 }
 /* Too difficult for now inside target framework*/
-.marginTop{
+.tei-marginTop{
 }
-.marginBottom{
+.tei-marginBottom{
 }
 
-.small{
+.tei-small{
     font-size:80%;
 }
-.smallcaps{
+.tei-smallcaps{
     font-variant:small-caps;
 }
-.underline{
+.tei-underline{
     text-decoration:underline;
 }
-.upsidedown{
+.tei-upsidedown{
     -ms-transform:rotate(180deg); /* IE 9 */
     -moz-transform:rotate(180deg); /* Firefox */
     -webkit-transform:rotate(180deg); /* Safari and Chrome */
     -o-transform:rotate(180deg); /* Opera */
 }
-span.vertical{
+span.tei-vertical{
     -ms-transform:rotate(90deg); /* IE 9 */
     -moz-transform:rotate(90deg); /* Firefox */
     -webkit-transform:rotate(90deg); /* Safari and Chrome */
@@ -226,22 +226,22 @@ span.vertical{
 }
 
 
-.black{
+.tei-black{
     color:black;
 }
-.blue{
+.tei-blue{
     color:blue;
 }
-.brown{
+.tei-brown{
     color:brown;
 }
-.gray{
+.tei-gray{
     color:gray;
 }
-.green{
+.tei-green{
     color:green;
 }
-.red{
+.tei-red{
     color:red;
 }
 
@@ -251,188 +251,188 @@ span.vertical{
 
 /** elements **/
 
-.space{
+.tei-space{
     border-bottom:1px dotted black;
 }
-.del{
+.tei-del{
     text-decoration:line-through;
 }
-.cancelled, .strike-through, .strikethrough, .overwritten{
+.tei-cancelled, .tei-strike-through, .tei-strikethrough, .tei-overwritten{
     text-decoration:line-through;
     border-bottom:1px solid black;
 }
 
 
-span.foreignItalic{
+span.tei-foreignItalic{
     font-style:italic;
 }
 
 
-.w{
+.tei-w{
 }
-.add{
+.tei-add{
 }
-.address{
+.tei-address{
     display:block;
 }
-.date
-.desc
-.editor
-.hi
-.imprint
-.label
-.measure
-.measureGrp
-.name
-.addName
-.forename
-.geogFeat
-.geogName
-.orgName
-.persName
-.placeName
-.roleName
-.surname
-.fw
-.q
-.quote
+.tei-date
+.tei-desc
+.tei-editor
+.tei-hi
+.tei-imprint
+.tei-label
+.tei-measure
+.tei-measureGrp
+.tei-name
+.tei-addName
+.tei-forename
+.tei-geogFeat
+.tei-geogName
+.tei-orgName
+.tei-persName
+.tei-placeName
+.tei-roleName
+.tei-surname
+.tei-fw
+.tei-q
+.tei-quote
 
-.term
-.note{display:block;}
-.gap {margin-left:5px; margin-right:5px;}
-.desc
-.gloss
-.seg
-.damage
-.unclear
+.tei-term
+.tei-note{display:block;}
+.tei-gap {margin-left:5px; margin-right:5px;}
+.tei-desc
+.tei-gloss
+.tei-seg
+.tei-damage
+.tei-unclear
 
-.monogr
-.addrLine
-.author
-.bibl{
+.tei-monogr
+.tei-addrLine
+.tei-author
+.tei-bibl{
     display:block;
 }
-.biblScope
-.date
-.pubPlace
-.publisher
-.title
+.tei-biblScope
+.tei-date
+.tei-pubPlace
+.tei-publisher
+.tei-title
 
-.quote{
+.tei-quote{
     display:block;
 }
-.TEI{
+.tei-TEI{
     display:block;
 }
-.back{
+.tei-back{
     display:block;
 }
-.body{
+.tei-body{
     display:block;
 }
-.p{
+.tei-p{
     display:block;
 }
-.ab{
+.tei-ab{
     display:block;
 }
-.closer{
+.tei-closer{
     display:block;
 }
-.dateline{
+.tei-dateline{
     display:block;
 }
-.div{
+.tei-div{
     display:block;
 }
-.front{
+.tei-front{
     display:block;
 }
 
 
-.ref,
+.tei-ref,
 a, a:visited{
     text-decoration:none;
     font-weight:bold;
     color:#AAF;
 }
 
-.head
+.tei-head
 
-.item{
+.tei-item{
 }
-.label{
+.tei-label{
 }
 
-.cb{
+.tei-cb{
 }
-.gb{
+.tei-gb{
 }
-.lb{
+.tei-lb{
 }
 /*.milestone {display:block; width:100%; background:#FFF; border-bottom:black 1px solid; height:1px; margin-left:auto; margin-right:auto; padding:2px;}*/
-.pb{
+.tei-pb{
     display:block;
 }
 
-.graphic{
+.tei-graphic{
 }
-.figure{
+.tei-figure{
 }
-.table,
+.tei-table,
 table{
 }
-.row,
+.tei-row,
 tr{
 }
-.cell,
+.tei-cell,
 td{
 }
-.anchor{
+.tei-anchor{
 }
-.app{
+.tei-app{
 }
-.rdg{
+.tei-rdg{
     display:block;
 }
-.addSpan{
+.tei-addSpan{
 }
-.damageSpan{
+.tei-damageSpan{
 }
-.delSpan{
+.tei-delSpan{
 }
-.handShift{
+.tei-handShift{
 }
-.metamark{
+.tei-metamark{
 }
-.mod{
+.tei-mod{
 }
-.redo{
+.tei-redo{
 }
-.restore{
+.tei-restore{
 }
-.retrace{
+.tei-retrace{
 }
-.subst{
+.tei-subst{
 }
-.supplied{
+.tei-supplied{
 }
-.surplus{
+.tei-surplus{
 }
-.transpose{
+.tei-transpose{
 }
-.undo{
+.tei-undo{
 }
 
-div.metadataContainer{
+div.tei-metadataContainer{
     margin-left:auto;
     margin-right:auto;
     width:90%;
     font-family:calibri, arial, helvetica, sans-serif;
 }
 
-table.MODS_metadataTable {width:90%;}
-table.MODS_metadataTable, table.MODS_metadataTable tr td {border:1px black dotted}
-table.MODS_metadataTable tr td.metadataTableLabel {width:20%; text-align:right; padding-right:10px; font-weight:bold;}
-table.MODS_metadataTable tr td.metadataTableData {text-align:left; padding-right:10px; font-weight:normal;}
+table.tei-MODS_metadataTable {width:90%;}
+table.tei-MODS_metadataTable, table.tei-MODS_metadataTable tr td {border:1px black dotted}
+table.tei-MODS_metadataTable tr td.tei-metadataTableLabel {width:20%; text-align:right; padding-right:10px; font-weight:bold;}
+table.tei-MODS_metadataTable tr td.tei-metadataTableData {text-align:left; padding-right:10px; font-weight:normal;}
 

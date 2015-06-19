@@ -207,17 +207,17 @@ or
             <script type="text/javascript">
               
               $(document).ready(function(){
-              $('button#toggle').removeClass("hidden");
+              $('button#toggle').removeClass("tei-hidden");
               $('button#toggle').click(function(){
-              $('.diplomatic').toggleClass("hidden");
-              $('.edited').toggleClass("hidden");
+              $('.tei-diplomatic').toggleClass("tei-hidden");
+              $('.tei-edited').toggleClass("tei-hidden");
               });
               });
               
             </script>
           </head>
           <body>
-            <div id="{@facs}">
+            <div id="{@facs}" class="tei-transcription">
               <button id="toggle" title="toggle" type="button" class="hidden">Toggle Edited</button>
             <xsl:apply-templates mode="transcription"/>
             </div>
@@ -230,7 +230,7 @@ or
           <xsl:text>
            </xsl:text>
         <xsl:comment>This HTML Fragment has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
-          <div id="{@facs}">
+          <div id="{@facs}" class="tei-transcription">
             <button id="toggle" title="toggle" type="button" class="hidden">Toggle Edited</button>
             <xsl:apply-templates mode="transcription"/>
           </div>
@@ -249,7 +249,7 @@ or
   
   <!-- general match -->
   <xsl:template match="*" priority="-10"  mode="transcription">
-    <xsl:variable name="class">
+    <xsl:variable name="class0">
       <xsl:if test="@rend">
         <xsl:value-of select="translate(@rend, '-', '')"/>
         <xsl:text> </xsl:text>
@@ -270,6 +270,7 @@ or
         <xsl:value-of select="concat(name(),': ', ., '; ')"/>
       </xsl:for-each>
     </xsl:variable>
+    <xsl:variable name="class"><xsl:for-each select="tokenize($class0, ' ')"><xsl:value-of select="concat('tei-', .)"/><xsl:if test="not(position()=last())"><xsl:text> </xsl:text></xsl:if></xsl:for-each></xsl:variable>
     <span>
       <xsl:if test="not(normalize-space($class)='')">
         <xsl:attribute name="class">
@@ -287,21 +288,30 @@ or
 
   <!-- make rend class -->
   <xsl:template match="*/@rend" priority="-1"  mode="transcription">
-    <xsl:attribute name="class">
-      <xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-      <xsl:value-of select="translate(., '-', '')"/>
-    </xsl:attribute>
+    <xsl:variable name="class0">
+        <xsl:value-of select="concat(parent::node()/name(), ' ')"/>
+        <xsl:value-of select="translate(., '-', '')"/>
+    </xsl:variable>
+    <xsl:attribute name="class"><xsl:for-each select="tokenize($class0, ' ')"><xsl:value-of select="concat('tei-', .)"/><xsl:if test="not(position()=last())"><xsl:text> </xsl:text></xsl:if></xsl:for-each></xsl:attribute>
   </xsl:template>
 
   <xsl:template match="front|back|body|div|text"  mode="transcription">
-    <div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+    <div>
+      <xsl:variable name="class0">
+        <xsl:value-of select="concat(name(), ' ', translate(@rend, '-', ''))"/>
+       </xsl:variable>
+      <xsl:attribute name="class"><xsl:for-each select="tokenize($class0, ' ')"><xsl:value-of select="concat('tei-', .)"/><xsl:if test="not(position()=last())"><xsl:text> </xsl:text></xsl:if></xsl:for-each></xsl:attribute>  
       <xsl:apply-templates mode="transcription" />
     </div>
   </xsl:template>
 
 
   <xsl:template match="p|ab"  mode="transcription">
-    <p class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+    <p>
+      <xsl:variable name="class0">
+        <xsl:value-of select="concat(name(), ' ', translate(@rend, '-', ''))"/>
+      </xsl:variable>
+      <xsl:attribute name="class"><xsl:for-each select="tokenize(normalize-space($class0), ' ')"><xsl:value-of select="concat('tei-', .)"/><xsl:if test="not(position()=last())"><xsl:text> </xsl:text></xsl:if></xsl:for-each></xsl:attribute>
       <xsl:apply-templates mode="transcription"/>
     </p>
   </xsl:template>
@@ -314,7 +324,7 @@ or
       <xsl:number level="any" from="pb"/>
     </xsl:variable>
     <xsl:if test="number($num) mod 5 =0">
-      <span class="linenumber">
+      <span class="tei-linenumber">
         <xsl:value-of select="$num"/>
       </span>
     </xsl:if>
@@ -325,13 +335,13 @@ or
   -->
 
   <xsl:template match="choice"  mode="transcription">
-    <span class="choice">
+    <span class="tei-choice">
       <xsl:apply-templates  mode="transcription"/>
     </span>
   </xsl:template>
   
   <xsl:template match="choice/abbr"  mode="transcription">
-    <span class="abbr diplomatic">
+    <span class="tei-abbr tei-diplomatic">
       <xsl:if test="../expan">
         <xsl:attribute name="title">expan: <xsl:value-of select="../expan"/></xsl:attribute>
       </xsl:if>
@@ -339,7 +349,7 @@ or
     </span>
   </xsl:template>
   <xsl:template match="choice/expan"  mode="transcription">
-    <span class="abbr edited hidden">
+    <span class="tei-abbr tei-edited tei-hidden">
       <xsl:if test="../abbr">
         <xsl:attribute name="title">expan: <xsl:value-of select="."/></xsl:attribute>
       </xsl:if>
@@ -347,7 +357,7 @@ or
     </span>
   </xsl:template>
   <xsl:template match="choice/orig"  mode="transcription">
-    <span class="orig diplomatic">
+    <span class="tei-orig tei-diplomatic">
       <xsl:if test="../reg">
         <xsl:attribute name="title">reg: <xsl:value-of select="../reg"/></xsl:attribute>
       </xsl:if>
@@ -355,7 +365,7 @@ or
     </span>
   </xsl:template>
   <xsl:template match="choice/reg"  mode="transcription">
-    <span class="reg edited hidden">
+    <span class="tei-reg tei-edited tei-hidden">
       <xsl:if test="../orig">
         <xsl:attribute name="title">orig: <xsl:value-of select="../orig"/></xsl:attribute>
       </xsl:if>
@@ -363,7 +373,7 @@ or
     </span>
   </xsl:template>
   <xsl:template match="choice/sic"  mode="transcription">
-    <span class="sic diplomatic ">
+    <span class="tei-sic tei-diplomatic ">
       <xsl:if test="../corr">
         <xsl:attribute name="title">corr: <xsl:value-of select="../corr"/></xsl:attribute>
       </xsl:if>
@@ -371,7 +381,7 @@ or
     </span>
   </xsl:template>
   <xsl:template match="choice/corr"  mode="transcription">
-    <span class="corr edited hidden">
+    <span class="tei-corr tei-edited tei-hidden">
       <xsl:if test="../sic">
         <xsl:attribute name="title">sic: <xsl:value-of select="../sic"/></xsl:attribute>
       </xsl:if>
@@ -396,7 +406,7 @@ or
 
 
   <xsl:template match="del[@type='cancelled']"  mode="transcription">
-    <span class="del cancelled">
+    <span class="tei-del tei-cancelled">
       <xsl:if test="@*">
         <xsl:attribute name="title">
           <xsl:value-of select="concat(name(), ':  ')"/>
@@ -414,10 +424,10 @@ or
  
     
   <!-- foreign should be italiced in edited view -->
-  <xsl:template match="foreign" xml:space="preserve"  mode="transcription"><span class="foreign diplomatic"><xsl:if test="@xml:lang"><xsl:attribute name="title"><xsl:value-of select="concat('lang: ', @xml:lang)"/></xsl:attribute></xsl:if><xsl:apply-templates mode="transcription"/></span><span class="foreign foreignItalic edited hidden" style="font-style:italic;"><xsl:if test="@xml:lang"><xsl:attribute name="title"><xsl:value-of select="concat('lang: ', @xml:lang)"/></xsl:attribute></xsl:if><xsl:apply-templates  mode="transcription"/></span></xsl:template>
+  <xsl:template match="foreign" xml:space="preserve"  mode="transcription"><span class="tei-foreign tei-diplomatic"><xsl:if test="@xml:lang"><xsl:attribute name="title"><xsl:value-of select="concat('lang: ', @xml:lang)"/></xsl:attribute></xsl:if><xsl:apply-templates mode="transcription"/></span><span class="tei-foreign tei-foreignItalic tei-edited tei-hidden" style="font-style:italic;"><xsl:if test="@xml:lang"><xsl:attribute name="title"><xsl:value-of select="concat('lang: ', @xml:lang)"/></xsl:attribute></xsl:if><xsl:apply-templates  mode="transcription"/></span></xsl:template>
 
   <xsl:template match="figure"  mode="transcription">
-    <span class="figure" title="{concat(head, ';  ', figDesc)}">[Illustration] <xsl:apply-templates  mode="transcription"/></span>
+    <span class="tei-figure" title="{concat(head, ';  ', figDesc)}">[Illustration] <xsl:apply-templates  mode="transcription"/></span>
   </xsl:template>
   <xsl:template match="figure/head|figure/figDesc"  mode="transcription"/>
   
@@ -426,17 +436,17 @@ or
   <xsl:template match="gap[@extent][@unit]|space[@extent][@unit]" priority="10"  mode="transcription">
     <xsl:choose>
       <xsl:when test="@unit='chars'">
-        <span class="space" title="{concat(name(), ':  ',@extent, ' ', @unit, ' ', @agent)}">
+        <span class="tei-space" title="{concat(name(), ':  ',@extent, ' ', @unit, ' ', @agent)}">
           [<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]
         </span>
       </xsl:when>
       <xsl:when test="@unit='words'">
-        <span class="space" title="{concat(name(), ':  ',@extent, ' ', @unit, ' ', @agent)}">
+        <span class="tei-space" title="{concat(name(), ':  ',@extent, ' ', @unit, ' ', @agent)}">
           [<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]
         </span>
       </xsl:when>
       <xsl:otherwise>
-        <span class="space" title="{concat(name(), ':  ', @extent, ' ', @unit, ' ', @agent)}">
+        <span class="tei-space" title="{concat(name(), ':  ', @extent, ' ', @unit, ' ', @agent)}">
           [<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]
         </span>
       </xsl:otherwise>
@@ -444,7 +454,7 @@ or
   </xsl:template>
   
   <xsl:template match="space[@extent][@unit][@dim='vertical']" priority="1"  mode="transcription">
-        <span class="space vertical verticalSpace"><xsl:attribute name="title"><xsl:for-each select="@*">
+    <span class="tei-space tei-vertical tei-verticalSpace"><xsl:attribute name="title"><xsl:for-each select="@*">
             <xsl:sort/>
             <xsl:value-of select="concat(name(),': ', ., '; ')"/>
           </xsl:for-each></xsl:attribute>
@@ -469,7 +479,7 @@ or
   </xsl:template>
   
   <xsl:template match="figure/head"  mode="transcription">
-    <span class="figHead">
+    <span class="tei-figHead">
       <xsl:apply-templates  mode="transcription"/>
     </span>
   </xsl:template>
@@ -484,7 +494,11 @@ or
 
 
   <xsl:template match="milestone"  mode="transcription">
-    <hr class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+    <hr>
+      <xsl:variable name="class0">
+        <xsl:value-of select="concat(name(), ' ', translate(@rend, '-', ''))"/>
+      </xsl:variable>
+      <xsl:attribute name="class"><xsl:for-each select="tokenize($class0, ' ')"><xsl:value-of select="concat('tei-', .)"/><xsl:if test="not(position()=last())"><xsl:text> </xsl:text></xsl:if></xsl:for-each></xsl:attribute>
       <xsl:if test="@*">
         <xsl:attribute name="title">
           <xsl:value-of select="concat(name(), ':  ')"/>
@@ -510,13 +524,13 @@ or
 <!-- Shouldn't fire in this version. -->
   <xsl:template match="pb"  mode="transcription">
     <hr/>
-    <span class="pb-title">Image: <xsl:value-of select="@n"/></span>
+    <span class="tei-pbTitle">Image: <xsl:value-of select="@n"/></span>
   </xsl:template>
   
   
 
   <xsl:template match="supplied"  mode="transcription">
-    <span class="supplied edited hidden"><xsl:if test="@*">
+    <span class="tei-supplied tei-edited tei-hidden"><xsl:if test="@*">
       <xsl:attribute name="title">
         <xsl:value-of select="concat(name(), ':  ')"/>
         <xsl:for-each select="@*">
@@ -549,13 +563,13 @@ or
 
 
 <xsl:template match="term[@type]" priority="1" mode="transcription">
- <span class="term" title="{@type}"><xsl:apply-templates mode="transcription"/></span> 
+  <span class="tei-term" title="{@type}"><xsl:apply-templates mode="transcription"/></span> 
 </xsl:template>
   
 
 
   <xsl:template match="unclear" mode="transcription">
-    <span class="unclear"><xsl:if test="@*">
+    <span class="tei-unclear"><xsl:if test="@*">
       <xsl:attribute name="title">
         <xsl:value-of select="concat(name(), ':  ')"/>
         <xsl:for-each select="@*">
@@ -566,11 +580,5 @@ or
     </xsl:if>
     <xsl:apply-templates select="node()" mode="transcription"/></span>
   </xsl:template>
-  
-
-  
-  
-  
-  
 
 </xsl:stylesheet>
