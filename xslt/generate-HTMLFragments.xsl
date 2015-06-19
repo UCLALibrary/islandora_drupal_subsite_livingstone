@@ -127,7 +127,7 @@ or
         <xsl:when test="self::pb">
           <xsl:copy-of select="."/>
           <xsl:element name="{$Name}">
-            <xsl:attribute name="rend">CONTINUED</xsl:attribute>
+            <!-- <xsl:attribute name="rend">CONTINUED</xsl:attribute> -->
             <xsl:apply-templates select="current-group() except ." mode="paging"/>
           </xsl:element>
         </xsl:when>
