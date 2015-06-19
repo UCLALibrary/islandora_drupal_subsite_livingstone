@@ -322,6 +322,9 @@ a .info > em {
   font-size: 24px;
 }
 /** browse by repository page  **/
+#block-views-repository-list-block {
+  z-index: 60;
+}
 .node-type-section-page.his-own-words.repository .pane-node-content h2.pane-title:before {
   content: "Browse by";
   font-style: italic;
@@ -342,9 +345,11 @@ a .info > em {
   font-weight: bold;
   padding: 10px;
 }
+
 #primary .view-repository-list th a {
     color: #428bca;
 }
+#primary .views-field.views-field-field-repo-link,
 #primary .views-field.views-field-field-repo-repository {
   width: 400px;
 }

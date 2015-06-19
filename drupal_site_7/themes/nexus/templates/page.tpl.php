@@ -113,8 +113,10 @@ if($node->type =='section_page'): ?>
     <li><a title="livingstone online" class="flex-next" href="<?php print base_path() . 'about-this-site' ?>">Level 2</a></li>
     </ul>   
 -->
+     
     <!--<div class="flex-direction-nav"><a class="flex-prev" href="<?php print base_path() ?>">Previous</a><a class="flex-next" href="<?php print base_path() ?>">Next</a></div>-->
     <div class="content_main">
+          <div id="uppermost"><?php print render($page['uppermost']); ?></div>
                <?php if ($page['sidebar_first']): ?>
           <aside id="sidebar" class="col-sm-4" role="complementary">
            <?php print render($page['sidebar_first']); ?>

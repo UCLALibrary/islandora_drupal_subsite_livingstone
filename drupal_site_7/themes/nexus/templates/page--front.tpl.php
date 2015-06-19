@@ -71,10 +71,10 @@
             <?php print render($page['header']); ?>
         </header>
     <?php endif; ?>
-    <ul class="flex-direction-nav">
+ <!--   <ul class="flex-direction-nav">
     <li><a title="resources" class="flex-prev" rel="prev" href="<?php print base_path() . 'resources' ?>">Previous</a></li>
     <li><a title="livingstone online" class="flex-next" rel="next"href="<?php print base_path() . 'about-this-site' ?>">Level 2</a></li>
-    </ul>
+    </ul>  -->
         <?php if (theme_get_setting('slideshow_display', 'nexus')): ?>
     <div id="slider">
         <div class="flexslider">

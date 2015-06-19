@@ -32,6 +32,7 @@ function repository_content_type_view_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
+    'edit_node' => 'field_repo_repository',
     'field_repo_repository' => 'field_repo_repository',
     'field_repo_city' => 'field_repo_city',
     'field_repo_state' => 'field_repo_state',
@@ -40,6 +41,11 @@ function repository_content_type_view_views_default_views() {
   );
   $handler->display->display_options['style_options']['default'] = 'field_repo_repository';
   $handler->display->display_options['style_options']['info'] = array(
+    'edit_node' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
     'field_repo_repository' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
@@ -80,6 +86,27 @@ function repository_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['field_repo_repository']['id'] = 'field_repo_repository';
   $handler->display->display_options['fields']['field_repo_repository']['table'] = 'field_data_field_repo_repository';
   $handler->display->display_options['fields']['field_repo_repository']['field'] = 'field_repo_repository';
+  $handler->display->display_options['fields']['field_repo_repository']['label'] = '';
+  $handler->display->display_options['fields']['field_repo_repository']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_repo_repository']['alter']['text'] = '<a href="[field_repo_link]">[field_repo_repository]</a>';
+  $handler->display->display_options['fields']['field_repo_repository']['element_label_colon'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['edit_node']['text'] = '&nbsp;&nbsp;E';
+  /* Field: Content: Repo link */
+  $handler->display->display_options['fields']['field_repo_link']['id'] = 'field_repo_link';
+  $handler->display->display_options['fields']['field_repo_link']['table'] = 'field_data_field_repo_link';
+  $handler->display->display_options['fields']['field_repo_link']['field'] = 'field_repo_link';
+  $handler->display->display_options['fields']['field_repo_link']['label'] = 'Repository';
+  $handler->display->display_options['fields']['field_repo_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_repo_link']['alter']['text'] = '<a href="[field_repo_link]">[field_repo_repository]</a>[edit_node]';
+  $handler->display->display_options['fields']['field_repo_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_repo_link']['empty'] = '[field_repo_repository][edit_node]';
   /* Field: Content: City */
   $handler->display->display_options['fields']['field_repo_city']['id'] = 'field_repo_city';
   $handler->display->display_options['fields']['field_repo_city']['table'] = 'field_data_field_repo_city';
@@ -97,7 +124,7 @@ function repository_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['field_repo_lcnaf']['table'] = 'field_data_field_repo_lcnaf';
   $handler->display->display_options['fields']['field_repo_lcnaf']['field'] = 'field_repo_lcnaf';
   $handler->display->display_options['fields']['field_repo_lcnaf']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_repo_lcnaf']['alter']['text'] = '<a href="[field_repo_lcnaf]">LCNAF</a>';
+  $handler->display->display_options['fields']['field_repo_lcnaf']['alter']['text'] = '<a href="[field_repo_lcnaf]" target="_blank">LCNAF</a>';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -121,6 +148,14 @@ function repository_content_type_view_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
+
+  /* Display: EVA Field */
+  $handler = $view->new_display('entity_view', 'EVA Field', 'entity_view_1');
+  $handler->display->display_options['enabled'] = FALSE;
+  $handler->display->display_options['entity_type'] = 'node';
+  $handler->display->display_options['bundles'] = array(
+    0 => 'section_page',
+  );
   $export['repository_list'] = $view;
 
   return $export;
