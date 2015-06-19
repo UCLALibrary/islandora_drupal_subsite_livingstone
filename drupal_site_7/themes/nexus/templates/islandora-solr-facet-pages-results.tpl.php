@@ -25,7 +25,7 @@
         <?php 
         $resultExplodeArray = explode(':', $result);        
         ?>
-        <br/>
+        
       <?php print l(truncate_utf8($resultExplodeArray[0], 72, TRUE, TRUE), 'islandora/search/*:*', array('query' => array('f' => array($filter)))); ?>
       <span class="bucket-size">(<?php print $count; ?>)</span> 
       <?php
