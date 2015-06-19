@@ -260,6 +260,70 @@ function level_2_v1_0_stage_views_default_views() {
       'label' => 'Content: Sections (field_section_page_sections)',
     ),
   );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Sections (field_section_page_sections) */
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['id'] = 'field_section_page_sections_tid';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['table'] = 'field_data_field_section_page_sections';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['field'] = 'field_section_page_sections_tid';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['vocabulary'] = 'site_section';
+  $handler->display->display_options['block_description'] = 'banner - addressee';
+
+  /* Display: Block 2 */
+  $handler = $view->new_display('block', 'Block 2', 'block_2');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'jcarousel';
+  $handler->display->display_options['style_options']['wrap'] = 'circular';
+  $handler->display->display_options['style_options']['skin'] = 'tango';
+  $handler->display->display_options['style_options']['visible'] = '';
+  $handler->display->display_options['style_options']['auto'] = '0';
+  $handler->display->display_options['style_options']['autoPause'] = 1;
+  $handler->display->display_options['style_options']['easing'] = '';
+  $handler->display->display_options['style_options']['vertical'] = 0;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'section_page' => 'section_page',
+  );
+  /* Filter criterion: Content: Sections (field_section_page_sections) */
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['id'] = 'field_section_page_sections_tid';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['table'] = 'field_data_field_section_page_sections';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['field'] = 'field_section_page_sections_tid';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['value'] = array(
+    8 => '8',
+  );
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_section_page_sections_tid']['vocabulary'] = 'site_section';
+  $handler->display->display_options['block_description'] = 'banner - other pages';
   $export['image_banner_scroll'] = $view;
 
   $view = new view();
