@@ -133,11 +133,12 @@ $('.islandora-solr-content tr td:first-child a').text(
   for (i = 0; i < otherVeriosnArray.length; i++) {
     if(otherVeriosnArray[i].indexOf("http://") == 0){
         finalVersion += '<a href="' + otherVeriosnArray[i] + '">Link to Other Version</a> ';
-    }
+    }else{
     finalVersion += otherVeriosnArray[i] + " ";
+    }
     
     }
-    $(this).text(finalVersion);
+    $(this).html(finalVersion);
             } 
                     
             );
