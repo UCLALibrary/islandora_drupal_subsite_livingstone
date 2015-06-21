@@ -124,6 +124,24 @@ $('.islandora-solr-content tr td:first-child a').text(
     pagingInfo = $( ".islandora-solr-content" ).children(".item-list").first().detach();
     pagingInfo.insertBefore(".islandora-solr-sort table");
     
+    $("td.otherVersions_hlt").each(
+            function( index ) {
+  console.log( index + ": " + $( this ).text() );
+  otherVersionText = $(this).text();
+  otherVeriosnArray = otherVersionText.split(" ");
+  finalVersion  = "";
+  for (i = 0; i < otherVeriosnArray.length; i++) {
+    if(otherVeriosnArray[i].indexOf("http://") == 0){
+        finalVersion += '<a href="' + otherVeriosnArray[i] + '">Link to Other Version</a> ';
+    }else{
+    finalVersion += otherVeriosnArray[i] + " ";
+    }
+    
+    }
+    $(this).html(finalVersion);
+            } 
+                    
+            );
     $(".soft-limit").click(function(e) {
           // toggle class .hidden
           $(this).parent().children().last().toggleClass('hidden');
