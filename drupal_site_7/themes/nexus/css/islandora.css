@@ -1,0 +1,284 @@
+
+/**** carousel   ***/
+.view-image-banner-scroll.view-display-id-block_1 .jcarousel-skin-tango {
+  background: #f7c983 none repeat scroll 0 0;
+  text-align: center;
+}
+.view.view-image-banner-scroll.view-display-id-block_1 {
+  margin: 0 25px 0 28px;
+}
+
+.block.footershare::before {
+  border-bottom: 1px solid #999;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 25%;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+.block.footershare {
+  padding-top: 20px;
+}
+/*** Browse by Addressee  ***/
+.prevnextnavt .flex-direction-nav a.flex-prev {
+  margin-left: 23px;
+}
+.prevnextnavt .flex-direction-nav a.flex-next {
+  margin-right: 20px;
+}
+
+ul.islandora-solr-facet-pages-letterer {
+  margin-top: 20px;
+  text-align: center;
+}
+body.page-browse-recipient .islandora-solr-facet-pages-wrapper {
+  margin: 1% 20%;
+  z-index: 60;
+}
+body.page-browse-recipient .results-count {
+  display: none;
+}
+body.page-browse-recipient ul.islandora-solr-facet-pages-results {
+  list-style: outside none none;
+  margin-bottom: 0;
+}
+body.page-browse-recipient h1.page-title::before {
+  content: "Browse by";
+  font-size: 32px;
+  font-style: italic;
+  padding-right: 7px;
+}
+body.page-browse-recipient h1.page-title {
+  color: #000;
+  font-family: "Crimson Text",serif;
+  font-size: 36.5px;
+  font-weight: 600;
+  line-height: 105%;
+  margin: 20px 20%;
+  text-align: center;
+}
+body.page-browse-recipient .islandora-solr-facet-pages-results > li {
+  margin-left: 20px;
+}
+body.page-browse-recipient .islandora-solr-facet-pages-results > li a {
+  margin-left: -20px;
+}
+
+/******* catalog  ******/
+body.page-islandora #sidebar .block > h2 {
+  text-transform: none;
+}
+body.page-islandora  #islandora-solr-simple-search-form input[type="text"] {
+  background: #f0ecec url("/sites/digital-stage.library.ucla.edu.livingstone/themes/nexus/images/search-button.png") no-repeat scroll 1px 1px;
+  border: 1px solid #d0d0d0;
+  height: 25px;
+  border-radius: 7px;
+}
+body.page-islandora  #islandora-solr-simple-search-form input[type="text"] {
+    background: #f0ecec url("/sites/digital-stage.library.ucla.edu.livingstone/themes/nexus/images/search-button.png") no-repeat scroll 1px 1px;
+    border: 1px solid #d0d0d0;
+    height: 25px;
+    width: 60%;
+}
+body.page-islandora  #islandora-solr-simple-search-form input[type="text"] {
+}
+body.page-islandora  #islandora-solr-simple-search-form .rounded {
+    border-radius: 7px;
+}
+body.page-islandora  #islandora-solr-simple-search-form .search {
+    background: rgba(0, 0, 0, 0) url("../images/search-button.png") no-repeat scroll 1px 1px;
+    margin-top: 8px;
+    padding: 3px 15px 3px 30px;
+}
+#edit-submit--2.form-submit {
+  border: 0 none;
+  border-radius: 8px;
+  display: none;
+}
+/*-----------------*/
+body.page-islandora #sidebar.col-sm-4 {
+  padding-top: 15px;
+   padding-left: 30px;
+  width: 23% !important;
+}
+#block-islandora-solr-simple h2 {
+  font-size: 16px;
+}
+#fullRecordForm {
+  margin: 20px 0 10px;
+}
+#block-islandora-solr-basic-facets {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.islandora-solr-facet-wrapper {
+  border: 0px solid;
+  display: inline-block;
+  width: 100%;
+}
+a.soft-limit.processed {
+  background: url("http://digital-stage.library.ucla.edu/livingstone/misc/arrow-asc.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin-right: 10px;
+  position: relative;
+  text-indent: -999px;
+}
+a.soft-limit.processed.facet_clicked {
+  background: transparent url("http://digital-stage.library.ucla.edu/livingstone/misc/arrow-desc.png") no-repeat scroll 0 0;
+  display: inline-block;
+  height: 13px;
+  margin-right: 10px;
+  position: relative;
+  text-indent: -999px;
+  width: 13px;
+}
+body.page-islandora .islandora-solr-facet-wrapper ul.islandora-solr-facet mods_originInfo_type_normalized_dateOther_t_ul,
+body.page-islandora .islandora-solr-facet-wrapper ul.islandora-solr-facet mods_name_personal_creator_namePart_s_ul,
+body.page-islandora .islandora-solr-facet-wrapper ul.islandora-solr-facet mods_genre_s_ul {
+  margin-top: -10px !important;
+  min-height: 0;
+  padding: 0;
+}
+#fullRecord {
+  margin-right: 10px;
+}
+#block-islandora-solr-simple.block {
+  margin-bottom: 0px;
+}
+.islandora-solr-facet-wrapper .item-list h3 {
+  display:none;
+}
+.islandora-solr-query-wrap h3,
+.islandora-solr-filter-wrap h3 {
+  display: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.islandora-solr-facet-wrapper h3 {
+  display: inline;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+body.page-islandora .plusminus {
+  display: none;
+  float: left;
+  padding-right: 10px;
+}
+
+#block-islandora-solr-simple h3 {
+ font-family: "Crimson Text",serif;
+ font-style: italic;
+ margin-bottom: 0;
+}
+ul.islandora-solr-filter-list.filter-list,
+ul.islandora-solr-query-list.query-list {
+ list-style: none;
+}
+
+/* -------------------------------  */
+#primary .islandora-solr-sort table {
+margin-right: 15px;
+margin-bottom: 0px;
+}
+body.page-islandora #primary th {
+  border: 1px solid #999;
+  padding: 5px 10px;
+}
+body.page-islandora #primary th:first-child, 
+body.page-islandora #primary td:first-child {
+  /* background: red; */
+  max-width: 60px !important;
+  min-width: 60px !important;
+  width: 60px !important;
+}
+body.page-islandora #primary th.mods_titleInfo_title_s, 
+body.page-islandora #primary td.mods_titleInfo_title_hlt {
+  /* background: yellow; */
+  max-width: 200px !important;
+  min-width: 200px !important;
+  width: 200px !important;
+}
+body.page-islandora #primary th.mods_originInfo_dateCreated_s,
+body.page-islandora #primary td.mods_originInfo_dateCreated_hlt {
+  /* background: orange; */
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+}
+body.page-islandora #primary th.creator_s, 
+body.page-islandora #primary td.creator_hlt {
+  /* background: green; */
+  max-width: 200px !important;
+  min-width: 200px !important;
+  width: 200px !important;
+}
+body.page-islandora #primary th.addressee_s, 
+body.page-islandora #primary td.addressee_hlt {
+  /* background: blue; */
+  max-width: 160px !important;
+  min-width: 160px !important;
+  width: 160px !important;
+}
+body.page-islandora #primary th.mods_originInfo_place_placeTerm_text_s, 
+body.page-islandora #primary td.mods_originInfo_place_placeTerm_text_hlt {
+  /* background: red; */
+  max-width: 150px !important;
+  min-width: 150px !important;
+  width: 150px !important;
+}
+body.page-islandora #primary th.mods_physicalDescription_extent_pages_s, 
+body.page-islandora #primary td.mods_physicalDescription_extent_mm_hlt {
+  /* background: green; */
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+}
+body.page-islandora #primary th.mods_physicalDescription_extent_mm_s, 
+body.page-islandora #primary td.mods_physicalDescription_extent_pages_hlt {
+  /* background: yellow; */
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+}
+body.page-islandora #primary th.genre_s, 
+body.page-islandora #primary td.genre_hlt {
+  /* background: blue; */
+  max-width: 200px !important;
+  min-width: 200px !important;
+  width: 200px !important;
+}
+body.page-islandora #primary th.repository_s,
+body.page-islandora #primary td.repository_hlt {
+  /* background: pink; */
+  max-width: 230px !important;
+  min-width: 230px !important;
+  width: 230px !important;
+}
+body.page-islandora #primary th.mods_identifier_local_NLS_copy_identifier_s, 
+body.page-islandora #primary td.mods_identifier_local_NLS_copy_identifier_hlt {
+  /* background: green; */
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+}
+body.page-islandora #primary th.otherVersions_s, 
+body.page-islandora #primary td.otherVersions_hlt {
+  /* background: red; */
+  max-width: 200px !important;
+  min-width: 200px !important;
+  width: 200px !important;
+}
+body.page-islandora #primary th.mods_identifier_local_Canonical_Catalog_Number_s, 
+body.page-islandora #primary td.mods_identifier_local_Canonical_Catalog_Number_hlt {
+  /* background: green; */
+  max-width: 160px !important;
+  min-width: 160px !important;
+  width: 160px !important;
+}
