@@ -25,7 +25,7 @@
       <tr>
       <?php foreach($row as $key => $value):?>
         <td class="<?php print $key; ?>">
-            <?php if(strlen($str) == 0): ?>
+            <?php if(strlen($value) == 0): ?>
             &nbsp;
                <?php else: ?> 
             <?php print $value; ?>
