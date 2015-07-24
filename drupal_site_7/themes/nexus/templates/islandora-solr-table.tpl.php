@@ -25,7 +25,13 @@
       <tr>
       <?php foreach($row as $key => $value):?>
         <td class="<?php print $key; ?>">
-          <?php print $value; ?>
+            <?php if(strlen($str) == 0): ?>
+            &nbsp;
+               <?php else: ?> 
+            <?php print $value; ?>
+            <?php endif; ?>
+
+          
         </td>
       <?php endforeach; ?>
       </tr>
