@@ -738,6 +738,7 @@ body.not-front .flex-direction-nav {
 }
 .node-type-section-page .field.field-name-field-section-page-tag-line p {
   font-size: 15px;
+  padding-left: 5px;
 }
  
  /* 
