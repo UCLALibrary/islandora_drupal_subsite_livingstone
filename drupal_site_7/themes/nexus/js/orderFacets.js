@@ -35,7 +35,43 @@ $lisGenre = $("li.mods_genre_s");
     });
     $("li.mods_genre_s").parent("ul").html(genreOrderedLis);         
   
-  
+  if($("td.mods_titleInfo_title_hlt").length===0){
+            $("<td class='mods_titleInfo_title_hlt'>&nbsp;</td>").insertAfter("td.access_hlt");
+   }
+   if($("td.mods_originInfo_dateCreated_hlt ").length===0){
+            $("<td class='mods_originInfo_dateCreated_hlt'>&nbsp;</td>").insertAfter("td.mods_titleInfo_title_hlt");
+   } 
+    if($("td.creator_hlt").length===0){
+            $("<td class='creator_hlt'>&nbsp;</td>").insertAfter("td.mods_originInfo_dateCreated_hlt"); 
+   }   
+   if($("td.addressee_hlt").length===0){
+     $("<td class='addressee_hlt'>&nbsp;</td>").insertAfter("td.creator_hlt");        
+   }   
+   if($("td.mods_originInfo_place_placeTerm_text_hlt").length===0){
+            $("<td class='mods_originInfo_place_placeTerm_text_hlt'>&nbsp;</td>").insertAfter("td.addressee_hlt");        
+   }   
+   if($("td.mods_physicalDescription_extent_mm_hlt").length===0){
+     $("<td class='mods_physicalDescription_extent_mm_hlt'>&nbsp;</td>").insertAfter("td.mods_originInfo_place_placeTerm_text_hlt");               
+   }   
+   if($("td.mods_physicalDescription_extent_pages_hlt").length===0){
+     $("<td class='mods_physicalDescription_extent_pages_hlt'>&nbsp;</td>").insertAfter("td.mods_physicalDescription_extent_mm_hlt");                      
+   }   
+   if($("td.genre_hlt").length===0){
+      $("<td class='genre_hlt'>&nbsp;</td>").insertAfter("td.mods_physicalDescription_extent_pages_hlt");                             
+   }   
+   if($("td.repository_hlt").length===0){
+       $("<td class='repository_hlt'>&nbsp;</td>").insertAfter("td.genre_hlt");                                   
+   }   
+   if($("td.mods_identifier_local_NLS_copy_identifier_hlt").length===0){
+            $("<td class='mods_identifier_local_NLS_copy_identifier_hlt'>&nbsp;</td>").insertAfter("td.repository_hlt");                                    
+   }   
+   if($("td.otherVersions_hlt").length===0){
+         $("<td class='otherVersions_hlt'>&nbsp;</td>").insertAfter("td.mods_identifier_local_NLS_copy_identifier_hlt");                                        
+   }   
+    if($("td.mods_identifier_local_Canonical_Catalog_Number_hlt").length===0){
+          $("<td class='mods_identifier_local_Canonical_Catalog_Number_hlt'>&nbsp;</td>").insertAfter("td.otherVersions_hlt");                                           
+   } 
+   
     
        
         $("td.addressee_hlt").hide();
@@ -55,6 +91,8 @@ $lisGenre = $("li.mods_genre_s");
         $("th.mods_identifier_local_NLS_copy_identifier_s").hide();
         $("th.otherVersions_s").hide();
         $("th.mods_identifier_local_Canonical_Catalog_Number_s").hide();
+        
+       
         
         
         $('#fullRecord').change(function() {
