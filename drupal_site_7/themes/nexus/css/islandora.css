@@ -1,4 +1,4 @@
-<style>
+
 
 /** pager  **/
 .pager li > a, .pager li > span {
@@ -349,7 +349,7 @@ body.page-islandora #primary td.mods_titleInfo_title_hlt {
   max-width: 240px !important;
   min-width: 240px !important;
   width: 240px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.mods_originInfo_dateCreated_s,
 body.page-islandora #primary td.mods_originInfo_dateCreated_hlt {
@@ -357,7 +357,7 @@ body.page-islandora #primary td.mods_originInfo_dateCreated_hlt {
   max-width: 135px !important;
   min-width: 135px !important;
   width: 135px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.creator_s, 
 body.page-islandora #primary td.creator_hlt {
@@ -365,7 +365,7 @@ body.page-islandora #primary td.creator_hlt {
   max-width: 200px !important;
   min-width: 200px !important;
   width: 200px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.addressee_s, 
 body.page-islandora #primary td.addressee_hlt {
@@ -373,7 +373,7 @@ body.page-islandora #primary td.addressee_hlt {
   max-width: 160px !important;
   min-width: 160px !important;
   width: 160px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.mods_originInfo_place_placeTerm_text_s, 
 body.page-islandora #primary td.mods_originInfo_place_placeTerm_text_hlt {
@@ -381,7 +381,7 @@ body.page-islandora #primary td.mods_originInfo_place_placeTerm_text_hlt {
   max-width: 150px !important;
   min-width: 150px !important;
   width: 150px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.mods_physicalDescription_extent_pages_s, 
 body.page-islandora #primary td.mods_physicalDescription_extent_mm_hlt {
@@ -389,7 +389,7 @@ body.page-islandora #primary td.mods_physicalDescription_extent_mm_hlt {
   max-width: 70px !important;
   min-width: 70px !important;
   width: 70px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.mods_physicalDescription_extent_mm_s, 
 body.page-islandora #primary td.mods_physicalDescription_extent_pages_hlt {
@@ -397,7 +397,7 @@ body.page-islandora #primary td.mods_physicalDescription_extent_pages_hlt {
   max-width: 110px !important;
   min-width: 110px !important;
   width: 110px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.genre_s, 
 body.page-islandora #primary td.genre_hlt {
@@ -405,7 +405,7 @@ body.page-islandora #primary td.genre_hlt {
   max-width: 150px !important;
   min-width: 150px !important;
   width: 150px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.repository_s,
 body.page-islandora #primary td.repository_hlt {
@@ -413,7 +413,7 @@ body.page-islandora #primary td.repository_hlt {
   max-width: 250px !important;
   min-width: 250px !important;
   width: 250px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.mods_identifier_local_NLS_copy_identifier_s, 
 body.page-islandora #primary td.mods_identifier_local_NLS_copy_identifier_hlt {
@@ -421,7 +421,7 @@ body.page-islandora #primary td.mods_identifier_local_NLS_copy_identifier_hlt {
   max-width: 150px !important;
   min-width: 150px !important;
   width: 150px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.otherVersions_s, 
 body.page-islandora #primary td.otherVersions_hlt {
@@ -429,7 +429,7 @@ body.page-islandora #primary td.otherVersions_hlt {
   max-width: 200px !important;
   min-width: 200px !important;
   width: 200px !important;
-  display: table-cell;
+   
 }
 body.page-islandora #primary th.mods_identifier_local_Canonical_Catalog_Number_s, 
 body.page-islandora #primary td.mods_identifier_local_Canonical_Catalog_Number_hlt {
@@ -437,9 +437,6 @@ body.page-islandora #primary td.mods_identifier_local_Canonical_Catalog_Number_h
   max-width: 160px !important;
   min-width: 160px !important;
   width: 160px !important;
-  display: table-cell;
+   
 }
-.show-table-cells{
-    display: table-cell;
-}
-</style>
+
