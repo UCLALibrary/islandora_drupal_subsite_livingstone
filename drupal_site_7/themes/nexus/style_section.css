@@ -2063,3 +2063,6 @@ height:25px;
   display: none;
   font-size: 0.85em;
 }
+.show-table-cells{
+    display: table-cell;
+}
