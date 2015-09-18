@@ -376,7 +376,7 @@ h1#site-title a:link, h1#site-title a:visited{
 /* Layout */
 
 #primary, #sidebar {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-top: 0;
 }
 
@@ -678,7 +678,7 @@ body.not-front .flex-direction-nav {
     margin: 0 auto;
 }
 .node-type-section-page .panel-pane.pane-node-content .content {
-  margin: 1% 20%;
+  margin: 1% 20% 0;
   position: relative;
   z-index: 60;
 }
@@ -713,10 +713,13 @@ body.not-front .flex-direction-nav {
 
 }
 .node-type-section-page .field-name-field-section-page-tag-line {
-  border-top: 1px solid #999;
+  /* border-top: 1px solid #999; */
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px 0 0;
   font-family: "Crimson Text",serif;
   font-weight: bold;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .node-type-section-page .pane-node-content .field-item ul {
   margin: 1.5% 0 1.5% 3.5%;
@@ -762,7 +765,7 @@ body.not-front .flex-direction-nav {
   margin-bottom: 0;  
 }
 .node-type-section-page .field.field-name-body {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-left: 1.5% 20%;
 }
 .node-type-section-page  .field.field-name-field-social-media-links .field-items {
@@ -1280,7 +1283,7 @@ span.footpdf {
 }
 
 #sidebar .block {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #sidebar .block > h2 {
