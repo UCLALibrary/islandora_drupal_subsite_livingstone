@@ -68,6 +68,9 @@
 fieldset#edit-advanced.search-advanced {
   display: none;
 }
+body.page-islandora-search aside#sidebar.col-sm-4 {
+  padding-right: 0;
+}
 body.page-islandora-search #sidebar #block-islandora-solr-simple h2,
 body.page-islandora-search #sidebar #block-islandora-solr-simple h3,
 body.page-islandora-search #content-wrap h1.page-title {
@@ -200,9 +203,6 @@ body.page-browse-recipient .islandora-solr-facet-pages-results > li a {
 }
 
 /******* catalog  ******/
-body.page-islandora-search aside#sidebar.col-sm-4 {
-  padding-right: 0;
-}
 body.page-islandora #sidebar .block > h2 {
   text-transform: none;
 }
@@ -214,13 +214,13 @@ body.page-islandora  #islandora-solr-simple-search-form input[type="text"] {
   border: 1px solid #d0d0d0;
   height: 25px;
   border-radius: 7px;
-  padding-left: 10px;
 }
 body.page-islandora  #islandora-solr-simple-search-form input[type="text"] {
     background: #f0ecec url("/sites/livingstoneonline.org/themes/nexus/images/search-button.png") no-repeat scroll right 1px;
     border: 1px solid #d0d0d0;
     height: 25px;
     width: 100%;
+    padding-left: 10px;
 }
 body.page-islandora  #islandora-solr-simple-search-form input[type="text"] {
 }
@@ -237,11 +237,15 @@ body.page-islandora  #islandora-solr-simple-search-form .search {
   border-radius: 8px;
   display: none;
 }
+.access_s,
+.access_hlt {
+  display: none;
+}
 /*-----------------*/
 body.page-islandora #sidebar.col-sm-4 {
   padding-top: 15px;
    padding-left: 30px;
-  width: 18% !important;
+  width: 21% !important;
 }
 #block-islandora-solr-simple h2 {
   font-size: 16px;
@@ -297,7 +301,9 @@ body.page-islandora .islandora-solr-facet-wrapper ul.islandora-solr-facet mods_g
 body.page-islandora .content-area.col-sm-8 {
   overflow-x: scroll;
   overflow-y:hidden;
-  width: 81%;
+  width: 77%;
+  padding-left: 0px;
+  margin-left: 12px;
 }
 .primary1 .div1 {
   width:1000px;

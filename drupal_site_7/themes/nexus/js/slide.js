@@ -4,7 +4,7 @@ jQuery(window).load(function() {
     animation: "slide",
     direction: "horizontal",
     directionNav:true,
-    slideshowSpeed: 4000,
+    slideshowSpeed: 5000,
     animationDuration: 3000,
     controlNav:false
   });
