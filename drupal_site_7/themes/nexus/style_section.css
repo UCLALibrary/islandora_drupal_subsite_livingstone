@@ -517,11 +517,12 @@ img.grayscale {
 	display: none;
 }
 body.not-front .flex-direction-nav {
-  max-width: 1260px;
+  max-width: 1253px;
   position: fixed;
   top: 50%;
   width: 100%;
   z-index: 50;
+  margin-left: 5px;
 }
 /* level 2 pages */
 .node-type-page .region-content-top {
