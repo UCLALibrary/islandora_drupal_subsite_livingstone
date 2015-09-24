@@ -781,7 +781,7 @@ body.not-front .flex-direction-nav {
   text-align: center;
 }
 .node-type-section-page.repository .block.footershare::before {
-  border-top: 1px solid #999;
+  border-top: 0px solid #999;
   bottom: 0;
   content: "";
   height: 1px;
