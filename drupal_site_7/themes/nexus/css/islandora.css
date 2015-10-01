@@ -83,7 +83,7 @@ body.page-islandora-search h1.page-title::before {
     padding-right: 7px;
 }
 body.page-islandora-search h1.page-title {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #ccc;
     color: #000;
     font-family: "Crimson Text",serif;
     font-size: 36.5px;
@@ -150,8 +150,12 @@ body.page-search #edit-basic {
 .prevnextnavt .flex-direction-nav a.flex-next {
   margin-right: 20px;
 }
+
+body.page-browse-addressee .field-name-field-section-page-tag-line,
 body.page-browse-recipient .field-name-field-section-page-tag-line {
-  border-bottom: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 0 0 1px;
   font-family: "Crimson Text",serif;
   font-weight: bold;
   margin: 1% 20% 3%;
@@ -162,13 +166,16 @@ ul.islandora-solr-facet-pages-letterer {
   margin-top: 20px;
   text-align: center;
 }
+body.page-browse-addressee .islandora-solr-facet-pages-wrapper,
 body.page-browse-recipient .islandora-solr-facet-pages-wrapper {
   margin: 1% 20%;
   z-index: 60;
 }
+body.page-browse-addressee .results-count,
 body.page-browse-recipient .results-count {
   display: none;
 }
+body.page-browse-addressee ul.islandora-solr-facet-pages-results,
 body.page-browse-recipient ul.islandora-solr-facet-pages-results {
   list-style: outside none none;
   margin-bottom: 0;
@@ -176,6 +183,7 @@ body.page-browse-recipient ul.islandora-solr-facet-pages-results {
 .node-type-section-page.his-own-words.repository .pane-node-content h2.pane-title::before {
   font-size: 36.5px !important;
 }
+body.page-browse-addressee h1.page-title::before,
 body.page-browse-recipient h1.page-title::before {
   content: "Browse by";
   font-size: 36.5px;
@@ -183,8 +191,11 @@ body.page-browse-recipient h1.page-title::before {
   padding-right: 7px;
 }
 body.page-search-node h1.page-title,
+body.page-browse-addressee h1.page-title,
 body.page-browse-recipient h1.page-title {
-  border-bottom: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 0 0 1px;
   color: #000;
   font-family: "Crimson Text",serif;
   font-size: 36.5px;
@@ -195,9 +206,11 @@ body.page-browse-recipient h1.page-title {
   text-align: center;
 
 }
+body.page-browse-addressee .islandora-solr-facet-pages-results > li,
 body.page-browse-recipient .islandora-solr-facet-pages-results > li {
   margin-left: 20px;
 }
+body.page-browse-addressee .islandora-solr-facet-pages-results > li a,
 body.page-browse-recipient .islandora-solr-facet-pages-results > li a {
   margin-left: -20px;
 }
@@ -265,9 +278,10 @@ body.page-islandora #sidebar.col-sm-4 {
   width: 100%;
 }
 a.soft-limit.processed {
-  background: url("/misc/arrow-asc.png") no-repeat scroll 0 0 transparent;
+  background: url("/sites/digital.library.ucla.edu.livingstone/files/styles/large/public/arrow-right.png") no-repeat scroll 0 3px transparent;
+ /* background: url("/misc/arrow-asc.png") no-repeat scroll 0 1px transparent; */
   display: inline-block;
-  height: 13px;
+  height: 16px;
   width: 13px;
   margin-right: 10px;
   position: relative;

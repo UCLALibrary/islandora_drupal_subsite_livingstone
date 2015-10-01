@@ -198,7 +198,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_carousel_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_carousel_image']['settings'] = array(
     'image_style' => '65x65_square',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Sections */
   $handler->display->display_options['fields']['field_section_page_sections']['id'] = 'field_section_page_sections';
@@ -351,7 +351,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_section_page_image']['settings'] = array(
     'image_style' => '65x65_square',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Carousel image */
   $handler->display->display_options['fields']['field_carousel_image']['id'] = 'field_carousel_image';
@@ -366,7 +366,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_carousel_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_carousel_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_carousel_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => '65x65_square',
     'image_link' => '',
   );
   /* Field: Content: Sections */

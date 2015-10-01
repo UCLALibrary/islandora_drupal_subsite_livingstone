@@ -56,13 +56,14 @@ html[xmlns] .slides {display: block;}
     height: 100px; 
     margin: -50px 0 0; 
     display: block; 
-    background: url("../images/bg_direction_nav-new2.png") no-repeat scroll 0 0 rgba(240, 240, 240, .5); 
+    background: url("../images/bg_direction_nav-new2.png") no-repeat scroll 0 0 #f2f2f2; 
     position: absolute; 
-    top: 50%; 
+    top: 47.5%; 
     z-index: 160; 
     cursor: pointer; 
     text-indent: -9999px; 
     border-radius: 0 6px 6px 0;
+    border: 1px solid #eee;
 }
 .flex-direction-nav a.flex-next {
    /* border:solid 1px #fff ;*/
@@ -70,13 +71,14 @@ html[xmlns] .slides {display: block;}
     height: 100px; 
     margin: -50px 0 0; 
     display: block; 
-    background: url("../images/bg_direction_nav-new2.png") no-repeat scroll -50px 0 rgba(240, 240, 240, .5); 
+    background: url("../images/bg_direction_nav-new2.png") no-repeat scroll -50px 0 #f2f2f2; 
     position: absolute; 
-    top: 50%; 
+    top: 47.5%; 
     z-index: 160; 
     cursor: pointer; 
     text-indent: -9999px; 
     border-radius: 6px 0 0 6px;
+    border: 1px solid #eee;
 }
 .flex-direction-nav .flex-next {background-position: 100% 0; right: 0px; }
 .flex-direction-nav .flex-prev {left: 0px;}
@@ -84,10 +86,10 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
 .prevnextnav .flex-direction-nav a.flex-prev {
-  margin-left: 20px;
+  margin-left: 27px;
 }
 .prevnextnav .flex-direction-nav a.flex-next {
-  margin-right: 20px;
+  margin-right: 23px;
 }
 
 
