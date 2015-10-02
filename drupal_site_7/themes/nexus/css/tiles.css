@@ -335,6 +335,7 @@ a .info > em {
   font-size: 14px;
   width: 70%;
   z-index: 80;
+  position: relative;
 }
 #primary .view-repository-list .view-repository-list table thead{
 
