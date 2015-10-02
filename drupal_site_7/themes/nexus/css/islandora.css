@@ -367,7 +367,7 @@ ul.islandora-solr-query-list.query-list {
 
 /* -------------------------------  */
 #primary .islandora-solr-sort table {
-margin-right: 15px;
+margin-right: 0px;
 margin-bottom: 0px;
 }
 body.page-islandora #primary th {

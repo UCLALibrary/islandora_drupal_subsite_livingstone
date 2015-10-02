@@ -528,7 +528,6 @@ body.not-front .flex-direction-nav {
 .node-type-page .region-content-top {
   float: right;
   margin-bottom: 20px;
-  margin-right: 95px;
 }
 .nodequeuepager8 {
   margin-left: -25px;
@@ -566,7 +565,7 @@ body.not-front .flex-direction-nav {
   display: block;
   float: left;
   height: 100px;
-  margin-left: 15px;
+  margin-left: -80px;
   text-indent: -9999px;
   width: 50px;
   z-index: 110;
