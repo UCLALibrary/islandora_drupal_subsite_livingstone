@@ -315,11 +315,11 @@ function nexus_item_list($variables) {
        if (strpos($data,'title="Place Created"') !== false) {
              $output .= '<th class="mods_originInfo_place_placeTerm_text_s" >' . $data . '</th>';
        }
-       if (strpos($data,'title="Extent (pages)"') !== false) {
-             $output .= '<th class="mods_physicalDescription_extent_pages_s" >' . $data . '</th>';
-       }
        if (strpos($data,'title="Extent (size)"') !== false) {
              $output .= '<th class="mods_physicalDescription_extent_mm_s" >' . $data . '</th>';
+       }
+       if (strpos($data,'title="Extent (pages)"') !== false) {
+             $output .= '<th class="mods_physicalDescription_extent_pages_s" >' . $data . '</th>';
        }
        if (strpos($data,'title="Genre"') !== false) {
              $output .= '<th class="genre_s" >' . $data . '</th>';
