@@ -78,10 +78,11 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
   $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
   $handler->display->display_options['fields']['field_outbound_link']['field'] = 'field_outbound_link';
-  /* Sort criterion: Content: Nid */
-  $handler->display->display_options['sorts']['nid']['id'] = 'nid';
-  $handler->display->display_options['sorts']['nid']['table'] = 'node';
-  $handler->display->display_options['sorts']['nid']['field'] = 'nid';
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   /* Contextual filter: Content: Sections (field_section_page_sections) */
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['id'] = 'field_section_page_sections_tid';
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['table'] = 'field_data_field_section_page_sections';
@@ -269,12 +270,6 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Sections (field_section_page_sections) */
-  $handler->display->display_options['filters']['field_section_page_sections_tid']['id'] = 'field_section_page_sections_tid';
-  $handler->display->display_options['filters']['field_section_page_sections_tid']['table'] = 'field_data_field_section_page_sections';
-  $handler->display->display_options['filters']['field_section_page_sections_tid']['field'] = 'field_section_page_sections_tid';
-  $handler->display->display_options['filters']['field_section_page_sections_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_section_page_sections_tid']['vocabulary'] = 'site_section';
   $handler->display->display_options['block_description'] = 'banner - addressee';
 
   /* Display: Block 2 */
