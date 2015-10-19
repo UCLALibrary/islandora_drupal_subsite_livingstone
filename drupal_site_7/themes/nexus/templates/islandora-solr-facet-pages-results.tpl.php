@@ -22,20 +22,22 @@
     <li>
         
         
-      <?php 
+      
+        
+        <?php 
+        $resultExplodeArray = explode(':', $result);        
+        ?>
+        
+        <?php 
       
       
       if($solr_field == 'addressee_description_ms'){
-    $filter = 'mods_name_personal_addressee_namePart_ms'. ':"' . addslashes($result) . '"'; 
+    $filter = 'mods_name_personal_addressee_namePart_ms'. ':"' . addslashes(trim($resultExplodeArray[0])) . '"'; 
   }else{
       $filter = $solr_field . ':"' . addslashes($result) . '"';
   }
       
      ?> 
-        
-        <?php 
-        $resultExplodeArray = explode(':', $result);        
-        ?>
         
       <?php print l(truncate_utf8($resultExplodeArray[0], 72, TRUE, TRUE), 'islandora/search/*:*', array('query' => array('f' => array($filter)))); ?>
       <span class="bucket-size">(<?php print $count; ?>)</span> 
