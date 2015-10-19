@@ -26,7 +26,7 @@
       
       
       if($solr_field == 'addressee_description_ms'){
-    $filter = "mods_name_personal_addressee_namePart_ms". ':"' . addslashes($result) . '"'; 
+    $filter = 'mods_name_personal_addressee_namePart_ms'. ':"' . addslashes($result) . '"'; 
   }else{
       $filter = $solr_field . ':"' . addslashes($result) . '"';
   }
