@@ -1,5 +1,5 @@
 
-# Islandora Drupal Subsite Template
+# Islandora Drupal Subsite Livingstone Template
 
-This is a template repository that can be cloned to create a new project repository.
+Livingstone Online Drupal subsite for use with Islandora.
 
